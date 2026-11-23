@@ -30,6 +30,7 @@ python -E -S tools/verify_lean_match.py --lean "$LEAN_BIN" \
 
 - 합성 Lean에서 정의 경유 Choice와 증명 경로 Choice를 모두 확인했다. 값이 없는 공리의 `value_refs`는 `null`로 기록하며, 참조가 없는 저장 본체는 빈 목록으로 표현한다. [합성 기준 기록](rh-lean-fixture-match-v2.json)
 - 원본 `rh_of_right._proof_1_1`과 `_proof_1_2`의 직접 VALUE 참조는 각각 57개이고 두 집합이 일치한다. 중복 제거한 57개 중 53개를 Lean `Init`에서 대조했다. 네 미해결 선언은 `Int.instLinearOrder`, `LinearOrder.toPartialOrder`, `PartialOrder.toPreorder`, `Preorder.toLT`다. [원본 기준 기록](rh-lean-helper-match-v2.json)
-- USTAR·PAX·GNU 긴 경로 테스트를 통과했다. 보존된 압축 조각 36개를 제한적으로 재검색한 결과 `VwinOfRow.olean`는 `HELD`다. 공개 그래프는 후보 선언 위치를 제공한다. 실제 원본 간선은 해당 파일의 고정 해시와 선언을 검사한 뒤 수용한다.
+- P3 환경을 준비하면서 고정 Mathlib의 세 컴파일 파일에서 위 네 선언을 추가로 확인했다. 직접 참조 57개가 `Init` 또는 고정 Mathlib에서 확인됐다. [후속 대조 기록](rh-mathlib-frontier-match.json)
+- USTAR·PAX·GNU 긴 경로 테스트를 통과했다. 보존된 압축 조각 36개를 제한적으로 재검색한 결과 `VwinOfRow.olean`는 `HELD`다. 고정된 14조각 소스 아카이브에서는 `VwinOfRow.lean` 4행의 `theorem UpperTheory.One.vwin_of_row`를 확인했다. 해당 소스의 SHA-256은 `d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080`이다. 컴파일된 VALUE 간선의 추가 추출에는 여전히 고정 `.olean`이 필요하다. [소스 아카이브](../lean-archive-manifest.json)
 
 P1의 선언 매치는 저장된 표현식의 검증 범위다. RH 전체 증명의 Lean 커널 재검사와 독립 운영자 재현은 별도 실행으로 기록한다.

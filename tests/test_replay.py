@@ -30,6 +30,7 @@ class ReplayTests(unittest.TestCase):
 
     def test_lean_tail_caps_bind_to_replayed_input_and_endpoints(self):
         source = (ROOT / "tests/lean/E2ATailCapCertificate.lean").read_text(encoding="utf-8")
+        p3 = (ROOT / "tests/lean/E2ALandauTailRational.lean").read_text(encoding="utf-8")
         reports = run_cases()
         model = {"component": "outside_window", "k": 3, "rate": "3", "a": "1", "b": "3",
                  "precision_bits": 128}
@@ -50,6 +51,12 @@ class ReplayTests(unittest.TestCase):
                     self.assertEqual(len(literals), 1, name)
                     numerator, denominator = map(int, literals[0])
                     self.assertEqual(Fraction(numerator, denominator), Fraction(expected), name)
+                    if name in ("lower", "upper"):
+                        checks = re.findall(
+                            rf"^\s+tail{name.title()} = (\d+) / ([1-9]\d*)", p3, re.M,
+                        )
+                        self.assertEqual(len(checks), 1, name)
+                        self.assertEqual(Fraction(*map(int, checks[0])), Fraction(expected), name)
 
     def test_report_with_missing_case_is_rejected(self):
         report = run_cases()

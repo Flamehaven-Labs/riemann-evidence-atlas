@@ -23,6 +23,8 @@
 
 이 파일럿의 형식 검증 범위는 유리수 구간의 임계값 판정이다. 실수 적분과 유리수 구간을 연결하는 정리, 외향 오차 상계의 형식 증명, 원천 명제에 대한 독립 검토는 아직 필요하다. 이 실험은 리만 가설 또는 보존된 `Main.olean`을 판정하는 데 사용하지 않는다.
 
+후속 P3에서 고정 입력의 실수 지수 포함과 꼬리 적분 등식을 Lean으로 연결했다. [P3 실행 기록](P3_LANDAU_TAIL_ko.md)
+
 ## 로컬 MCP 실행 증거
 
 기본 Flamehaven-MCP 체크아웃에서 임시 설정으로 FH-MCPd 0.3.6의 로컬 stdio를 실행했다. `fh_verify_profile`은 호스트에 고정한 Python 3.12.16과 Lean 4.33.1을 사용했다. Python 재현 검사 8/8과 `LEAN_SOURCE_CHECK`가 같은 영수증에 기록됐으며 `evidenceComplete=true`, `checkedSource.unchanged=true`였다. 실험 도구는 운영 daemon과 다른 프로세스에서 실행됐다.

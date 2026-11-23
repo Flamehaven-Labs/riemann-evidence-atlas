@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "Mathlib.Data.Int.Order.Basic": {
+      "path": "Mathlib/Data/Int/Order/Basic.olean",
+      "sha256": "d2e1c9df8e10ccf81b5b5389b74838a7e99417dc99515756cc6a44a8894cc73e"
+    },
+    "Mathlib.Order.Defs.LinearOrder": {
+      "path": "Mathlib/Order/Defs/LinearOrder.olean",
+      "sha256": "40705e923dc521257526d1ea62aa5c5579f5aff8adb2bf7a24a4e89f4208e3b3"
+    },
+    "Mathlib.Order.Defs.PartialOrder": {
+      "path": "Mathlib/Order/Defs/PartialOrder.olean",
+      "sha256": "cb1230ab4ebc3b360ca0251f5721e8e6cddfa7e9570c0da04e52a28ca058bf45"
+    }
+  },
+  "extractor_sha256": "2e8920c64bc4db471dec07da0b3ff39047b3a0738617dc62156dc7d6a32ed741",
+  "matched_declarations": [
+    {
+      "declaration": "Int.instLinearOrder",
+      "kind": "definition",
+      "module": "Mathlib.Data.Int.Order.Basic"
+    },
+    {
+      "declaration": "LinearOrder.toPartialOrder",
+      "kind": "definition",
+      "module": "Mathlib.Order.Defs.LinearOrder"
+    },
+    {
+      "declaration": "PartialOrder.toPreorder",
+      "kind": "definition",
+      "module": "Mathlib.Order.Defs.PartialOrder"
+    },
+    {
+      "declaration": "Preorder.toLT",
+      "kind": "definition",
+      "module": "Mathlib.Order.Defs.PartialOrder"
+    }
+  ],
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "schema": "riemann-evidence-rh-mathlib-frontier-match-v1",
+  "seed_report_sha256": "c6815fdd1dc48e288fb1c080a10c092c0729d91e1c2c89e7a19b03a280cb7010",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "transitive_closure": "NOT_RUN"
+}

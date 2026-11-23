@@ -58,6 +58,7 @@ python window_kernel.py --window case.json
 | [2026-11-23 로컬 검수 기록](docs/LOCAL_VALIDATION_2026-11-23_ko.md) | 17개 회귀 테스트, Lean 4.33.1 직접 참조, 합성 Choice 전이, Python 다중 버전과 노트북 실행의 정확한 범위 |
 | [Inspector 검수와 수용 판정](docs/INSPECTOR_REVIEW_2026-11-23_ko.md) | 검수별 근거와 ACCEPT·AMBER·REJECT |
 | [P0 기준선 재현](docs/P0_BASELINE_REPLAY_ko.md) | 새 체크아웃에서의 실행과 원본 증거 재생 |
+| [P3 Landau 꼬리 검증](docs/P3_LANDAU_TAIL_ko.md) | 고정 입력의 유리수 포락, 실수 적분, Lean 재현 절차 |
 | [Masullo 원고와 소수 2 기준선](docs/masullo/README_ko.md) | PDF 출처·중요 페이지·유리수 항등식 |
 | [소수 2 문자 비교](docs/masullo/P2_CHARACTER_COMPARISON_ko.md) | 네 문자와 modulus·conductor 대조, 원문의 연결 조건 |
 | [자료 목록](sources.json) · [PDF 페이지 색인](pdf-pages.jsonl) | 4개 PDF 및 공개 입력의 출처, 해시, 원본 페이지 |

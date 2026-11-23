@@ -8,6 +8,9 @@
 - Add a platform-aware Lean matching procedure for the first Colab replay.
 - Replay four exact prime-2 character comparisons, including the modulus–conductor split, through the baseline checks. Record the source equations and the open trace-formula correspondence.
 
+- Certify the fixed Landau tail integral in Lean 4.33.1 with pinned Mathlib. Prove the existing 128-bit enclosure and both cap decisions for the real integral.
+- Resolve four direct RH helper references against the pinned Mathlib modules. The original `VwinOfRow` artifact and the cross-paper trace correspondence remain open.
+
 ## v0.2.0-rc.1 — 2026-11-23
 
 - Adopt **Riemann Evidence Atlas** as the repository title and pin Lean 4.33.1.
