@@ -6,6 +6,7 @@
 - Record Lean declaration kinds, TYPE and VALUE references, and the absence of a stored VALUE in v2 matching reports.
 - Recover hash-pinned members from local tar fragments with USTAR, PAX, and GNU names. The original VwinOfRow artifact remains pending.
 - Add a platform-aware Lean matching procedure for the first Colab replay.
+- Replay four exact prime-2 character comparisons, including the modulus–conductor split, through the baseline checks. Record the source equations and the open trace-formula correspondence.
 
 ## v0.2.0-rc.1 — 2026-11-23
 

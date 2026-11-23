@@ -12,9 +12,11 @@ ROOT = Path(__file__).resolve().parents[1]
 NEXT_LAYER = "docs/rh-next-layer-module-set.json"
 FRONTIER = "docs/rh-frontier-classification.json"
 PRIME_TWO = "docs/masullo/P2_LOCAL_SURFACE.json"
+PRIME_TWO_CHARACTERS = "docs/masullo/P2_CHARACTER_COMPARISON.json"
 RECEIPTS = {
     "window-results-v2.json": "ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1",
     PRIME_TWO: "298d90f4f80e932d6d1eb1034dd76fca519555dada786964f0b5d7ce28cdec03",
+    PRIME_TWO_CHARACTERS: "bbdc488501a875c0d0121d386f2b3e0a6d5b4edbcbc03bc6e1db0231e3ddbd89",
     "docs/rh-module-set-pilot.json": "0b541e3ceb684e8f457fc6a91f84256bc13943a5519f2b85cb6b1ae15f37ac34",
     "docs/rh-branch-module-set.json": "f213bd94da41795a8bf8dff610312679cdb32347e08ab8420f4bddb39f7bf90c",
     NEXT_LAYER: "de121ac9ac426cc666410147abe107ab41e2d06effc01e4e2c480e88a1a1e582",
@@ -40,6 +42,7 @@ def portable_replay() -> None:
     run_python("-m", "unittest", "discover", "-s", "tests", "-v")
     run_python("window_kernel.py", "--verify-report", "window-results-v2.json")
     run_python("tools/prime_two_local_surface.py", "--verify-report", PRIME_TWO)
+    run_python("tools/prime_two_local_surface.py", "--characters", "--verify-report", PRIME_TWO_CHARACTERS)
     run_python("tools/local_notebook_smoke.py")
     print("P0_PORTABLE_BASELINE_PASS", flush=True)
 

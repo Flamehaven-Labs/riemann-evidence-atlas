@@ -10,4 +10,4 @@
 python -E -S tools/prime_two_local_surface.py --verify-report docs/masullo/P2_LOCAL_SURFACE.json
 ~~~
 
-비자명·분기 문자와 conductor/modulus가 다른 사례는 후속 P2 작업이다. 이 기준선의 주장 범위는 유리수 항등식이다.
+P2는 비자명·분기 문자와 conductor/modulus가 다른 사례까지 확장했다. 정확 유리수 계산과 원문의 주값 적분 대조 상태는 [소수 2 문자 비교](P2_CHARACTER_COMPARISON_ko.md)에 기록한다.

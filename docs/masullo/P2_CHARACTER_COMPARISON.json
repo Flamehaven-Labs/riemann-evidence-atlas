@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "at_conductor": {
+        "L_p": "4/3",
+        "character_at_p": 1,
+        "exact_tail": "1/196608",
+        "finite_prime_power_weight": "21845/65536",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "1/3"
+      },
+      "at_level": {
+        "L_p": "4/3",
+        "character_at_p": 1,
+        "exact_tail": "1/196608",
+        "finite_prime_power_weight": "21845/65536",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "1/3"
+      },
+      "character": "trivial_mod_1",
+      "conductor": 1,
+      "finite_removal_factor": "1",
+      "finite_removal_log_derivative_coefficient": "0",
+      "modulus": 1,
+      "omitted_by_level": false,
+      "ramified_at_p": false
+    },
+    {
+      "at_conductor": {
+        "L_p": "4/5",
+        "character_at_p": -1,
+        "exact_tail": "-1/327680",
+        "finite_prime_power_weight": "-13107/65536",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "-1/5"
+      },
+      "at_level": {
+        "L_p": "4/5",
+        "character_at_p": -1,
+        "exact_tail": "-1/327680",
+        "finite_prime_power_weight": "-13107/65536",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "-1/5"
+      },
+      "character": "quadratic_mod_3",
+      "conductor": 3,
+      "finite_removal_factor": "1",
+      "finite_removal_log_derivative_coefficient": "0",
+      "modulus": 3,
+      "omitted_by_level": false,
+      "ramified_at_p": false
+    },
+    {
+      "at_conductor": {
+        "L_p": "1",
+        "character_at_p": 0,
+        "exact_tail": "0",
+        "finite_prime_power_weight": "0",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "0"
+      },
+      "at_level": {
+        "L_p": "1",
+        "character_at_p": 0,
+        "exact_tail": "0",
+        "finite_prime_power_weight": "0",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "0"
+      },
+      "character": "primitive_mod_4",
+      "conductor": 4,
+      "finite_removal_factor": "1",
+      "finite_removal_log_derivative_coefficient": "0",
+      "modulus": 4,
+      "omitted_by_level": false,
+      "ramified_at_p": true
+    },
+    {
+      "at_conductor": {
+        "L_p": "4/3",
+        "character_at_p": 1,
+        "exact_tail": "1/196608",
+        "finite_prime_power_weight": "21845/65536",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "1/3"
+      },
+      "at_level": {
+        "L_p": "1",
+        "character_at_p": 0,
+        "exact_tail": "0",
+        "finite_prime_power_weight": "0",
+        "identity_holds": true,
+        "negative_log_derivative_over_log_p": "0"
+      },
+      "character": "principal_mod_4",
+      "conductor": 1,
+      "finite_removal_factor": "3/4",
+      "finite_removal_log_derivative_coefficient": "-1/3",
+      "modulus": 4,
+      "omitted_by_level": true,
+      "ramified_at_p": false
+    }
+  ],
+  "claim_authority": "NONE",
+  "claim_scope": "EXACT_RATIONAL_LOCAL_EULER_FACTORS",
+  "inputs": {
+    "p": 2,
+    "s": 2,
+    "terms": 8
+  },
+  "schema": "e2a-prime-two-character-comparison-v2",
+  "trace_formula_correspondence": "HELD"
+}
