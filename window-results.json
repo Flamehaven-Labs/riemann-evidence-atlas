@@ -1,0 +1,248 @@
+{
+  "landau_shaped_window": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "PASS",
+    "inputs": {
+      "window": {
+        "sha256": "71f7e06e7719302ede3c6fc333a7740c88aca095d78f077fbafeeb23e411d74f",
+        "bytes": 103
+      }
+    },
+    "details": {
+      "cap": "1/100",
+      "fractional_bits": 128,
+      "lower": "53254650015239634433808340305174801251/6890717930149003885133335800493306281984",
+      "reason": "upper endpoint meets cap",
+      "upper": "71006200020319512578411120406899735063/9187623906865338513511114400657741709312"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "landau_tail_valid_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "PASS",
+    "inputs": {
+      "window": {
+        "sha256": "ea5ed7211fb86cf13903c773fce203bd6fed318701bf4a98ffa2cc3067b65ede",
+        "bytes": 111
+      }
+    },
+    "details": {
+      "cap": "1/200",
+      "fractional_bits": 128,
+      "lower": "127263766859979925728141246211069006267/27562871720596015540533343201973225127936",
+      "reason": "upper endpoint meets cap",
+      "upper": "10605313904998327144011770517589083871/2296905976716334628377778600164435427328"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "landau_tail_violated_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "FAIL",
+    "inputs": {
+      "window": {
+        "sha256": "c6dc828a961aa6ccb3741da57c17245d336f78ccf2577f960806bd8ec4425337",
+        "bytes": 111
+      }
+    },
+    "details": {
+      "cap": "1/300",
+      "fractional_bits": 128,
+      "lower": "127263766859979925728141246211069006267/27562871720596015540533343201973225127936",
+      "reason": "lower endpoint exceeds cap",
+      "upper": "10605313904998327144011770517589083871/2296905976716334628377778600164435427328"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "valid_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "PASS",
+    "inputs": {
+      "window": {
+        "sha256": "d8ad2a145266615d424405cf83d372503f6f87ffce3ab6b692e6549e8a66a346",
+        "bytes": 102
+      }
+    },
+    "details": {
+      "cap": "1/16",
+      "fractional_bits": 128,
+      "lower": "325861162102033785884393756801935689481/5444517870735015415413993718908291383296",
+      "reason": "upper endpoint meets cap",
+      "upper": "488791743153050678826590635202903534411/8166776806102523123120990578362437074944"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "violated_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "FAIL",
+    "inputs": {
+      "window": {
+        "sha256": "b35326025b81d447e1acb5711f9301cff7d1cd3b5dd0eea486eefd1158ce4dca",
+        "bytes": 102
+      }
+    },
+    "details": {
+      "cap": "1/32",
+      "fractional_bits": 128,
+      "lower": "325861162102033785884393756801935689481/5444517870735015415413993718908291383296",
+      "reason": "lower endpoint exceeds cap",
+      "upper": "488791743153050678826590635202903534411/8166776806102523123120990578362437074944"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "precision_exhausted": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "UNRESOLVED",
+    "inputs": {
+      "window": {
+        "sha256": "ac1fe6a3c9be25b1449e69a7a983af58695d70117fc09cad22c72bd90992db27",
+        "bytes": 180
+      }
+    },
+    "details": {
+      "cap": "1955166972612202715306362540811614137265/32667107224410092492483962313449748299776",
+      "fractional_bits": 128,
+      "lower": "325861162102033785884393756801935689481/5444517870735015415413993718908291383296",
+      "reason": "precision budget exhausted",
+      "upper": "488791743153050678826590635202903534411/8166776806102523123120990578362437074944"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "refined_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "PASS",
+    "inputs": {
+      "window": {
+        "sha256": "efb5c7e5f8f2e52c65ca50680aec218da1239d0f43566ce9657e185b94bd0307",
+        "bytes": 180
+      }
+    },
+    "details": {
+      "cap": "1955166972612202715306362540811614137265/32667107224410092492483962313449748299776",
+      "fractional_bits": 256,
+      "lower": "20790901411441437750246664134923557962186112657648624226675327575174570415723/347376267711948586270712955026063723559809953996921692118372752023739388919808",
+      "reason": "upper endpoint meets cap",
+      "upper": "110884807527687668001315542052925642464992600840792662542268413734264375550649/1852673427797059126777135760139006525652319754650249024631321344126610074238976"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "invalid_window": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "landau-window-kernel-mass",
+    "revision": "2",
+    "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!",
+    "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+    "method": "Closed-form primitive and total mass with outward NSRW rational bounds",
+    "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+    "status": "FAIL",
+    "inputs": {
+      "window": {
+        "sha256": "62615155a704350d333c1a17370891428b3d7e05681b5c2107dbffeb1ba8b9f9",
+        "bytes": 103
+      }
+    },
+    "details": {
+      "reason": "invalid window: expected integer 0 <= k <= 64, rate > 0, 0 <= a < b, and rate*b <= 16"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "nsrw_ratio_valid_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "nsrw-mb06-normalized-ratio-cap",
+    "revision": "1",
+    "target": "Normalized factor R(lambda) in the MomentBound inequality",
+    "domain": "Dimensionless factor at the fixed MB-06 lambda=1/10^12",
+    "method": "Outward NSRW expm1 intervals and the shared upper-cap decision rule",
+    "evidence_class": "BOUNDED_NUMERICAL_FACTOR_CHECK",
+    "status": "PASS",
+    "inputs": {
+      "ratio": {
+        "sha256": "0d8fb52faabebb59beaabb99838263c60b4f7788d7265de043c5a96e4218a21e",
+        "bytes": 68
+      }
+    },
+    "details": {
+      "cap": "17/20",
+      "fractional_bits": 128,
+      "lower": "192826674588695698635979289/226854911280852497220197182",
+      "reason": "upper endpoint meets cap",
+      "upper": "578480023766087095907937868/680564733842557491660591545"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  },
+  "nsrw_ratio_violated_cap": {
+    "format": "nsrw-research-verification-v1",
+    "check_id": "nsrw-mb06-normalized-ratio-cap",
+    "revision": "1",
+    "target": "Normalized factor R(lambda) in the MomentBound inequality",
+    "domain": "Dimensionless factor at the fixed MB-06 lambda=1/10^12",
+    "method": "Outward NSRW expm1 intervals and the shared upper-cap decision rule",
+    "evidence_class": "BOUNDED_NUMERICAL_FACTOR_CHECK",
+    "status": "FAIL",
+    "inputs": {
+      "ratio": {
+        "sha256": "7d0d405f4ad2f6c20e000288d8f65bd3f82f1bf7df300d5d19fe5ba5dbfa51cb",
+        "bytes": 71
+      }
+    },
+    "details": {
+      "cap": "849/1000",
+      "fractional_bits": 128,
+      "lower": "192826674588695698635979289/226854911280852497220197182",
+      "reason": "lower endpoint exceeds cap",
+      "upper": "578480023766087095907937868/680564733842557491660591545"
+    },
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "module_count": 175187,
+  "internal_import_edges": 753569,
+  "import_path_to_window_inequality": [
+    "Main",
+    "Supplements.Kernels.MainTheoremsAll",
+    "Supplements.Kernels.MainTheoremsCritical",
+    "Supplements.Kernels.MainTheorems",
+    "Formalism.GammaFactorNonvanishing.CritLine",
+    "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+    "Development.AutomorphicArithmetic.CharacterBoxes.ShapeWin",
+    "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG",
+    "Development.AutomorphicArithmetic.PrimitiveCosets.Imports",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq"
+  ],
+  "selected_declarations": [
+    {
+      "declaration": "riemannHypothesis",
+      "module": "Main",
+      "source_path": "src/Main.lean",
+      "source_sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "line": 4,
+      "references": [
+        {
+          "target_token": "rhOfAll",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "declaration": "riemannZeta_eq_zero_re",
+      "module": "Main",
+      "source_path": "src/Main.lean",
+      "source_sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "line": 6,
+      "references": [
+        {
+          "target_token": "rhOfAll",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "declaration": "LFunction_ne_zero_of_half_lt_re",
+      "module": "Main",
+      "source_path": "src/Main.lean",
+      "source_sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "line": 8,
+      "references": [
+        {
+          "target_token": "allChi",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "declaration": "LFunction_eq_zero_re",
+      "module": "Main",
+      "source_path": "src/Main.lean",
+      "source_sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "line": 10,
+      "references": [
+        {
+          "target_token": "claimAll",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "declaration": "LFunction_eq_zero_re_of_isPrimitive",
+      "module": "Main",
+      "source_path": "src/Main.lean",
+      "source_sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "line": 12,
+      "references": [
+        {
+          "target_token": "critAll",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "declaration": "rhOfAll",
+      "module": "Supplements.Kernels.MainTheorems",
+      "source_path": "src/Supplements/Kernels/MainTheorems.lean",
+      "source_sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "line": 9,
+      "references": [
+        {
+          "target_token": "Formalism.VW.rh_of_every",
+          "line": 9
+        },
+        {
+          "target_token": "allChi",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "declaration": "allChi",
+      "module": "Supplements.Kernels.MainTheorems",
+      "source_path": "src/Supplements/Kernels/MainTheorems.lean",
+      "source_sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "line": 7,
+      "references": [
+        {
+          "target_token": "UpperTheory.FinalTheorems.everyCharacter",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "declaration": "critAll",
+      "module": "Supplements.Kernels.MainTheorems",
+      "source_path": "src/Supplements/Kernels/MainTheorems.lean",
+      "source_sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "line": 11,
+      "references": [
+        {
+          "target_token": "Formalism.VW.critLine",
+          "line": 13
+        },
+        {
+          "target_token": "allChi",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "declaration": "claimAll",
+      "module": "Supplements.Kernels.MainTheorems",
+      "source_path": "src/Supplements/Kernels/MainTheorems.lean",
+      "source_sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "line": 15,
+      "references": [
+        {
+          "target_token": "allChi",
+          "line": 16
+        },
+        {
+          "target_token": "Claim.strip",
+          "line": 16
+        },
+        {
+          "target_token": "Claim.zeta",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter",
+      "module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+      "source_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "source_sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "line": 10,
+      "references": [
+        {
+          "target_token": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "line": 11
+        },
+        {
+          "target_token": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+      "source_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "source_sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "line": 7,
+      "references": [
+        {
+          "target_token": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "line": 8
+        },
+        {
+          "target_token": "UpperTheory.One.vwin_of_row",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "declaration": "landau_window",
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+      "source_path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "source_sha256": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5",
+      "line": 83,
+      "references": [
+        {
+          "target_token": "landau_window_key",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "declaration": "landau_window_key",
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+      "source_path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "source_sha256": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5",
+      "line": 40,
+      "references": [
+        {
+          "target_token": "landau_coeff",
+          "line": 58
+        },
+        {
+          "target_token": "landau_window_ineq",
+          "line": 57
+        },
+        {
+          "target_token": "landau_tails",
+          "line": 46
+        }
+      ]
+    }
+  ],
+  "method": "static source import scan and checked source tokens",
+  "kernel_dependency_closure": "NOT_RUN"
+}

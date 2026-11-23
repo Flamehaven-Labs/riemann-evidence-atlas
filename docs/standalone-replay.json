@@ -1,0 +1,30 @@
+{
+  "format": "riemann-evidence-standalone-replay-v1",
+  "scope": "LOCAL_BOUNDED_NUMERICAL_REPLAY_AND_ARCHIVE_SOURCE_MATCH",
+  "record_date": "2026-11-23",
+  "environment": {
+    "python": "3.14.10",
+    "platform": "Windows",
+    "third_party_dependencies": []
+  },
+  "command": "python -E -S window_kernel.py --verify-report window-results-v2.json",
+  "case_count": 10,
+  "historical_comparison": "IDENTICAL_INPUT_DIGESTS_BOUNDS_AND_DECISIONS",
+  "archive_extract_matches": 15,
+  "lean_kernel_execution": "NOT_RUN",
+  "independent_operator_replay": "NOT_RUN",
+  "standalone_colab_execution": "NOT_RUN",
+  "claim_authority": "NONE",
+  "sha256": {
+    "window_kernel.py": "9c7c14b2fb5539ff450fed8ee8c8d65117396c1389d5cc2a074891854881502f",
+    "riemann_evidence/__init__.py": "6ca64d9c498deddb106dad0b72d99e49a42935099fe18298879f7e9f82507cb8",
+    "riemann_evidence/rational_intervals.py": "5aa5fdcbb17ca443ddaa9c3362781da98b4a03d52afe0190fe1677a4a81acab9",
+    "riemann_evidence/verification.py": "6fd038c01f72b0ec8cce14396320e50fa8fe6c047232c60d1b40ed873ae876ac",
+    "RH_Window.ipynb": "e55a9f45b0a4d190d154050eb3184d83fa975aac75a53a9d19c3b2af34289eb1",
+    "window-results-v2.json": "ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1",
+    "window-results.json": "fc7ab07321c299d2f0adf921e07d8e3ecf0494b8da5e0f73ee14009bba8ae96b",
+    "lean-extract-manifest.json": "60e69fe0e8acea56ea843c826c44236bbc225663f17276fbcbc099973c67a082",
+    "lean-archive-manifest.json": "f7ba05d850907051f64f7d1576e8772054c9a5733df9afcdadbf915d4af05c05",
+    "rh-proof-trace.json": "aac0db91b918d0676e82801ba7164d9eb474f517d74ddae37c8fdeb2cef134f8"
+  }
+}

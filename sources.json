@@ -1,0 +1,66 @@
+[
+  {
+    "file": "sources/alpoge-remark.pdf",
+    "url": "https://alpo.ge/remark.pdf",
+    "bytes": 245114,
+    "sha256": "3fc97784b71ddd44ff8aa0a177e99622a1c61b13cfa843a0989ee4a7a0cfeb8d",
+    "pages": 4
+  },
+  {
+    "file": "sources/rubinstein-zeta-guide.pdf",
+    "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf",
+    "bytes": 1627433,
+    "sha256": "667d88b3c375adf0466678094f452ca966aef0f4d368f6340d2bd5328b7fb706",
+    "pages": 164
+  },
+  {
+    "file": "sources/pei-proof-roadmap.pdf",
+    "url": "https://peabrane.github.io/files/pei-2026-claimed-lean-proof-rh-roadmap.pdf",
+    "bytes": 674229,
+    "sha256": "115571f7519dc0a24d6414091fe07a0f1f090112708b5a2100e83a8e05c749bb",
+    "pages": 23
+  },
+  {
+    "file": "sources/alpoge-buckmaster-navier-stokes.pdf",
+    "url": "https://raw.githubusercontent.com/tristanbuckmaster/navier-stokes/ad53419de079eb8f95f60313473374624a348546/paper/finite-time-blow-up-navier-stokes.pdf",
+    "bytes": 1615293,
+    "sha256": "4a01929b2f8a595637bbbe1dfef9724e5de768d31283d62415ce045e2ed69901",
+    "pages": 79
+  },
+  {
+    "file": "sources/rh-Main.lean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/riemann-hypothesis/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean",
+    "bytes": 433,
+    "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939"
+  },
+  {
+    "file": "sources/rh-Statements.lean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/riemann-hypothesis/40e56bab026552e089d7afcfeff08d2defb9c005/src/Statements.lean",
+    "bytes": 783,
+    "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+  },
+  {
+    "file": "sources/rh-lean-toolchain",
+    "url": "https://raw.githubusercontent.com/leanprover-community/riemann-hypothesis/40e56bab026552e089d7afcfeff08d2defb9c005/lean-toolchain",
+    "bytes": 25,
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  {
+    "file": "sources/rh-lake-manifest.json",
+    "url": "https://raw.githubusercontent.com/leanprover-community/riemann-hypothesis/40e56bab026552e089d7afcfeff08d2defb9c005/lake-manifest.json",
+    "bytes": 3221,
+    "sha256": "fee57ee9ed399d0a638ca955e5ad40a37a36eeb9b6dfd9f5964114fa7bbe4774"
+  },
+  {
+    "file": "sources/ns-lean-README.md",
+    "url": "https://raw.githubusercontent.com/tristanbuckmaster/navier-stokes/ad53419de079eb8f95f60313473374624a348546/lean/README.md",
+    "bytes": 9236,
+    "sha256": "6c9fcebe97850fc2b26c5f2adf6f9fdaa03fb8811cbf1b1ca675c8a0dd130065"
+  },
+  {
+    "file": "sources/mit-audit.log",
+    "url": "https://math.mit.edu/~drew/grh/audit.log",
+    "bytes": 2062,
+    "sha256": "0a1473fce6eed840011f4a76b1c51558fc6f03edd1e6bd1ee542e6c738d87a62"
+  }
+]

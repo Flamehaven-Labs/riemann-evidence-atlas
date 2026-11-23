@@ -1,0 +1,11 @@
+* text=auto eol=lf
+# Existing evidence and pins are stored byte-for-byte.
+/window-results.json -text whitespace=cr-at-eol
+/nsrw-mb06-*.json -text whitespace=cr-at-eol
+/lean-archive-manifest.json -text whitespace=cr-at-eol
+/sources.json -text whitespace=cr-at-eol
+/pdf-pages.jsonl -text whitespace=cr-at-eol
+/rh-proof-trace.json -text whitespace=cr-at-eol
+/docs/unit_test_receipt.json -text whitespace=cr-at-eol
+/docs/CROSS_REPO_WORKFLOW_AND_VERIFICATION_SPEC_ko.md -text whitespace=cr-at-eol,-blank-at-eol
+/docs/ENGINEERING_RESEARCH_REPORT_ko.md -text whitespace=cr-at-eol,-blank-at-eol

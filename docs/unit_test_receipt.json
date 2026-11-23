@@ -1,0 +1,26 @@
+{
+  "claim_authority": "NONE",
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "inputs_sha256": {
+    "e2a_atlas/audit.py": "d58ed5229dba914ae8f15e1ce3cf07abc539429093f9392b0708dc78efe41638",
+    "e2a_atlas/math_patterns.py": "a6ca486d33c6f4497d6b37a85830eeac2d8e2f41464d277d37e6780a5ce26b03",
+    "e2a_atlas/semantic_graph.py": "2e4fe27e35fd7e33882e625d11771d2f36b59efd41bc86f80d2a797362575be6",
+    "spec/riemann_nsrw_toe_2026-11-22.json": "98e176516fcf7b91fa6176d94c40f3efd771da7f250c35ad4b39757e186868b6",
+    "tests/test_audit.py": "63f98fb6767dcc1b21473ccf90a3886a58c680ad51df0de8ec505bcf1950cc2e"
+  },
+  "lean_kernel_execution": "NOT_RUN",
+  "note": "unsigned development receipt; not an external clean replay",
+  "pdf_semantic_review": "NOT_RUN",
+  "schema": "flamehaven.e2a.dev-test-receipt.v1",
+  "scope": "PACKAGE_UNIT_TESTS_ONLY",
+  "status": "PASS",
+  "target_workspace_execution": "NOT_RUN",
+  "test_command": "python -m unittest discover -s tests -v",
+  "test_count": 13,
+  "test_log_sha256": "990f1b266c8fe472971a1d957a569aefc126a7d93db637b04d7ef6296d39e07f",
+  "tests_failed": 0
+}

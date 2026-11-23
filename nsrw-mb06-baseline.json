@@ -1,0 +1,30 @@
+{
+  "check_id": "mb06-ratio",
+  "claim_authority": "NONE",
+  "claim_status": "UNVERIFIED",
+  "details": {
+    "algorithm": "direct outward interval exp(x)-1 then divide",
+    "backend": "mpmath.iv 1.3.0",
+    "claim_authority": "NONE",
+    "claim_status": "UNVERIFIED",
+    "independent_operator": false,
+    "input_sha256": "c4d28daf7b44ef4ab0d7d90c74c1b942b181ddc9901e50a3a8a4beaf78a674e8",
+    "numeric_J_certified": false,
+    "precision_bits": 320,
+    "source_profile_constructed": false,
+    "status": "PASS[INDEPENDENT_ALGORITHM_FACTOR_CONTAINMENT]"
+  },
+  "domain": "Fixed parameter tuple and the submitted fractional precision",
+  "evidence_class": "INTERVAL_CROSSCHECK",
+  "format": "nsrw-research-verification-v1",
+  "inputs": {
+    "record": {
+      "bytes": 2054,
+      "sha256": "c4d28daf7b44ef4ab0d7d90c74c1b942b181ddc9901e50a3a8a4beaf78a674e8"
+    }
+  },
+  "method": "Outward mpmath interval exponentials and containment",
+  "revision": "1",
+  "status": "PASS",
+  "target": "Recorded normalized angular-moment factor"
+}

@@ -1,0 +1,110 @@
+{
+  "archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "files": [
+    {
+      "file": "sources/rh-ClaimStrip.lean",
+      "sha256": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03",
+      "archive_members": [
+        "lean/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-CritLine.lean",
+      "sha256": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02",
+      "archive_members": [
+        "lean/src/Formalism/GammaFactorNonvanishing/CritLine.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-lake-manifest.json",
+      "sha256": "fee57ee9ed399d0a638ca955e5ad40a37a36eeb9b6dfd9f5964114fa7bbe4774",
+      "archive_members": [
+        "lean/lake-manifest.json"
+      ]
+    },
+    {
+      "file": "sources/rh-LandauCoeff.lean",
+      "sha256": "e8bd6a4a51c2299ccdd213fd7b99a67c7a2968b14cd8752cf15ab3aa14874543",
+      "archive_members": [
+        "lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-landauWindow.lean",
+      "sha256": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5",
+      "archive_members": [
+        "lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-landauWindowIneq.lean",
+      "sha256": "e3d5d760bcefe1242d4f5b0ced44fc055f1fa8dfe048a2222cf2c39ae812e59c",
+      "archive_members": [
+        "lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-LandauZeroFreeCriterion.lean",
+      "sha256": "d4c5a8ba961bb0e91121212b697217904bf0ba56c2e89c00435fb7ee416a22d7",
+      "archive_members": [
+        "lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "archive_members": [
+        "lean/lean-toolchain"
+      ]
+    },
+    {
+      "file": "sources/rh-Main.lean",
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "archive_members": [
+        "lean/src/Main.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-MainConclusion.lean",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "archive_members": [
+        "lean/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-MainTheorems.lean",
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "archive_members": [
+        "lean/src/Supplements/Kernels/MainTheorems.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-MainTheoremsAll.lean",
+      "sha256": "a209a6a2f6ea1cc4abe865996b909bfeef391adcb89d3a948858874cb5956fec",
+      "archive_members": [
+        "lean/src/Supplements/Kernels/MainTheoremsAll.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-MainTheoremsCritical.lean",
+      "sha256": "793147c70274844b23a7977b41390e404910653c963fcdd5c84918185d7ff2bd",
+      "archive_members": [
+        "lean/src/Supplements/Kernels/MainTheoremsCritical.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-StatementOC.lean",
+      "sha256": "0249562a8b70df61856f6fdce16afdf17fbe88c9945af4231700503d11027f8a",
+      "archive_members": [
+        "lean/src/Formalism/StatementOC.lean"
+      ]
+    },
+    {
+      "file": "sources/rh-Statements.lean",
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+      "archive_members": [
+        "lean/src/Statements.lean"
+      ]
+    }
+  ]
+}

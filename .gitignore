@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+/outputs/
+/sources/
+/rh-import-graph.json
+/RH_NSRW_Window.ipynb
+/docs/idea1.txt
+/docs/idea2.txt

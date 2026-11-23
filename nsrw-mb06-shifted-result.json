@@ -1,0 +1,21 @@
+{
+  "check_id": "mb06-ratio",
+  "claim_authority": "NONE",
+  "claim_status": "UNVERIFIED",
+  "details": {
+    "reason": "independent ratio outside recorded interval"
+  },
+  "domain": "Fixed parameter tuple and the submitted fractional precision",
+  "evidence_class": "INTERVAL_CROSSCHECK",
+  "format": "nsrw-research-verification-v1",
+  "inputs": {
+    "record": {
+      "bytes": 2125,
+      "sha256": "0578640f7a26b3ee0afdfc1e408017767cc0dc9f02ad3b92013b15fa9d9f4aab"
+    }
+  },
+  "method": "Outward mpmath interval exponentials and containment",
+  "revision": "1",
+  "status": "FAIL",
+  "target": "Recorded normalized angular-moment factor"
+}
