@@ -1,0 +1,1987 @@
+{
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "semantic": {
+    "catalog_sha256": "2e8920c64bc4db471dec07da0b3ff39047b3a0738617dc62156dc7d6a32ed741",
+    "fixture": {
+      "choice_paths": [
+        {
+          "data_definitions": [
+            "auditComputedFromChosen",
+            "auditChosenNat"
+          ],
+          "numeric_relevance": "NOT_ESTABLISHED",
+          "path": [
+            "auditJoinChoicePaths",
+            "auditComputedFromChosen",
+            "auditChosenNat",
+            "Classical.choice"
+          ],
+          "position": "DATA_DEFINITION_PATH_CANDIDATE"
+        },
+        {
+          "data_definitions": [],
+          "numeric_relevance": "NOT_ESTABLISHED",
+          "path": [
+            "auditJoinChoicePaths",
+            "auditProofCallsChoice",
+            "Classical.choice"
+          ],
+          "position": "PROOF_VALUE_PATH_CANDIDATE"
+        }
+      ],
+      "declarations": {
+        "Bool": {
+          "declaration": "Bool",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "inductive",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [],
+          "value_refs": null
+        },
+        "Bool.rec": {
+          "declaration": "Bool.rec",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "recursor",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Bool",
+            "Bool.false",
+            "Bool.true"
+          ],
+          "value_refs": null
+        },
+        "Bool.true": {
+          "declaration": "Bool.true",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "constructor",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Bool"
+          ],
+          "value_refs": null
+        },
+        "Classical.choice": {
+          "declaration": "Classical.choice",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "axiom",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nonempty"
+          ],
+          "value_refs": null
+        },
+        "auditChosenNat": {
+          "declaration": "auditChosenNat",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "definition",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat"
+          ],
+          "value_refs": [
+            "Classical.choice",
+            "Nat",
+            "auditChosenNat._proof_1"
+          ]
+        },
+        "auditComputedFromChosen": {
+          "declaration": "auditComputedFromChosen",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "definition",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat"
+          ],
+          "value_refs": [
+            "HAdd.hAdd",
+            "Nat",
+            "OfNat.ofNat",
+            "auditChosenNat",
+            "instAddNat",
+            "instHAdd",
+            "instOfNatNat"
+          ]
+        },
+        "auditFixtureAxiom": {
+          "declaration": "auditFixtureAxiom",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": false,
+          "kind": "axiom",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "True"
+          ],
+          "value_refs": null
+        },
+        "auditJoinChoicePaths": {
+          "declaration": "auditJoinChoicePaths",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "And",
+            "Eq",
+            "Nat",
+            "Nonempty",
+            "auditComputedFromChosen"
+          ],
+          "value_refs": [
+            "And.intro",
+            "Eq",
+            "Nat",
+            "Nonempty",
+            "auditComputedFromChosen",
+            "auditProofCallsChoice",
+            "auditProofMentionsComputed"
+          ]
+        },
+        "auditOpaque": {
+          "declaration": "auditOpaque",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "opaque",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat"
+          ],
+          "value_refs": [
+            "auditChosenNat"
+          ]
+        },
+        "auditProofCallsChoice": {
+          "declaration": "auditProofCallsChoice",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat",
+            "Nonempty"
+          ],
+          "value_refs": [
+            "Classical.choice",
+            "Nat",
+            "Nonempty",
+            "Nonempty.intro",
+            "OfNat.ofNat",
+            "instOfNatNat"
+          ]
+        },
+        "auditProofMentionsComputed": {
+          "declaration": "auditProofMentionsComputed",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Eq",
+            "Nat",
+            "auditComputedFromChosen"
+          ],
+          "value_refs": [
+            "Eq.refl",
+            "Nat",
+            "auditComputedFromChosen"
+          ]
+        }
+      }
+    },
+    "fixture_source_sha256": "3e0ad01debdb464ff1d7aaba965b41de045199043039c9fa28bbc28233c798c3",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "original": {
+      "distinct_helper_value_references": 57,
+      "helpers": [
+        {
+          "declaration": "Formalism.VW.rh_of_right._proof_1_1",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Mathlib"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "False",
+            "Int",
+            "Int.instLEInt",
+            "Int.instLinearOrder",
+            "Int.instNegInt",
+            "LE.le",
+            "LT.lt",
+            "LinearOrder.toPartialOrder",
+            "Neg.neg",
+            "Not",
+            "OfNat.ofNat",
+            "PartialOrder.toPreorder",
+            "Preorder.toLT",
+            "instOfNat"
+          ],
+          "value_refs": [
+            "Bool",
+            "Bool.true",
+            "Decidable.decide",
+            "Eq",
+            "Eq.refl",
+            "Eq.symm",
+            "Eq.trans",
+            "HAdd.hAdd",
+            "HSub.hSub",
+            "Int",
+            "Int.add_one_le_of_lt",
+            "Int.instAdd",
+            "Int.instLEInt",
+            "Int.instLinearOrder",
+            "Int.instNegInt",
+            "Int.instSub",
+            "Int.sub_nonneg_of_le",
+            "LE.le",
+            "LT.lt",
+            "Lean.Omega.Coeffs.ofList",
+            "Lean.Omega.Constraint.addInequality_sat",
+            "Lean.Omega.Constraint.combine_sat'",
+            "Lean.Omega.Constraint.isImpossible",
+            "Lean.Omega.Constraint.mk",
+            "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+            "Lean.Omega.Int.add_congr",
+            "Lean.Omega.Int.lt_of_not_le",
+            "Lean.Omega.Int.sub_congr",
+            "Lean.Omega.LinearCombo",
+            "Lean.Omega.LinearCombo.add_eval",
+            "Lean.Omega.LinearCombo.coordinate",
+            "Lean.Omega.LinearCombo.coordinate_eval_0",
+            "Lean.Omega.LinearCombo.eval",
+            "Lean.Omega.LinearCombo.instAdd",
+            "Lean.Omega.LinearCombo.instSub",
+            "Lean.Omega.LinearCombo.mk",
+            "Lean.Omega.LinearCombo.sub_eval",
+            "Lean.Omega.tidy_sat",
+            "LinearOrder.toPartialOrder",
+            "List.cons",
+            "List.nil",
+            "Nat",
+            "Neg.neg",
+            "Not",
+            "OfNat.ofNat",
+            "Option.none",
+            "Option.some",
+            "PartialOrder.toPreorder",
+            "Preorder.toLT",
+            "id",
+            "instDecidableEqBool",
+            "instHAdd",
+            "instHSub",
+            "instOfNat",
+            "instOfNatNat",
+            "le_of_le_of_eq",
+            "of_decide_eq_true"
+          ]
+        },
+        {
+          "declaration": "Formalism.VW.rh_of_right._proof_1_2",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Mathlib"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "False",
+            "HSub.hSub",
+            "Int",
+            "Int.instLEInt",
+            "Int.instLinearOrder",
+            "Int.instSub",
+            "LE.le",
+            "LT.lt",
+            "LinearOrder.toPartialOrder",
+            "Not",
+            "OfNat.ofNat",
+            "PartialOrder.toPreorder",
+            "Preorder.toLT",
+            "instHSub",
+            "instOfNat"
+          ],
+          "value_refs": [
+            "Bool",
+            "Bool.true",
+            "Decidable.decide",
+            "Eq",
+            "Eq.refl",
+            "Eq.symm",
+            "Eq.trans",
+            "HAdd.hAdd",
+            "HSub.hSub",
+            "Int",
+            "Int.add_one_le_of_lt",
+            "Int.instAdd",
+            "Int.instLEInt",
+            "Int.instLinearOrder",
+            "Int.instNegInt",
+            "Int.instSub",
+            "Int.sub_nonneg_of_le",
+            "LE.le",
+            "LT.lt",
+            "Lean.Omega.Coeffs.ofList",
+            "Lean.Omega.Constraint.addInequality_sat",
+            "Lean.Omega.Constraint.combine_sat'",
+            "Lean.Omega.Constraint.isImpossible",
+            "Lean.Omega.Constraint.mk",
+            "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+            "Lean.Omega.Int.add_congr",
+            "Lean.Omega.Int.lt_of_not_le",
+            "Lean.Omega.Int.sub_congr",
+            "Lean.Omega.LinearCombo",
+            "Lean.Omega.LinearCombo.add_eval",
+            "Lean.Omega.LinearCombo.coordinate",
+            "Lean.Omega.LinearCombo.coordinate_eval_0",
+            "Lean.Omega.LinearCombo.eval",
+            "Lean.Omega.LinearCombo.instAdd",
+            "Lean.Omega.LinearCombo.instSub",
+            "Lean.Omega.LinearCombo.mk",
+            "Lean.Omega.LinearCombo.sub_eval",
+            "Lean.Omega.tidy_sat",
+            "LinearOrder.toPartialOrder",
+            "List.cons",
+            "List.nil",
+            "Nat",
+            "Neg.neg",
+            "Not",
+            "OfNat.ofNat",
+            "Option.none",
+            "Option.some",
+            "PartialOrder.toPreorder",
+            "Preorder.toLT",
+            "id",
+            "instDecidableEqBool",
+            "instHAdd",
+            "instHSub",
+            "instOfNat",
+            "instOfNatNat",
+            "le_of_le_of_eq",
+            "of_decide_eq_true"
+          ]
+        }
+      ],
+      "input_olean_sha256": "cf24f82f3f24144070062b19beedf83f0919c4e894c56759597fa76e2e93bc70",
+      "references": [
+        {
+          "declaration": "Bool",
+          "match": {
+            "declaration": "Bool",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "inductive",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Bool.true",
+          "match": {
+            "declaration": "Bool.true",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Decidable.decide",
+          "match": {
+            "declaration": "Decidable.decide",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Decidable"
+            ],
+            "value_refs": [
+              "Bool",
+              "Bool.false",
+              "Bool.true",
+              "Decidable",
+              "Decidable.casesOn",
+              "Not"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Eq",
+          "match": {
+            "declaration": "Eq",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "inductive",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Eq.refl",
+          "match": {
+            "declaration": "Eq.refl",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Eq.symm",
+          "match": {
+            "declaration": "Eq.symm",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.rec",
+              "rfl"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Eq.trans",
+          "match": {
+            "declaration": "Eq.trans",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.rec"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "HAdd.hAdd",
+          "match": {
+            "declaration": "HAdd.hAdd",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "HAdd",
+              "outParam"
+            ],
+            "value_refs": [
+              "HAdd",
+              "outParam"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "HSub.hSub",
+          "match": {
+            "declaration": "HSub.hSub",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "HSub",
+              "outParam"
+            ],
+            "value_refs": [
+              "HSub",
+              "outParam"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int",
+          "match": {
+            "declaration": "Int",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "inductive",
+            "module": "Init.Data.Int.Basic",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.add_one_le_of_lt",
+          "match": {
+            "declaration": "Int.add_one_le_of_lt",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Data.Int.Order",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "HAdd.hAdd",
+              "Int",
+              "Int.instAdd",
+              "Int.instLEInt",
+              "Int.instLTInt",
+              "LE.le",
+              "LT.lt",
+              "OfNat.ofNat",
+              "instHAdd",
+              "instOfNat"
+            ],
+            "value_refs": [
+              "Int",
+              "Int.instLTInt",
+              "LT.lt"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.instAdd",
+          "match": {
+            "declaration": "Int.instAdd",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Data.Int.Basic",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Add",
+              "Int"
+            ],
+            "value_refs": [
+              "Add.mk",
+              "Int",
+              "Int.add"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.instLEInt",
+          "match": {
+            "declaration": "Int.instLEInt",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Data.Int.Basic",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "LE"
+            ],
+            "value_refs": [
+              "Int",
+              "Int.le",
+              "LE.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.instLinearOrder",
+          "match": null,
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.instNegInt",
+          "match": {
+            "declaration": "Int.instNegInt",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Data.Int.Basic",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Neg"
+            ],
+            "value_refs": [
+              "Int",
+              "Int.neg",
+              "Neg.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.instSub",
+          "match": {
+            "declaration": "Int.instSub",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Data.Int.Basic",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Sub"
+            ],
+            "value_refs": [
+              "Int",
+              "Int.sub",
+              "Sub.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Int.sub_nonneg_of_le",
+          "match": {
+            "declaration": "Int.sub_nonneg_of_le",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Data.Int.Order",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "HSub.hSub",
+              "Int",
+              "Int.instLEInt",
+              "Int.instSub",
+              "LE.le",
+              "OfNat.ofNat",
+              "instHSub",
+              "instOfNat"
+            ],
+            "value_refs": [
+              "Eq.mp",
+              "HAdd.hAdd",
+              "Int",
+              "Int.add_le_add_right",
+              "Int.add_right_neg",
+              "Int.instAdd",
+              "Int.instLEInt",
+              "Int.instNegInt",
+              "LE.le",
+              "Neg.neg",
+              "OfNat.ofNat",
+              "congrArg",
+              "instHAdd",
+              "instOfNat"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "LE.le",
+          "match": {
+            "declaration": "LE.le",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "LE"
+            ],
+            "value_refs": [
+              "LE"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "LT.lt",
+          "match": {
+            "declaration": "LT.lt",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "LT"
+            ],
+            "value_refs": [
+              "LT"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Coeffs.ofList",
+          "match": {
+            "declaration": "Lean.Omega.Coeffs.ofList",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Omega.Coeffs",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Lean.Omega.Coeffs",
+              "List"
+            ],
+            "value_refs": [
+              "Int",
+              "List"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Constraint.addInequality_sat",
+          "match": {
+            "declaration": "Lean.Omega.Constraint.addInequality_sat",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Constraint",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "GE.ge",
+              "HAdd.hAdd",
+              "Int",
+              "Int.instAdd",
+              "Int.instLEInt",
+              "Int.instNegInt",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Coeffs.dot",
+              "Lean.Omega.Constraint.mk",
+              "Lean.Omega.Constraint.sat'",
+              "Neg.neg",
+              "OfNat.ofNat",
+              "Option.none",
+              "Option.some",
+              "instHAdd",
+              "instOfNat"
+            ],
+            "value_refs": [
+              "And",
+              "Bool",
+              "Bool.true",
+              "Decidable.decide",
+              "Decidable.decide.congr_simp",
+              "Eq",
+              "Eq.mpr",
+              "Eq.symm",
+              "Eq.trans",
+              "GE.ge",
+              "HAdd.hAdd",
+              "HSub.hSub",
+              "Int",
+              "Int.decLe",
+              "Int.instAdd",
+              "Int.instLEInt",
+              "Int.instNegInt",
+              "Int.instSub",
+              "Int.sub_left_le_of_le_add",
+              "Int.zero_sub",
+              "LE.le",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Coeffs.dot",
+              "Lean.Omega.Constraint.lowerBound",
+              "Lean.Omega.Constraint.mk",
+              "Lean.Omega.Constraint.sat'",
+              "Lean.Omega.Constraint.upperBound",
+              "Lean.Omega.LowerBound.sat",
+              "Lean.Omega.UpperBound.sat",
+              "Neg.neg",
+              "OfNat.ofNat",
+              "Option.none",
+              "Option.some",
+              "True",
+              "and_true",
+              "congr",
+              "congrArg",
+              "congrFun'",
+              "decide_eq_true_eq",
+              "eq_self",
+              "id",
+              "instDecidableAnd",
+              "instDecidableEqBool",
+              "instHAdd",
+              "instHSub",
+              "instOfNat"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Constraint.combine_sat'",
+          "match": {
+            "declaration": "Lean.Omega.Constraint.combine_sat'",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Constraint",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.combine",
+              "Lean.Omega.Constraint.sat'"
+            ],
+            "value_refs": [
+              "And",
+              "And.intro",
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "Eq.mpr",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Coeffs.dot",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.combine",
+              "Lean.Omega.Constraint.combine_sat",
+              "Lean.Omega.Constraint.sat",
+              "Lean.Omega.Constraint.sat'"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Constraint.isImpossible",
+          "match": {
+            "declaration": "Lean.Omega.Constraint.isImpossible",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Omega.Constraint",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Lean.Omega.Constraint"
+            ],
+            "value_refs": [
+              "Bool",
+              "Bool.false",
+              "Decidable.decide",
+              "Int",
+              "Int.decLt",
+              "Int.instLTInt",
+              "LT.lt",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.isImpossible.match_1"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Constraint.mk",
+          "match": {
+            "declaration": "Lean.Omega.Constraint.mk",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Omega.Constraint",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Lean.Omega.Constraint",
+              "Lean.Omega.LowerBound",
+              "Lean.Omega.UpperBound"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+          "match": {
+            "declaration": "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Constraint",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.isImpossible",
+              "Lean.Omega.Constraint.sat'",
+              "Not"
+            ],
+            "value_refs": [
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Coeffs.dot",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.isImpossible",
+              "Lean.Omega.Constraint.not_sat_of_isImpossible"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Int.add_congr",
+          "match": {
+            "declaration": "Lean.Omega.Int.add_congr",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Int",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq",
+              "HAdd.hAdd",
+              "Int",
+              "Int.instAdd",
+              "instHAdd"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.ndrec",
+              "Eq.refl",
+              "HAdd.hAdd",
+              "Int",
+              "Int.instAdd",
+              "instHAdd"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Int.lt_of_not_le",
+          "match": {
+            "declaration": "Lean.Omega.Int.lt_of_not_le",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Int",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Int.instLEInt",
+              "Int.instLTInt",
+              "LE.le",
+              "LT.lt",
+              "Not"
+            ],
+            "value_refs": [
+              "Iff.mp",
+              "Int",
+              "Int.instLEInt",
+              "Int.instLTInt",
+              "Int.not_le",
+              "LE.le",
+              "LT.lt",
+              "Not"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.Int.sub_congr",
+          "match": {
+            "declaration": "Lean.Omega.Int.sub_congr",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Int",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq",
+              "HSub.hSub",
+              "Int",
+              "Int.instSub",
+              "instHSub"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.ndrec",
+              "Eq.refl",
+              "HSub.hSub",
+              "Int",
+              "Int.instSub",
+              "instHSub"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "inductive",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.add_eval",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.add_eval",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq",
+              "HAdd.hAdd",
+              "Int",
+              "Int.instAdd",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.eval",
+              "Lean.Omega.LinearCombo.instAdd",
+              "instHAdd"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.mpr",
+              "Eq.rec",
+              "Eq.refl",
+              "Eq.trans",
+              "HAdd",
+              "HAdd.hAdd",
+              "Int",
+              "Int.add_assoc",
+              "Int.add_left_comm",
+              "Int.instAdd",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Coeffs.dot",
+              "Lean.Omega.Coeffs.dot_distrib_left",
+              "Lean.Omega.IntList.instAdd",
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.casesOn",
+              "Lean.Omega.LinearCombo.eval",
+              "Lean.Omega.LinearCombo.instAdd",
+              "Lean.Omega.LinearCombo.mk",
+              "congr",
+              "congrArg",
+              "id",
+              "instHAdd"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.coordinate",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.coordinate",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Lean.Omega.LinearCombo",
+              "Nat"
+            ],
+            "value_refs": [
+              "Int",
+              "Lean.Omega.Coeffs.set",
+              "Lean.Omega.LinearCombo.mk",
+              "List.nil",
+              "Nat",
+              "OfNat.ofNat",
+              "instOfNat"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.coordinate_eval_0",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.coordinate_eval_0",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq",
+              "Int",
+              "Lean.Omega.Coeffs.ofList",
+              "Lean.Omega.LinearCombo.coordinate",
+              "Lean.Omega.LinearCombo.eval",
+              "List",
+              "List.cons",
+              "Nat",
+              "OfNat.ofNat",
+              "instOfNatNat"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.trans",
+              "Int",
+              "Lean.Omega.Coeffs.get",
+              "Lean.Omega.Coeffs.ofList",
+              "Lean.Omega.IntList.get_cons_zero",
+              "Lean.Omega.LinearCombo.coordinate",
+              "Lean.Omega.LinearCombo.coordinate_eval",
+              "Lean.Omega.LinearCombo.eval",
+              "List",
+              "List.cons",
+              "Nat",
+              "OfNat.ofNat",
+              "True",
+              "congrArg",
+              "congrFun'",
+              "eq_self",
+              "instOfNatNat",
+              "of_eq_true"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.eval",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.eval",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.LinearCombo"
+            ],
+            "value_refs": [
+              "HAdd.hAdd",
+              "Int",
+              "Int.instAdd",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Coeffs.dot",
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.coeffs",
+              "Lean.Omega.LinearCombo.const",
+              "instHAdd"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.instAdd",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.instAdd",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Add",
+              "Lean.Omega.LinearCombo"
+            ],
+            "value_refs": [
+              "Add.mk",
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.add"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.instSub",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.instSub",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Lean.Omega.LinearCombo",
+              "Sub"
+            ],
+            "value_refs": [
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.sub",
+              "Sub.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.mk",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.mk",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.LinearCombo"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.LinearCombo.sub_eval",
+          "match": {
+            "declaration": "Lean.Omega.LinearCombo.sub_eval",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.LinearCombo",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq",
+              "HSub.hSub",
+              "Int",
+              "Int.instSub",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.eval",
+              "Lean.Omega.LinearCombo.instSub",
+              "instHSub"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.trans",
+              "HAdd.hAdd",
+              "HSub.hSub",
+              "Int",
+              "Int.instAdd",
+              "Int.instNegInt",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.LinearCombo",
+              "Lean.Omega.LinearCombo.add_eval",
+              "Lean.Omega.LinearCombo.eval",
+              "Lean.Omega.LinearCombo.instAdd",
+              "Lean.Omega.LinearCombo.instNeg",
+              "Lean.Omega.LinearCombo.instSub",
+              "Lean.Omega.LinearCombo.neg_eval",
+              "Lean.Omega.LinearCombo.sub_eq_add_neg",
+              "Neg.neg",
+              "True",
+              "congrArg",
+              "congrFun'",
+              "eq_self",
+              "instHAdd",
+              "instHSub",
+              "of_eq_true"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Lean.Omega.tidy_sat",
+          "match": {
+            "declaration": "Lean.Omega.tidy_sat",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Omega.Constraint",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.sat'",
+              "Lean.Omega.tidyCoeffs",
+              "Lean.Omega.tidyConstraint"
+            ],
+            "value_refs": [
+              "And",
+              "And.casesOn",
+              "Bool",
+              "Bool.true",
+              "Eq",
+              "Eq.ndrec",
+              "Eq.refl",
+              "Eq.symm",
+              "Eq.trans",
+              "Lean.Omega.Coeffs",
+              "Lean.Omega.Constraint",
+              "Lean.Omega.Constraint.sat'",
+              "Lean.Omega.normalize",
+              "Lean.Omega.normalize?",
+              "Lean.Omega.normalize?_eq_some",
+              "Lean.Omega.normalizeCoeffs",
+              "Lean.Omega.normalizeConstraint",
+              "Lean.Omega.normalize_sat",
+              "Lean.Omega.positivize?",
+              "Lean.Omega.positivize?_eq_some",
+              "Lean.Omega.positivizeCoeffs",
+              "Lean.Omega.positivizeConstraint",
+              "Lean.Omega.positivize_sat",
+              "Lean.Omega.tidy?.match_1",
+              "Lean.Omega.tidyCoeffs",
+              "Lean.Omega.tidyConstraint",
+              "Option",
+              "Option.getD",
+              "Option.none",
+              "Option.some",
+              "Prod",
+              "Prod.fst",
+              "Prod.mk",
+              "Prod.snd",
+              "True",
+              "Unit",
+              "_private.Init.Omega.Constraint.0.Lean.Omega.tidy?.match_1.splitter",
+              "congrArg",
+              "congrFun'",
+              "eq_self",
+              "id",
+              "of_eq_true"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "LinearOrder.toPartialOrder",
+          "match": null,
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "List.cons",
+          "match": {
+            "declaration": "List.cons",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "List"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "List.nil",
+          "match": {
+            "declaration": "List.nil",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "List"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Nat",
+          "match": {
+            "declaration": "Nat",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "inductive",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Neg.neg",
+          "match": {
+            "declaration": "Neg.neg",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Neg"
+            ],
+            "value_refs": [
+              "Neg"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Not",
+          "match": {
+            "declaration": "Not",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": [
+              "False"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "OfNat.ofNat",
+          "match": {
+            "declaration": "OfNat.ofNat",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Nat",
+              "OfNat"
+            ],
+            "value_refs": [
+              "Nat",
+              "OfNat"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Option.none",
+          "match": {
+            "declaration": "Option.none",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Option"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Option.some",
+          "match": {
+            "declaration": "Option.some",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": false,
+            "kind": "constructor",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Option"
+            ],
+            "value_refs": null
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "PartialOrder.toPreorder",
+          "match": null,
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "Preorder.toLT",
+          "match": null,
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "id",
+          "match": {
+            "declaration": "id",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [],
+            "value_refs": []
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "instDecidableEqBool",
+          "match": {
+            "declaration": "instDecidableEqBool",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "DecidableEq"
+            ],
+            "value_refs": [
+              "Bool.decEq"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "instHAdd",
+          "match": {
+            "declaration": "instHAdd",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Add",
+              "HAdd"
+            ],
+            "value_refs": [
+              "Add",
+              "Add.add",
+              "HAdd.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "instHSub",
+          "match": {
+            "declaration": "instHSub",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "HSub",
+              "Sub"
+            ],
+            "value_refs": [
+              "HSub.mk",
+              "Sub",
+              "Sub.sub"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "instOfNat",
+          "match": {
+            "declaration": "instOfNat",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Data.Int.Basic",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Int",
+              "Nat",
+              "OfNat"
+            ],
+            "value_refs": [
+              "Int",
+              "Int.ofNat",
+              "Nat",
+              "OfNat.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "instOfNatNat",
+          "match": {
+            "declaration": "instOfNatNat",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "definition",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Nat",
+              "OfNat"
+            ],
+            "value_refs": [
+              "Nat",
+              "OfNat.mk"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "le_of_le_of_eq",
+          "match": {
+            "declaration": "le_of_le_of_eq",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Core",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Eq",
+              "LE",
+              "LE.le"
+            ],
+            "value_refs": [
+              "Eq",
+              "Eq.rec",
+              "LE",
+              "LE.le"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        },
+        {
+          "declaration": "of_decide_eq_true",
+          "match": {
+            "declaration": "of_decide_eq_true",
+            "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+            "has_value": true,
+            "kind": "theorem",
+            "module": "Init.Prelude",
+            "module_imports": [],
+            "schema": "riemann-evidence-direct-proof-refs-v2",
+            "type_refs": [
+              "Bool",
+              "Bool.true",
+              "Decidable",
+              "Decidable.decide",
+              "Eq"
+            ],
+            "value_refs": [
+              "Bool",
+              "Bool.true",
+              "Decidable",
+              "Decidable.decide",
+              "Eq",
+              "Not",
+              "_private.Init.Prelude.0.of_decide_eq_true.match_1_1",
+              "absurd",
+              "decide_eq_false",
+              "ne_true_of_eq_false"
+            ]
+          },
+          "referrers": [
+            "Formalism.VW.rh_of_right._proof_1_1",
+            "Formalism.VW.rh_of_right._proof_1_2"
+          ]
+        }
+      ],
+      "transitive_closure": "NOT_RUN"
+    },
+    "original_proof_kernel_replay": "NOT_RUN",
+    "schema": "riemann-evidence-lean-match-v2"
+  },
+  "semantic_sha256": "fb1ffaaaf1018aeae7a13ac3887d493c0ab4ac29337abf0d71160570542fdb79"
+}

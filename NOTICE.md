@@ -1,6 +1,6 @@
 # Source and license
 
-The code license is [MIT](LICENSE). Two local modules adapt MIT-licensed code
+The repository code is licensed under [MIT](LICENSE). Two local modules adapt MIT-licensed code
 from Flamehaven contributors at the NSRW release commit
 `6119a2208e1992c1ecea5c9862eac712d604e77f`.
 
@@ -14,4 +14,4 @@ verification module uses the local report format identifier. The pinned input
 files and historical experiment results identify their respective projects.
 Papers and Lean sources belong to their original authors. Their URLs and
 identities are recorded in [the source catalog](sources.json) and
-[the archive manifest](lean-archive-manifest.json).
+[the archive manifest](lean-archive-manifest.json). The cited papers and compiled archives are separately sourced. This repository records their identities and selected declaration-reference metadata.

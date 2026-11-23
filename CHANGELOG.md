@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Preserve proof-only and definition-mediated Choice paths when they meet at one declaration.
+- Record Lean declaration kinds, TYPE and VALUE references, and the absence of a stored VALUE in v2 matching reports.
+- Recover hash-pinned members from local tar fragments with USTAR, PAX, and GNU names. The original VwinOfRow artifact remains pending.
+- Add a platform-aware Lean matching procedure for the first Colab replay.
+
 ## v0.2.0-rc.1 — 2026-11-23
 
 - Adopt **Riemann Evidence Atlas** as the repository title and pin Lean 4.33.1.

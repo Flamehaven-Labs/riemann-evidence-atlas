@@ -48,6 +48,31 @@ class ProofPathTests(unittest.TestCase):
         )
         self.assertEqual(graph["choice_paths"][0]["numeric_relevance"], "NOT_ESTABLISHED")
 
+    def test_choice_keeps_both_routes_at_a_shared_declaration(self):
+        inputs = [
+            record("root", value=("shared", "chosen")),
+            record("chosen", kind="definition", value=("shared",)),
+            record("shared", value=("Classical.choice",)),
+        ]
+        paths = inspect_value_paths(inputs, "root")["choice_paths"]
+        self.assertEqual({row["position"]: row["path"] for row in paths}, {
+            "PROOF_VALUE_PATH_CANDIDATE": ["root", "shared", "Classical.choice"],
+            "DATA_DEFINITION_PATH_CANDIDATE": ["root", "chosen", "shared", "Classical.choice"],
+        })
+
+    def test_budget_counts_both_states_at_shared_declaration(self):
+        inputs = [
+            record("root", value=("shared", "chosen")),
+            record("chosen", kind="definition", value=("shared",)),
+            record("shared"),
+        ]
+        with self.assertRaisesRegex(ValueError, "budget"):
+            inspect_value_paths(inputs, "root", max_nodes=3)
+        self.assertEqual(
+            inspect_value_paths(inputs, "root", max_nodes=4)["reached_local_declarations"],
+            ["chosen", "root", "shared"],
+        )
+
     def test_external_declarations_are_not_silently_closed(self):
         graph = inspect_value_paths([record("top", value=("imported",))], "top")
         self.assertIn("imported", graph["external_or_unresolved_references"])
@@ -66,6 +91,21 @@ class ProofPathTests(unittest.TestCase):
         bad["schema"] = "untrusted"
         with self.assertRaisesRegex(ValueError, "schema"):
             normalize_records([bad])
+
+    def test_v2_distinguishes_missing_value_from_no_constant_refs(self):
+        axiom = {**record("assume", kind="axiom"), "value_refs": None, "has_value": False}
+        empty = {**record("empty", kind="definition", typ=("assume",)), "has_value": True}
+        for row in (axiom, empty):
+            row["schema"] = "riemann-evidence-direct-proof-refs-v2"
+        result = normalize_records([axiom, empty])
+        self.assertIsNone(result["assume"]["value_refs"])
+        self.assertEqual(result["empty"]["value_refs"], [])
+        self.assertEqual(inspect_value_paths([axiom], "assume")["choice_paths"], [])
+        self.assertEqual(inspect_value_paths([empty, axiom], "empty")["reached_local_declarations"], ["empty"])
+        for bad in ({**axiom, "value_refs": []}, {**axiom, "has_value": 0},
+                    {**axiom, "value_refs": [], "has_value": True}):
+            with self.assertRaisesRegex(ValueError, "stored value"):
+                normalize_records([bad])
 
     def test_cycle_does_not_loop(self):
         graph = inspect_value_paths(

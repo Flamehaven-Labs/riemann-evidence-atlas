@@ -1,0 +1,253 @@
+{
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "semantic": {
+    "catalog_sha256": "2e8920c64bc4db471dec07da0b3ff39047b3a0738617dc62156dc7d6a32ed741",
+    "fixture": {
+      "choice_paths": [
+        {
+          "data_definitions": [
+            "auditComputedFromChosen",
+            "auditChosenNat"
+          ],
+          "numeric_relevance": "NOT_ESTABLISHED",
+          "path": [
+            "auditJoinChoicePaths",
+            "auditComputedFromChosen",
+            "auditChosenNat",
+            "Classical.choice"
+          ],
+          "position": "DATA_DEFINITION_PATH_CANDIDATE"
+        },
+        {
+          "data_definitions": [],
+          "numeric_relevance": "NOT_ESTABLISHED",
+          "path": [
+            "auditJoinChoicePaths",
+            "auditProofCallsChoice",
+            "Classical.choice"
+          ],
+          "position": "PROOF_VALUE_PATH_CANDIDATE"
+        }
+      ],
+      "declarations": {
+        "Bool": {
+          "declaration": "Bool",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "inductive",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [],
+          "value_refs": null
+        },
+        "Bool.rec": {
+          "declaration": "Bool.rec",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "recursor",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Bool",
+            "Bool.false",
+            "Bool.true"
+          ],
+          "value_refs": null
+        },
+        "Bool.true": {
+          "declaration": "Bool.true",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "constructor",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Bool"
+          ],
+          "value_refs": null
+        },
+        "Classical.choice": {
+          "declaration": "Classical.choice",
+          "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+          "has_value": false,
+          "kind": "axiom",
+          "module": "Init.Prelude",
+          "module_imports": [],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nonempty"
+          ],
+          "value_refs": null
+        },
+        "auditChosenNat": {
+          "declaration": "auditChosenNat",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "definition",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat"
+          ],
+          "value_refs": [
+            "Classical.choice",
+            "Nat",
+            "auditChosenNat._proof_1"
+          ]
+        },
+        "auditComputedFromChosen": {
+          "declaration": "auditComputedFromChosen",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "definition",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat"
+          ],
+          "value_refs": [
+            "HAdd.hAdd",
+            "Nat",
+            "OfNat.ofNat",
+            "auditChosenNat",
+            "instAddNat",
+            "instHAdd",
+            "instOfNatNat"
+          ]
+        },
+        "auditFixtureAxiom": {
+          "declaration": "auditFixtureAxiom",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": false,
+          "kind": "axiom",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "True"
+          ],
+          "value_refs": null
+        },
+        "auditJoinChoicePaths": {
+          "declaration": "auditJoinChoicePaths",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "And",
+            "Eq",
+            "Nat",
+            "Nonempty",
+            "auditComputedFromChosen"
+          ],
+          "value_refs": [
+            "And.intro",
+            "Eq",
+            "Nat",
+            "Nonempty",
+            "auditComputedFromChosen",
+            "auditProofCallsChoice",
+            "auditProofMentionsComputed"
+          ]
+        },
+        "auditOpaque": {
+          "declaration": "auditOpaque",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "opaque",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat"
+          ],
+          "value_refs": [
+            "auditChosenNat"
+          ]
+        },
+        "auditProofCallsChoice": {
+          "declaration": "auditProofCallsChoice",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Nat",
+            "Nonempty"
+          ],
+          "value_refs": [
+            "Classical.choice",
+            "Nat",
+            "Nonempty",
+            "Nonempty.intro",
+            "OfNat.ofNat",
+            "instOfNatNat"
+          ]
+        },
+        "auditProofMentionsComputed": {
+          "declaration": "auditProofMentionsComputed",
+          "evidence": "SUPPLIED_OLEAN",
+          "has_value": true,
+          "kind": "theorem",
+          "module": "ChoiceDependenceFixture",
+          "module_imports": [
+            "Init",
+            "Init",
+            "Lean.Util.FoldConsts"
+          ],
+          "schema": "riemann-evidence-direct-proof-refs-v2",
+          "type_refs": [
+            "Eq",
+            "Nat",
+            "auditComputedFromChosen"
+          ],
+          "value_refs": [
+            "Eq.refl",
+            "Nat",
+            "auditComputedFromChosen"
+          ]
+        }
+      }
+    },
+    "fixture_source_sha256": "3e0ad01debdb464ff1d7aaba965b41de045199043039c9fa28bbc28233c798c3",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "original": null,
+    "original_proof_kernel_replay": "NOT_RUN",
+    "schema": "riemann-evidence-lean-match-v2"
+  },
+  "semantic_sha256": "ee704783fb95ad687cb1e3c2a8fa4076f398d04a13a3946799414aed188171dd"
+}

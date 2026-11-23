@@ -14,3 +14,10 @@ theorem auditProofCallsChoice : Nonempty Nat :=
   Classical.choice (show Nonempty (Nonempty Nat) from ⟨⟨7⟩⟩)
 
 theorem auditIndependent : True := True.intro
+
+axiom auditFixtureAxiom : True
+
+noncomputable opaque auditOpaque : Nat := auditChosenNat
+
+theorem auditJoinChoicePaths : Nonempty Nat ∧ auditComputedFromChosen = auditComputedFromChosen :=
+  ⟨auditProofCallsChoice, auditProofMentionsComputed⟩

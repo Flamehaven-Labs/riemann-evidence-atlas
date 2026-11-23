@@ -7,6 +7,7 @@ name = "riemann-evidence-atlas"
 version = "0.2.0rc1"
 description = "Lean declaration tracing and bounded numerical replay"
 readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 
 [tool.setuptools]

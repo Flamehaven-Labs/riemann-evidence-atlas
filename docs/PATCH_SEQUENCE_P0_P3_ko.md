@@ -37,8 +37,10 @@
 
 ## P1 — 확인 가능한 원본 Lean 경로 확장
 
+**로컬 대조 통과, 원본 확장 일부 보류.** BFS 합류 회귀, v2 선언 매치와 긴 tar 경로 회귀를 통과했다. 두 보조 증명의 직접 참조 57개 중 53개를 Lean `Init`에서 확인했다. 첫 Colab은 공개 커밋을 고정한 뒤 합성 Lean과 Python 재현을 수행하고, 고정 원본을 준비한 세션에만 원본 대조를 추가한다. [실행 순서와 결과](LEAN_MATCH_AND_COLAB_ko.md)
+
 - [ ] **P1.1 확보한 보조 증명부터 검사.** `rh_of_right._proof_1_1`, `rh_of_right._proof_1_2`의 이미 추출된 참조 목록에서 중복을 제거하되 각 참조의 출발점은 보존한다. 두 57개 직접 참조 집합은 동일하며 `Lean.Omega.*`를 포함한다. 후속 패스는 중복 57개를 한 번 분류해 두 출발점에 연결한다. 직접 `Classical.choice`는 관측되지 않았고 전이 여부는 열린 상태다. 같은 `.olean`에 있거나 고정 Lean의 좁은 모듈 묶음으로 읽을 수 있는 선언을 우선한다. 각 항목에 소속 모듈, 선언 종류, TYPE 또는 VALUE 간선, 직접 확인 여부를 기록한다.
-- [ ] **P1.2 `vwin_of_row`를 공개 그래프 후보에서 원본 검증으로 이동.** 대상은 `Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow`다. 배포자의 파일별 목록에서 `VwinOfRow.olean`의 예상 SHA-256 `d0beb229db7511a87434172b7d2af0e1830fa0d2585777f7c71badd06ac04d6a`을 확인했다. 합성 USTAR·PAX·GNU 긴 경로로 회귀 테스트를 만들고 `seek_member.py`의 prefix와 PAX path 처리 결손을 수정한다. 캐시에서 전체 143바이트 경로를 사용해 추출을 다시 시도한다. 파일 확보 후 이 해시와 Lean 4.33.1을 대조하고, `everyCharacter_of_row → vwin_of_row`의 대상 선언과 직접 TYPE·VALUE 참조를 읽는다. 확보나 해시 검사가 실패하면 이 항목을 보류하고 P1.1과 P2를 진행한다.
+- [ ] **P1.2 `vwin_of_row`를 공개 그래프 후보에서 원본 검증으로 이동.** 대상은 `Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow`다. 배포자의 파일별 목록에서 `VwinOfRow.olean`의 예상 SHA-256 `d0beb229db7511a87434172b7d2af0e1830fa0d2585777f7c71badd06ac04d6a`을 확인했다. 합성 USTAR·PAX·GNU 긴 경로로 회귀 테스트를 만들고 `tools/tar_fragment.py`와 `tools/recover_pinned_member.py`에서 prefix와 PAX path를 처리한다. 143바이트 경로를 사용한 캐시 36조각의 제한 검색은 `NOT_RECOVERED`였다. 파일 확보 후 이 해시와 Lean 4.33.1을 대조하고, `everyCharacter_of_row → vwin_of_row`의 대상 선언과 직접 TYPE·VALUE 참조를 읽는다. 확보나 해시 검사가 실패하면 이 항목을 보류하고 P1.1과 P2를 진행한다.
 - [ ] **P1.3 공리 상태 검증.** 이미 확인된 `riemannHypothesis → rhOfAll → rh_of_every → rh_of_right → propext` 경로를 기준 비교에 사용한다. 확장한 부분에서 `Classical.choice`까지 이어지는 실제 경로가 확보되면 경로와 선언 종류를 기록한다. BFS는 `(node, via_definition)`을 방문 상태로 유지하고, 한 중간 정점으로 합류하는 두 경로를 회귀 검사한다. `ProofRefs`와 `ProofFrontier`에 선언 종류·TYPE 참조 및 VALUE 본체 부재 여부를 명시한다. 확장 스키마는 별도 버전으로 보존한다. 정의를 경유하는 VALUE 경로와 실제 수치 평가의 의존성은 각각 검증한다.
 
 **완료 기준** 각 새 간선이 고정된 컴파일 파일 또는 해당 Lean 환경의 실제 선언에 연결되고, 동일 명령 두 번에서 같은 결과가 나온다. 기존 378개 분류 기록은 별도 기준선으로 보존하고, 새 참조와 미해결 경계는 새 기록에 담는다. 새 선언 수는 수용 조건으로 사용하지 않는다.

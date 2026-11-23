@@ -43,7 +43,7 @@ python window_kernel.py --window case.json
 
 ## Colab
 
-[독립 노트북](RH_Window.ipynb)은 이 저장소의 Python 파일을 그대로 사용합니다. Colab에서 열고 `window_kernel.py`, `riemann_evidence/__init__.py`, `riemann_evidence/rational_intervals.py`, `riemann_evidence/verification.py` 네 파일을 요청에 따라 올립니다. 노트북은 가져온 파일의 SHA-256을 확인하고 CLI와 동일한 10개 사례를 실행합니다. 저장소 폴더에서 열면 업로드 단계 없이 실행합니다. 이전 Colab 기준 결과의 범위와 이번 실행 검사는 [현재 상태](docs/REPOSITORY_BASELINE_ko.md)에 기록했습니다.
+[독립 노트북](RH_Window.ipynb)은 이 저장소의 Python 파일을 그대로 사용합니다. Colab에서 열고 `window_kernel.py`, `riemann_evidence/__init__.py`, `riemann_evidence/rational_intervals.py`, `riemann_evidence/verification.py` 네 파일을 요청에 따라 올립니다. 노트북은 가져온 파일의 SHA-256을 확인하고 CLI와 동일한 10개 사례를 실행합니다. 저장소 폴더에서 열면 업로드 단계 없이 실행합니다. 이전 Colab 기준 결과의 범위와 실행 검사는 [현재 상태](docs/REPOSITORY_BASELINE_ko.md)에 기록했습니다. 고정 Lean 선언을 Linux에서 대조하는 첫 실행은 [Lean·Colab 검증 절차](docs/LEAN_MATCH_AND_COLAB_ko.md)를 따릅니다.
 
 ## 원본과 설계 문서
 
@@ -53,6 +53,7 @@ python window_kernel.py --window case.json
 | [엔지니어링 연구 보고서](docs/ENGINEERING_RESEARCH_REPORT_ko.md) | 원본 Landau 분석, NSRW와 TOE에 적용할 후보 실험 |
 | [현재 상태](docs/REPOSITORY_BASELINE_ko.md) | 과거 기록 보존, 이번 검수와 미실행 항목 |
 | [증명 항 참조 실험](docs/PROOF_DEPENDENCY_PILOT_ko.md) | 원본 Lean 컴파일 산출물에서 타입·증명 항의 직접 참조 추출 |
+| [Lean 대조 및 Colab 실행 순서](docs/LEAN_MATCH_AND_COLAB_ko.md) | 합성 선언, 원본 보조 증명, Linux 재현의 입력과 결과 |
 | [P0–P3 재패치 순서](docs/PATCH_SEQUENCE_P0_P3_ko.md) | 기존 검수 기준선, 원본 Lean 경로 확장, 두 연구의 국소 항 비교와 형식 연결 |
 | [2026-11-23 로컬 검수 기록](docs/LOCAL_VALIDATION_2026-11-23_ko.md) | 17개 회귀 테스트, Lean 4.33.1 직접 참조, 합성 Choice 전이, Python 다중 버전과 노트북 실행의 정확한 범위 |
 | [Inspector 검수와 수용 판정](docs/INSPECTOR_REVIEW_2026-11-23_ko.md) | 검수별 근거와 ACCEPT·AMBER·REJECT |
