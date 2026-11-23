@@ -1,5 +1,6 @@
 * text=auto eol=lf
 # Existing evidence and pins are stored byte-for-byte.
+/docs/masullo/P2_LOCAL_SURFACE.json -text whitespace=cr-at-eol
 /window-results.json -text whitespace=cr-at-eol
 /nsrw-mb06-*.json -text whitespace=cr-at-eol
 /lean-archive-manifest.json -text whitespace=cr-at-eol

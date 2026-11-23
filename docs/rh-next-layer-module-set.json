@@ -1,0 +1,3862 @@
+{
+  "analysis": {
+    "choice_paths": [],
+    "direct_type_refs": [
+      "RiemannHypothesis"
+    ],
+    "direct_value_refs": [
+      "rhOfAll"
+    ],
+    "external_closure": "NOT_RUN",
+    "external_or_unresolved_references": [
+      "AddCancelMonoid.toAddRightCancelMonoid",
+      "AddCommGroup.toAddGroup",
+      "AddCommGroup.toDivisionAddCommMonoid",
+      "AddCommMonoidWithOne.toAddMonoidWithOne",
+      "AddGroup.toAddCancelMonoid",
+      "AddGroup.toSubNegMonoid",
+      "AddGroup.toSubtractionMonoid",
+      "AddGroupWithOne.toAddGroup",
+      "AddGroupWithOne.toAddMonoidWithOne",
+      "AddGroupWithOne.toIntCast",
+      "AddMonoid.toAddSemigroup",
+      "AddMonoid.toAddZeroClass",
+      "AddMonoidWithOne",
+      "AddMonoidWithOne.toAddMonoid",
+      "AddMonoidWithOne.toNatCast",
+      "AddMonoidWithOne.toOne",
+      "AddRightCancelMonoid.toAddRightCancelSemigroup",
+      "AddRightCancelSemigroup.toIsRightCancelAdd",
+      "AddSemigroup.toAdd",
+      "AddZero.toZero",
+      "AddZeroClass.toAddZero",
+      "Algebra",
+      "Bool",
+      "Bool.false",
+      "CStarAlgebra.toNormedRing",
+      "CharZero.NeZero.two",
+      "CommCStarAlgebra.toCStarAlgebra",
+      "CommGroupWithZero.toCommMonoidWithZero",
+      "CommRing.toCommMonoid",
+      "CommRing.toNonAssocCommRing",
+      "CommRing.toNonUnitalCommRing",
+      "CommRing.toRing",
+      "CommSemiring.toSemiring",
+      "Complex",
+      "Complex.Gamma",
+      "Complex.Gamma_ne_zero_of_re_pos",
+      "Complex.addCommGroup",
+      "Complex.addGroupWithOne",
+      "Complex.commRing",
+      "Complex.cos",
+      "Complex.cos_eq_zero_iff",
+      "Complex.cpow_ne_zero_iff",
+      "Complex.im",
+      "Complex.instAdd",
+      "Complex.instCharZero",
+      "Complex.instCommSemiring",
+      "Complex.instDivInvMonoid",
+      "Complex.instField",
+      "Complex.instIntCast",
+      "Complex.instMul",
+      "Complex.instNatCast",
+      "Complex.instNeg",
+      "Complex.instNormedField",
+      "Complex.instOne",
+      "Complex.instPow",
+      "Complex.instRing",
+      "Complex.instSemiring",
+      "Complex.instSub",
+      "Complex.instZero",
+      "Complex.mul_re",
+      "Complex.natCast_re",
+      "Complex.neg_re",
+      "Complex.ofReal",
+      "Complex.ofReal_inj._simp_1",
+      "Complex.one_re",
+      "Complex.re",
+      "Complex.sub_re",
+      "Decidable.byContradiction",
+      "DirichletCharacter",
+      "DirichletCharacter.LFunction",
+      "DirichletCharacter.LFunction_modOne_eq",
+      "Distrib.toAdd",
+      "Distrib.toMul",
+      "DivInvMonoid.toDiv",
+      "DivInvOneMonoid.toInvOneClass",
+      "DivisionMonoid.toDivInvOneMonoid",
+      "DivisionRing.toDivInvMonoid",
+      "DivisionRing.toRing",
+      "DivisionSemiring.toGroupWithZero",
+      "DivisionSemiring.toSemiring",
+      "Eq",
+      "Eq.mp",
+      "Eq.mpr",
+      "Eq.ndrec",
+      "Eq.refl",
+      "Eq.symm",
+      "Eq.trans",
+      "Exists",
+      "Exists.casesOn",
+      "Exists.intro",
+      "False",
+      "False.elim",
+      "Field",
+      "Field.toCommRing",
+      "Field.toDivisionRing",
+      "Field.toSemifield",
+      "FloorRing.toFloorSemiring",
+      "FloorSemiring.instCharZero",
+      "Formalism.ConjugateSelfDual.IsPlaceOver",
+      "Formalism.VW.rh_of_right._proof_1_1",
+      "Formalism.VW.rh_of_right._proof_1_2",
+      "GlobalTheory.LocGL.IrrGL",
+      "GlobalTheory.WeilDeligne.WD",
+      "GroupWithZero.toDivInvMonoid",
+      "GroupWithZero.toDivisionMonoid",
+      "HAdd.hAdd",
+      "HDiv.hDiv",
+      "HMul.hMul",
+      "HPow.hPow",
+      "HSub.hSub",
+      "HasDistribNeg.toInvolutiveNeg",
+      "Iff.mp",
+      "Iff.mpr",
+      "Int",
+      "Int.cast",
+      "Int.cast_le._simp_1",
+      "Int.cast_natCast",
+      "Int.cast_negSucc._simp_1",
+      "Int.cast_one",
+      "Int.cast_sub",
+      "Int.cast_zero",
+      "Int.decLe",
+      "Int.instLEInt",
+      "Int.instLinearOrder",
+      "Int.instNegInt",
+      "Int.instRing",
+      "Int.instSub",
+      "Int.mul",
+      "Int.negOfNat",
+      "Int.negSucc",
+      "Int.ofNat",
+      "Int.rawCast",
+      "Int.toNat",
+      "Int.toNat_of_nonneg",
+      "Inv.inv",
+      "InvOneClass.toInv",
+      "InvolutiveNeg.toNeg",
+      "IsAlgClosure",
+      "IsDedekindDomain.HeightOneSpectrum",
+      "IsDedekindDomain.HeightOneSpectrum.adicCompletion",
+      "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField",
+      "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instUniformSpace",
+      "IsOrderedAddMonoid.toAddLeftMono",
+      "LE.le",
+      "LT.lt",
+      "LinearOrder.toPartialOrder",
+      "Mathlib.Meta.NormNum.IsInt.of_raw",
+      "Mathlib.Meta.NormNum.IsInt.to_isNat",
+      "Mathlib.Meta.NormNum.IsInt.to_isRat",
+      "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+      "Mathlib.Meta.NormNum.IsNNRat.den_nz",
+      "Mathlib.Meta.NormNum.IsNNRat.of_raw",
+      "Mathlib.Meta.NormNum.IsNNRat.to_eq",
+      "Mathlib.Meta.NormNum.IsNNRat.to_isNat",
+      "Mathlib.Meta.NormNum.IsNNRat.to_isRat",
+      "Mathlib.Meta.NormNum.IsNNRat.to_raw_eq",
+      "Mathlib.Meta.NormNum.IsNat.of_raw",
+      "Mathlib.Meta.NormNum.IsNat.to_isInt",
+      "Mathlib.Meta.NormNum.IsNat.to_isNNRat",
+      "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+      "Mathlib.Meta.NormNum.IsRat.den_nz",
+      "Mathlib.Meta.NormNum.IsRat.of_raw",
+      "Mathlib.Meta.NormNum.IsRat.to_isInt",
+      "Mathlib.Meta.NormNum.IsRat.to_raw_eq",
+      "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+      "Mathlib.Meta.NormNum.instAddMonoidWithOne'",
+      "Mathlib.Meta.NormNum.instAtLeastTwo",
+      "Mathlib.Meta.NormNum.isInt_add",
+      "Mathlib.Meta.NormNum.isInt_mul",
+      "Mathlib.Meta.NormNum.isInt_neg",
+      "Mathlib.Meta.NormNum.isNNRat_div",
+      "Mathlib.Meta.NormNum.isNNRat_inv_pos",
+      "Mathlib.Meta.NormNum.isNNRat_mul",
+      "Mathlib.Meta.NormNum.isNat_eq_true",
+      "Mathlib.Meta.NormNum.isNat_lt_true",
+      "Mathlib.Meta.NormNum.isNat_mul",
+      "Mathlib.Meta.NormNum.isNat_ofNat",
+      "Mathlib.Meta.NormNum.isRat_div",
+      "Mathlib.Meta.NormNum.isRat_eq_false",
+      "Mathlib.Meta.NormNum.isRat_mul",
+      "Mathlib.Tactic.CancelDenoms.derive_trans",
+      "Mathlib.Tactic.CancelDenoms.div_subst",
+      "Mathlib.Tactic.CancelDenoms.sub_subst",
+      "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le",
+      "Mathlib.Tactic.Linarith.add_neg",
+      "Mathlib.Tactic.Linarith.lt_irrefl",
+      "Mathlib.Tactic.Linarith.lt_of_lt_of_eq",
+      "Mathlib.Tactic.Linarith.mul_eq",
+      "Mathlib.Tactic.Linarith.mul_neg",
+      "Mathlib.Tactic.Linarith.mul_nonpos",
+      "Mathlib.Tactic.Linarith.natCast_nonneg",
+      "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+      "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+      "Mathlib.Tactic.Linarith.zero_lt_one",
+      "Mathlib.Tactic.LinearCombination.eq_of_eq",
+      "Mathlib.Tactic.LinearCombination.eq_rearrange",
+      "Mathlib.Tactic.LinearCombination.mul_const_eq",
+      "Mathlib.Tactic.Ring.Common.add_congr",
+      "Mathlib.Tactic.Ring.Common.add_mul",
+      "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+      "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+      "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+      "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+      "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+      "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+      "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+      "Mathlib.Tactic.Ring.Common.atom_pf",
+      "Mathlib.Tactic.Ring.Common.div_congr",
+      "Mathlib.Tactic.Ring.Common.div_pf",
+      "Mathlib.Tactic.Ring.Common.inv_single",
+      "Mathlib.Tactic.Ring.Common.mul_add",
+      "Mathlib.Tactic.Ring.Common.mul_congr",
+      "Mathlib.Tactic.Ring.Common.mul_pf_left",
+      "Mathlib.Tactic.Ring.Common.mul_pf_right",
+      "Mathlib.Tactic.Ring.Common.mul_zero",
+      "Mathlib.Tactic.Ring.Common.neg_add",
+      "Mathlib.Tactic.Ring.Common.neg_congr",
+      "Mathlib.Tactic.Ring.Common.neg_mul",
+      "Mathlib.Tactic.Ring.Common.neg_zero",
+      "Mathlib.Tactic.Ring.Common.sub_congr",
+      "Mathlib.Tactic.Ring.Common.sub_pf",
+      "Mathlib.Tactic.Ring.Common.zero_mul",
+      "Mathlib.Tactic.Ring.cast_pos",
+      "Mathlib.Tactic.Ring.cast_zero",
+      "Mathlib.Tactic.Ring.of_eq",
+      "Monoid.toNPow",
+      "Mul",
+      "MulChar.hasOne",
+      "MulZeroClass.mul_zero",
+      "MulZeroClass.toMul",
+      "MulZeroClass.toZero",
+      "NNRat.rawCast",
+      "NPow.toPow",
+      "Nat",
+      "Nat.cast",
+      "Nat.cast_nonneg",
+      "Nat.cast_one",
+      "Nat.cast_zero",
+      "Nat.instAtLeastTwoHAddOfNat",
+      "Nat.instCommSemiring",
+      "Nat.instNeZeroSucc",
+      "Nat.mul",
+      "Nat.rawCast",
+      "Ne",
+      "Ne.eq_1",
+      "NeZero.charZero_one",
+      "Neg.neg",
+      "NegZeroClass.toNeg",
+      "NegZeroClass.toZero",
+      "NonAssocCommRing.toNonAssocRing",
+      "NonAssocRing.toAddCommGroupWithOne",
+      "NonAssocSemiring.toAddCommMonoidWithOne",
+      "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+      "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+      "NonUnitalNonAssocRing.toHasDistribNeg",
+      "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+      "NonUnitalNonAssocSemiring.toDistrib",
+      "NormMulClass.toNoZeroDivisors",
+      "NormedDivisionRing.toNormMulClass",
+      "NormedField.toNormedDivisionRing",
+      "Not",
+      "NumberField",
+      "NumberField.RingOfIntegers",
+      "NumberField.RingOfIntegers.instAlgebra_1",
+      "NumberField.RingOfIntegers.instIsDedekindDomain",
+      "NumberField.RingOfIntegers.instIsFractionRing",
+      "NumberField.instCommRingRingOfIntegers",
+      "OfNat.ofNat",
+      "One.toOfNat1",
+      "Or",
+      "Or.casesOn",
+      "Or.inl",
+      "Or.inr",
+      "PartialOrder.toPreorder",
+      "Preorder.toLE",
+      "Preorder.toLT",
+      "Rat.rawCast",
+      "Real",
+      "Real.commRing",
+      "Real.instAddCommGroup",
+      "Real.instAddCommMonoid",
+      "Real.instAddGroup",
+      "Real.instAddMonoid",
+      "Real.instCommSemiring",
+      "Real.instDivInvMonoid",
+      "Real.instField",
+      "Real.instFloorRing",
+      "Real.instIntCast",
+      "Real.instIsOrderedAddMonoid",
+      "Real.instIsOrderedRing",
+      "Real.instIsStrictOrderedRing",
+      "Real.instLE",
+      "Real.instLT",
+      "Real.instMul",
+      "Real.instNatCast",
+      "Real.instNeg",
+      "Real.instOne",
+      "Real.instPreorder",
+      "Real.instRing",
+      "Real.instSub",
+      "Real.instZero",
+      "Real.instZeroLEOneClass",
+      "Real.linearOrder",
+      "Real.partialOrder",
+      "Real.pi",
+      "Real.pi_ne_zero",
+      "Real.semiring",
+      "RiemannHypothesis",
+      "RiemannHypothesis._proof_1",
+      "Ring",
+      "Ring.toAddCommGroup",
+      "Ring.toAddGroupWithOne",
+      "Ring.toSemiring",
+      "Semifield.toCommGroupWithZero",
+      "Semifield.toCommSemiring",
+      "Semifield.toDivisionSemiring",
+      "Semiring.toMonoid",
+      "Semiring.toNonAssocSemiring",
+      "SubNegMonoid.toSub",
+      "SubNegZeroMonoid.toNegZeroClass",
+      "SubtractionCommMonoid.toSubtractionMonoid",
+      "SubtractionMonoid.toSubNegZeroMonoid",
+      "True",
+      "UniformSpace.toTopologicalSpace",
+      "UpperTheory.EveryCharacter",
+      "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+      "UpperTheory.GalStar.RecNotion._proof_1",
+      "UpperTheory.GalStar.Row0b",
+      "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.mk",
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "UpperTheory.One.vwin_of_row",
+      "UpperTheory.Zero.LLC.IsRecT",
+      "UpperTheory.Zero.LLC.recTExists",
+      "ValuationSubring",
+      "ZMod",
+      "ZMod.commRing",
+      "Zero.toOfNat0",
+      "absurd",
+      "cast",
+      "congr",
+      "congrArg",
+      "congrFun'",
+      "eq_false",
+      "eq_self",
+      "id",
+      "inferInstance",
+      "instAddNat",
+      "instCommCStarAlgebraComplex",
+      "instDistribOfSemiring",
+      "instHAdd",
+      "instHDiv",
+      "instHMul",
+      "instHPow",
+      "instHSub",
+      "instMulZeroClassOfSemiring",
+      "instNatCastInt",
+      "instNeZeroNatHAdd_1",
+      "instOfNat",
+      "instOfNatAtLeastTwo",
+      "instOfNatNat",
+      "lt_of_not_ge",
+      "lt_trichotomy",
+      "mul_eq_zero",
+      "mul_ne_zero",
+      "neg_eq_zero",
+      "neg_mul",
+      "neg_neg_of_pos",
+      "neg_zero",
+      "of_eq_true",
+      "propext",
+      "rfl",
+      "riemannZeta",
+      "riemannZeta_one_sub",
+      "riemannZeta_zero",
+      "sub_eq_zero_of_eq",
+      "sub_sub_cancel",
+      "sub_zero",
+      "two_ne_zero"
+    ],
+    "imports_not_direct_constant_references": [
+      "Init",
+      "Statements",
+      "Supplements.Kernels.MainTheoremsAll"
+    ],
+    "kind": "theorem",
+    "original_proof_kernel_replay": "NOT_RUN",
+    "reached_declarations": {
+      "Formalism.VW.rh_of_every": "Formalism.GammaFactorNonvanishing.CritLine",
+      "Formalism.VW.rh_of_right": "Formalism.GammaFactorNonvanishing.RhOfRight",
+      "UpperTheory.FinalTheorems.everyCharacter": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+      "UpperTheory.FinalTheorems.everyCharacter_of_row": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+      "allChi": "Supplements.Kernels.MainTheorems",
+      "rhOfAll": "Supplements.Kernels.MainTheorems",
+      "riemannHypothesis": "Main"
+    },
+    "resolved_edges": [
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_right",
+        "to_module": "Formalism.GammaFactorNonvanishing.RhOfRight"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "to_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      },
+      {
+        "from": "allChi",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "UpperTheory.FinalTheorems.everyCharacter",
+        "to_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_every",
+        "to_module": "Formalism.GammaFactorNonvanishing.CritLine"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "allChi",
+        "to_module": "Supplements.Kernels.MainTheorems"
+      },
+      {
+        "from": "riemannHypothesis",
+        "from_module": "Main",
+        "kind": "value",
+        "to": "rhOfAll",
+        "to_module": "Supplements.Kernels.MainTheorems"
+      }
+    ],
+    "root": "riemannHypothesis",
+    "schema": "riemann-evidence-module-set-value-paths-v1",
+    "scope": "SUPPLIED_MODULE_DECLARATION_RECORDS",
+    "unresolved_edges": [
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "CommGroupWithZero.toCommMonoidWithZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "CommRing.toCommMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.instField"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.instZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DirichletCharacter"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DirichletCharacter.LFunction"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DirichletCharacter.LFunction_modOne_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DivInvMonoid.toDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Eq.mp"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Field.toSemifield"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "HDiv.hDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "LT.lt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "MulChar.hasOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Nat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Nat.instAtLeastTwoHAddOfNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Nat.instNeZeroSucc"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Ne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "OfNat.ofNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "One.toOfNat1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Or.inr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instLT"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instNatCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Semifield.toCommGroupWithZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "ZMod"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "ZMod.commRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Zero.toOfNat0"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "congrArg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "instHDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "instOfNatAtLeastTwo"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "instOfNatNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "riemannZeta"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Complex"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Complex.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Complex.instZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Complex.re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "DivInvMonoid.toDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "HDiv.hDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "LT.lt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Nat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Nat.instAtLeastTwoHAddOfNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Nat.instNeZeroSucc"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Ne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "OfNat.ofNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "One.toOfNat1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Real"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Real.instDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Real.instLT"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Real.instNatCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Real.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "Zero.toOfNat0"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "instHDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "instOfNatAtLeastTwo"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "instOfNatNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "type",
+        "to": "riemannZeta"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddCancelMonoid.toAddRightCancelMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddCommGroup.toAddGroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddCommGroup.toDivisionAddCommMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddCommMonoidWithOne.toAddMonoidWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddGroup.toAddCancelMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddGroup.toSubNegMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddGroup.toSubtractionMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddGroupWithOne.toAddGroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddGroupWithOne.toAddMonoidWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddGroupWithOne.toIntCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddMonoid.toAddSemigroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddMonoid.toAddZeroClass"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddMonoidWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddMonoidWithOne.toAddMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddMonoidWithOne.toNatCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddMonoidWithOne.toOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddRightCancelMonoid.toAddRightCancelSemigroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddRightCancelSemigroup.toIsRightCancelAdd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddSemigroup.toAdd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddZero.toZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "AddZeroClass.toAddZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Bool"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Bool.false"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CStarAlgebra.toNormedRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CharZero.NeZero.two"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CommCStarAlgebra.toCStarAlgebra"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CommRing.toNonAssocCommRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CommRing.toNonUnitalCommRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CommRing.toRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "CommSemiring.toSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.Gamma"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.Gamma_ne_zero_of_re_pos"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.addCommGroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.addGroupWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.commRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.cos"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.cos_eq_zero_iff"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.cpow_ne_zero_iff"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.im"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instAdd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instCharZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instCommSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instField"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instIntCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instMul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instNatCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instNeg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instNormedField"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instPow"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instSub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.instZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.mul_re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.natCast_re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.neg_re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.ofReal"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.ofReal_inj._simp_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.one_re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Complex.sub_re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Decidable.byContradiction"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Distrib.toAdd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Distrib.toMul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivInvMonoid.toDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivInvOneMonoid.toInvOneClass"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivisionMonoid.toDivInvOneMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivisionRing.toDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivisionRing.toRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivisionSemiring.toGroupWithZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "DivisionSemiring.toSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq.mp"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq.mpr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq.ndrec"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq.refl"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq.symm"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Eq.trans"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Exists"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Exists.casesOn"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Exists.intro"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "False"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "False.elim"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Field.toDivisionRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Field.toSemifield"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "FloorRing.toFloorSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "FloorSemiring.instCharZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_right._proof_1_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_right._proof_1_2"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "GroupWithZero.toDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "GroupWithZero.toDivisionMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "HAdd.hAdd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "HDiv.hDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "HMul.hMul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "HPow.hPow"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "HSub.hSub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "HasDistribNeg.toInvolutiveNeg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Iff.mp"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Iff.mpr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast_le._simp_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast_natCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast_negSucc._simp_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast_one"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast_sub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.cast_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.decLe"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.instLEInt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.instLinearOrder"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.instNegInt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.instRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.instSub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.negOfNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.negSucc"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.ofNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.rawCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.toNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Int.toNat_of_nonneg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Inv.inv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "InvOneClass.toInv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "InvolutiveNeg.toNeg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "IsOrderedAddMonoid.toAddLeftMono"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "LE.le"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "LT.lt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "LinearOrder.toPartialOrder"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsInt.of_raw"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsInt.to_isNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsInt.to_isRat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsInt.to_raw_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNNRat.den_nz"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNNRat.of_raw"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNNRat.to_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNNRat.to_isNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNNRat.to_isRat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNNRat.to_raw_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNat.of_raw"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNat.to_isInt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNat.to_isNNRat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsNat.to_raw_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsRat.den_nz"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsRat.of_raw"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsRat.to_isInt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.IsRat.to_raw_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.instAddMonoidWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.instAddMonoidWithOne'"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.instAtLeastTwo"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isInt_add"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isInt_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isInt_neg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNNRat_div"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNNRat_inv_pos"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNNRat_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNat_eq_true"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNat_lt_true"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNat_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isNat_ofNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isRat_div"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isRat_eq_false"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Meta.NormNum.isRat_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.CancelDenoms.derive_trans"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.CancelDenoms.div_subst"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.CancelDenoms.sub_subst"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.add_neg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.lt_irrefl"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.lt_of_lt_of_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.mul_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.mul_neg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.mul_nonpos"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.natCast_nonneg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.sub_neg_of_lt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.sub_nonpos_of_le"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Linarith.zero_lt_one"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.LinearCombination.eq_of_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.LinearCombination.eq_rearrange"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.LinearCombination.mul_const_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_congr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_pf_add_gt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_pf_add_lt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_pf_add_overlap"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_pf_add_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.add_pf_zero_add"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.atom_pf"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.div_congr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.div_pf"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.inv_single"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.mul_add"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.mul_congr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.mul_pf_left"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.mul_pf_right"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.mul_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.neg_add"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.neg_congr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.neg_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.neg_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.sub_congr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.sub_pf"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.Common.zero_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.cast_pos"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.cast_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mathlib.Tactic.Ring.of_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Monoid.toNPow"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "MulZeroClass.mul_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "MulZeroClass.toMul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "MulZeroClass.toZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NNRat.rawCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NPow.toPow"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.cast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.cast_nonneg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.cast_one"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.cast_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.instAtLeastTwoHAddOfNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.instCommSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.instNeZeroSucc"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Nat.rawCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Ne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Ne.eq_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NeZero.charZero_one"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Neg.neg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NegZeroClass.toNeg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NegZeroClass.toZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonAssocCommRing.toNonAssocRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonAssocRing.toAddCommGroupWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonAssocSemiring.toAddCommMonoidWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonUnitalCommRing.toNonUnitalNonAssocCommRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonUnitalNonAssocRing.toHasDistribNeg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NonUnitalNonAssocSemiring.toDistrib"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NormMulClass.toNoZeroDivisors"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NormedDivisionRing.toNormMulClass"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "NormedField.toNormedDivisionRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Not"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "OfNat.ofNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "One.toOfNat1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Or"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Or.casesOn"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Or.inl"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "PartialOrder.toPreorder"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Preorder.toLE"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Preorder.toLT"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Rat.rawCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.commRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instAddCommGroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instAddCommMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instAddGroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instAddMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instCommSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instField"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instFloorRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instIntCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instIsOrderedAddMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instIsOrderedRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instIsStrictOrderedRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instLE"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instLT"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instMul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instNatCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instNeg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instPreorder"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instSub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.instZeroLEOneClass"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.linearOrder"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.partialOrder"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.pi"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.pi_ne_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Real.semiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "RiemannHypothesis._proof_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Ring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Ring.toAddCommGroup"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Ring.toAddGroupWithOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Ring.toSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Semifield.toDivisionSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Semiring.toMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Semiring.toNonAssocSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "SubNegMonoid.toSub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "SubNegZeroMonoid.toNegZeroClass"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "SubtractionCommMonoid.toSubtractionMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "SubtractionMonoid.toSubNegZeroMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "True"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "Zero.toOfNat0"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "absurd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "cast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "congr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "congrArg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "congrFun'"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "eq_false"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "eq_self"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "id"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "inferInstance"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instAddNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instCommCStarAlgebraComplex"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instDistribOfSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instHAdd"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instHDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instHMul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instHPow"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instHSub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instMulZeroClassOfSemiring"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instNatCastInt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instNeZeroNatHAdd_1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instOfNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instOfNatAtLeastTwo"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "instOfNatNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "lt_of_not_ge"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "lt_trichotomy"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "mul_eq_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "mul_ne_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "neg_eq_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "neg_mul"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "neg_neg_of_pos"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "neg_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "of_eq_true"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "propext"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "rfl"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "riemannZeta"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "riemannZeta_one_sub"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "riemannZeta_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "sub_eq_zero_of_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "sub_sub_cancel"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "sub_zero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_right",
+        "from_module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "kind": "value",
+        "to": "two_ne_zero"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Algebra"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "DivisionSemiring.toSemiring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Field"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Field.toCommRing"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Field.toSemifield"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Formalism.ConjugateSelfDual.IsPlaceOver"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "GlobalTheory.LocGL.IrrGL"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "GlobalTheory.WeilDeligne.WD"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "IsAlgClosure"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "IsDedekindDomain.HeightOneSpectrum"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "IsDedekindDomain.HeightOneSpectrum.adicCompletion"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instUniformSpace"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "NumberField"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "NumberField.RingOfIntegers"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "NumberField.RingOfIntegers.instAlgebra_1"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "NumberField.RingOfIntegers.instIsDedekindDomain"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "NumberField.RingOfIntegers.instIsFractionRing"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "NumberField.instCommRingRingOfIntegers"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Semifield.toCommSemiring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "Semifield.toDivisionSemiring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UniformSpace.toTopologicalSpace"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UpperTheory.GalStar.RecNotion._proof_1"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UpperTheory.GalStar.Row0b"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UpperTheory.Zero.LLC.IsRecT"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "ValuationSubring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Algebra"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "DivisionSemiring.toSemiring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Field"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Field.toCommRing"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Field.toSemifield"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Formalism.ConjugateSelfDual.IsPlaceOver"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "GlobalTheory.LocGL.IrrGL"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "GlobalTheory.WeilDeligne.WD"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "IsAlgClosure"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "IsDedekindDomain.HeightOneSpectrum"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "IsDedekindDomain.HeightOneSpectrum.adicCompletion"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instUniformSpace"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "NumberField"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "NumberField.RingOfIntegers"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "NumberField.RingOfIntegers.instAlgebra_1"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "NumberField.RingOfIntegers.instIsDedekindDomain"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "NumberField.RingOfIntegers.instIsFractionRing"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "NumberField.instCommRingRingOfIntegers"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Semifield.toCommSemiring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "Semifield.toDivisionSemiring"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UniformSpace.toTopologicalSpace"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.GalStar.RecNotion._proof_1"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.GalStar.Row0b"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.mk"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.One.vwin_of_row"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.Zero.LLC.IsRecT"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.Zero.LLC.recTExists"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "ValuationSubring"
+      },
+      {
+        "from": "allChi",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "riemannHypothesis",
+        "from_module": "Main",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      }
+    ]
+  },
+  "archive_sha256": "31ed2ace3a3d2a3daff6dc689d7848c15f5d7ce77a71eb68d481b03e72b7cabe",
+  "claim_authority": "NONE",
+  "extractor_sha256": "5791ea7f98c65f2f8cae19b2ab60ec4ab6f729264468d4464cd3bb418c64382a",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "module_inputs": {
+    "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion": {
+      "archive": "alp-oleans-Development-AutomorphicArithmetic.tar.gz",
+      "archive_member": "alp-oleans/lib/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.olean",
+      "sha256": "96f053d27b81461fcf5ca2fe9a234384bc6ead9697de76cee37e13686aa156df"
+    },
+    "Formalism.GammaFactorNonvanishing.CritLine": {
+      "archive": "alp-oleans-Formalism.tar.gz",
+      "archive_member": "alp-oleans/lib/Formalism/GammaFactorNonvanishing/CritLine.olean",
+      "sha256": "10eb57ebfe01dffd2cff3890214eed84dc5e1373da81ddadb6c98eccc40341e7"
+    },
+    "Formalism.GammaFactorNonvanishing.RhOfRight": {
+      "archive": "alp-oleans-Formalism.tar.gz",
+      "archive_member": "alp-oleans/lib/Formalism/GammaFactorNonvanishing/RhOfRight.olean",
+      "sha256": "cf24f82f3f24144070062b19beedf83f0919c4e894c56759597fa76e2e93bc70"
+    },
+    "Main": {
+      "archive_member": "alp-oleans/lib/Main.olean",
+      "sha256": "9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad"
+    },
+    "Supplements.Kernels.MainTheorems": {
+      "archive_member": "alp-oleans/lib/Supplements/Kernels/MainTheorems.olean",
+      "sha256": "ccf715ec0e2be6075cefe8cae3f43de6e18501959fa768970b1e11d81683d02f"
+    }
+  },
+  "records": [
+    {
+      "declaration": "riemannHypothesis",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Statements",
+        "Supplements.Kernels.MainTheoremsAll"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis"
+      ],
+      "value_refs": [
+        "rhOfAll"
+      ]
+    },
+    {
+      "declaration": "rhOfAll",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis"
+      ],
+      "value_refs": [
+        "Formalism.VW.rh_of_every",
+        "allChi"
+      ]
+    },
+    {
+      "declaration": "allChi",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "UpperTheory.FinalTheorems.everyCharacter"
+      ]
+    },
+    {
+      "declaration": "Formalism.VW.rh_of_every",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+        "Formalism.GammaFactorNonvanishing.RhOfRight"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis",
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "CommGroupWithZero.toCommMonoidWithZero",
+        "CommRing.toCommMonoid",
+        "Complex",
+        "Complex.instField",
+        "Complex.instOne",
+        "Complex.instZero",
+        "Complex.re",
+        "DirichletCharacter",
+        "DirichletCharacter.LFunction",
+        "DirichletCharacter.LFunction_modOne_eq",
+        "DivInvMonoid.toDiv",
+        "Eq.mp",
+        "Field.toSemifield",
+        "Formalism.VW.rh_of_right",
+        "HDiv.hDiv",
+        "LT.lt",
+        "MulChar.hasOne",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Or.inr",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instLT",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Semifield.toCommGroupWithZero",
+        "UpperTheory.EveryCharacter",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "congrArg",
+        "instHDiv",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "riemannZeta"
+      ]
+    },
+    {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.EveryCharacterOfLiteratureOfVWin",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+        "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc",
+        "Development.AutomorphicArithmetic.CharacterBoxes.RiemannHypothesisOfEveryCharacter"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      ]
+    },
+    {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.EveryCharacterOfLiteratureOfVWin",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+        "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc",
+        "Development.AutomorphicArithmetic.CharacterBoxes.RiemannHypothesisOfEveryCharacter"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "Algebra",
+        "DivisionSemiring.toSemiring",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Formalism.ConjugateSelfDual.IsPlaceOver",
+        "GlobalTheory.LocGL.IrrGL",
+        "GlobalTheory.WeilDeligne.WD",
+        "IsAlgClosure",
+        "IsDedekindDomain.HeightOneSpectrum",
+        "IsDedekindDomain.HeightOneSpectrum.adicCompletion",
+        "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField",
+        "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instUniformSpace",
+        "NumberField",
+        "NumberField.RingOfIntegers",
+        "NumberField.RingOfIntegers.instAlgebra_1",
+        "NumberField.RingOfIntegers.instIsDedekindDomain",
+        "NumberField.RingOfIntegers.instIsFractionRing",
+        "NumberField.instCommRingRingOfIntegers",
+        "Semifield.toCommSemiring",
+        "Semifield.toDivisionSemiring",
+        "UniformSpace.toTopologicalSpace",
+        "UpperTheory.EveryCharacter",
+        "UpperTheory.GalStar.RecNotion._proof_1",
+        "UpperTheory.GalStar.Row0b",
+        "UpperTheory.Zero.LLC.IsRecT",
+        "ValuationSubring"
+      ],
+      "value_refs": [
+        "Algebra",
+        "DivisionSemiring.toSemiring",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Formalism.ConjugateSelfDual.IsPlaceOver",
+        "GlobalTheory.LocGL.IrrGL",
+        "GlobalTheory.WeilDeligne.WD",
+        "IsAlgClosure",
+        "IsDedekindDomain.HeightOneSpectrum",
+        "IsDedekindDomain.HeightOneSpectrum.adicCompletion",
+        "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField",
+        "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instUniformSpace",
+        "NumberField",
+        "NumberField.RingOfIntegers",
+        "NumberField.RingOfIntegers.instAlgebra_1",
+        "NumberField.RingOfIntegers.instIsDedekindDomain",
+        "NumberField.RingOfIntegers.instIsFractionRing",
+        "NumberField.instCommRingRingOfIntegers",
+        "Semifield.toCommSemiring",
+        "Semifield.toDivisionSemiring",
+        "UniformSpace.toTopologicalSpace",
+        "UpperTheory.GalStar.RecNotion._proof_1",
+        "UpperTheory.GalStar.Row0b",
+        "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.mk",
+        "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+        "UpperTheory.One.vwin_of_row",
+        "UpperTheory.Zero.LLC.IsRecT",
+        "UpperTheory.Zero.LLC.recTExists",
+        "ValuationSubring"
+      ]
+    },
+    {
+      "declaration": "Formalism.VW.rh_of_right",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Mathlib"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "Complex",
+        "Complex.instOne",
+        "Complex.instZero",
+        "Complex.re",
+        "DivInvMonoid.toDiv",
+        "HDiv.hDiv",
+        "LT.lt",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instLT",
+        "Real.instNatCast",
+        "Real.instOne",
+        "RiemannHypothesis",
+        "Zero.toOfNat0",
+        "instHDiv",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "riemannZeta"
+      ],
+      "value_refs": [
+        "AddCancelMonoid.toAddRightCancelMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toAddCancelMonoid",
+        "AddGroup.toSubNegMonoid",
+        "AddGroup.toSubtractionMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toIntCast",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "AddRightCancelMonoid.toAddRightCancelSemigroup",
+        "AddRightCancelSemigroup.toIsRightCancelAdd",
+        "AddSemigroup.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Bool",
+        "Bool.false",
+        "CStarAlgebra.toNormedRing",
+        "CharZero.NeZero.two",
+        "CommCStarAlgebra.toCStarAlgebra",
+        "CommRing.toNonAssocCommRing",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.Gamma",
+        "Complex.Gamma_ne_zero_of_re_pos",
+        "Complex.addCommGroup",
+        "Complex.addGroupWithOne",
+        "Complex.commRing",
+        "Complex.cos",
+        "Complex.cos_eq_zero_iff",
+        "Complex.cpow_ne_zero_iff",
+        "Complex.im",
+        "Complex.instAdd",
+        "Complex.instCharZero",
+        "Complex.instCommSemiring",
+        "Complex.instDivInvMonoid",
+        "Complex.instField",
+        "Complex.instIntCast",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instPow",
+        "Complex.instRing",
+        "Complex.instSemiring",
+        "Complex.instSub",
+        "Complex.instZero",
+        "Complex.mul_re",
+        "Complex.natCast_re",
+        "Complex.neg_re",
+        "Complex.ofReal",
+        "Complex.ofReal_inj._simp_1",
+        "Complex.one_re",
+        "Complex.re",
+        "Complex.sub_re",
+        "Decidable.byContradiction",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toDivInvMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toGroupWithZero",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Exists",
+        "Exists.casesOn",
+        "Exists.intro",
+        "False",
+        "False.elim",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "FloorRing.toFloorSemiring",
+        "FloorSemiring.instCharZero",
+        "Formalism.VW.rh_of_right._proof_1_1",
+        "Formalism.VW.rh_of_right._proof_1_2",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toDivisionMonoid",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDistribNeg.toInvolutiveNeg",
+        "Iff.mp",
+        "Iff.mpr",
+        "Int",
+        "Int.cast",
+        "Int.cast_le._simp_1",
+        "Int.cast_natCast",
+        "Int.cast_negSucc._simp_1",
+        "Int.cast_one",
+        "Int.cast_sub",
+        "Int.cast_zero",
+        "Int.decLe",
+        "Int.instLEInt",
+        "Int.instLinearOrder",
+        "Int.instNegInt",
+        "Int.instRing",
+        "Int.instSub",
+        "Int.mul",
+        "Int.negOfNat",
+        "Int.negSucc",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Int.toNat",
+        "Int.toNat_of_nonneg",
+        "Inv.inv",
+        "InvOneClass.toInv",
+        "InvolutiveNeg.toNeg",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "LE.le",
+        "LT.lt",
+        "LinearOrder.toPartialOrder",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_isRat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNNRat.den_nz",
+        "Mathlib.Meta.NormNum.IsNNRat.of_raw",
+        "Mathlib.Meta.NormNum.IsNNRat.to_eq",
+        "Mathlib.Meta.NormNum.IsNNRat.to_isNat",
+        "Mathlib.Meta.NormNum.IsNNRat.to_isRat",
+        "Mathlib.Meta.NormNum.IsNNRat.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_isNNRat",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsRat.den_nz",
+        "Mathlib.Meta.NormNum.IsRat.of_raw",
+        "Mathlib.Meta.NormNum.IsRat.to_isInt",
+        "Mathlib.Meta.NormNum.IsRat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne'",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNNRat_div",
+        "Mathlib.Meta.NormNum.isNNRat_inv_pos",
+        "Mathlib.Meta.NormNum.isNNRat_mul",
+        "Mathlib.Meta.NormNum.isNat_eq_true",
+        "Mathlib.Meta.NormNum.isNat_lt_true",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Meta.NormNum.isRat_div",
+        "Mathlib.Meta.NormNum.isRat_eq_false",
+        "Mathlib.Meta.NormNum.isRat_mul",
+        "Mathlib.Tactic.CancelDenoms.derive_trans",
+        "Mathlib.Tactic.CancelDenoms.div_subst",
+        "Mathlib.Tactic.CancelDenoms.sub_subst",
+        "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le",
+        "Mathlib.Tactic.Linarith.add_neg",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.lt_of_lt_of_eq",
+        "Mathlib.Tactic.Linarith.mul_eq",
+        "Mathlib.Tactic.Linarith.mul_neg",
+        "Mathlib.Tactic.Linarith.mul_nonpos",
+        "Mathlib.Tactic.Linarith.natCast_nonneg",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+        "Mathlib.Tactic.Linarith.zero_lt_one",
+        "Mathlib.Tactic.LinearCombination.eq_of_eq",
+        "Mathlib.Tactic.LinearCombination.eq_rearrange",
+        "Mathlib.Tactic.LinearCombination.mul_const_eq",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.div_congr",
+        "Mathlib.Tactic.Ring.Common.div_pf",
+        "Mathlib.Tactic.Ring.Common.inv_single",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toNPow",
+        "Mul",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "NNRat.rawCast",
+        "NPow.toPow",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_nonneg",
+        "Nat.cast_one",
+        "Nat.cast_zero",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.mul",
+        "Nat.rawCast",
+        "Ne",
+        "Ne.eq_1",
+        "NeZero.charZero_one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocCommRing.toNonAssocRing",
+        "NonAssocRing.toAddCommGroupWithOne",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedDivisionRing",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Or",
+        "Or.casesOn",
+        "Or.inl",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "Preorder.toLT",
+        "Rat.rawCast",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instFloorRing",
+        "Real.instIntCast",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.instZeroLEOneClass",
+        "Real.linearOrder",
+        "Real.partialOrder",
+        "Real.pi",
+        "Real.pi_ne_zero",
+        "Real.semiring",
+        "RiemannHypothesis",
+        "RiemannHypothesis._proof_1",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "Zero.toOfNat0",
+        "absurd",
+        "cast",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_false",
+        "eq_self",
+        "id",
+        "inferInstance",
+        "instAddNat",
+        "instCommCStarAlgebraComplex",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instNatCastInt",
+        "instNeZeroNatHAdd_1",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "lt_of_not_ge",
+        "lt_trichotomy",
+        "mul_eq_zero",
+        "mul_ne_zero",
+        "neg_eq_zero",
+        "neg_mul",
+        "neg_neg_of_pos",
+        "neg_zero",
+        "of_eq_true",
+        "propext",
+        "rfl",
+        "riemannZeta",
+        "riemannZeta_one_sub",
+        "riemannZeta_zero",
+        "sub_eq_zero_of_eq",
+        "sub_sub_cancel",
+        "sub_zero",
+        "two_ne_zero"
+      ]
+    }
+  ],
+  "schema": "riemann-evidence-rh-module-set-replay-v1"
+}

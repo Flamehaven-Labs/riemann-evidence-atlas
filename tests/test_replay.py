@@ -1,6 +1,8 @@
+from fractions import Fraction
 import hashlib
 import json
 from pathlib import Path
+import re
 import unittest
 
 from window_kernel import run_cases, verify_saved_report
@@ -25,6 +27,29 @@ class ReplayTests(unittest.TestCase):
 
     def test_current_report_replays(self):
         self.assertTrue(verify_saved_report((ROOT / "window-results-v2.json").read_bytes()))
+
+    def test_lean_tail_caps_bind_to_replayed_input_and_endpoints(self):
+        source = (ROOT / "tests/lean/E2ATailCapCertificate.lean").read_text(encoding="utf-8")
+        reports = run_cases()
+        model = {"component": "outside_window", "k": 3, "rate": "3", "a": "1", "b": "3",
+                 "precision_bits": 128}
+        for case, status, cap, lean_cap in (
+            ("landau_tail_valid_cap", "PASS", "1/200", "acceptedCap"),
+            ("landau_tail_violated_cap", "FAIL", "1/300", "rejectedCap"),
+        ):
+            with self.subTest(case=case):
+                report = reports[case]
+                raw = json.dumps({**model, "cap": cap}, sort_keys=True).encode("utf-8")
+                self.assertEqual(report["inputs"]["window"]["sha256"], hashlib.sha256(raw).hexdigest())
+                self.assertEqual(report["status"], status)
+                self.assertEqual(report["details"]["fractional_bits"], model["precision_bits"])
+                for name, expected in (("lower", report["details"]["lower"]),
+                                       ("upper", report["details"]["upper"]),
+                                       (lean_cap, cap)):
+                    literals = re.findall(rf"^def {name} : Rat := (\d+) / ([1-9]\d*)$", source, re.M)
+                    self.assertEqual(len(literals), 1, name)
+                    numerator, denominator = map(int, literals[0])
+                    self.assertEqual(Fraction(numerator, denominator), Fraction(expected), name)
 
     def test_report_with_missing_case_is_rejected(self):
         report = run_cases()

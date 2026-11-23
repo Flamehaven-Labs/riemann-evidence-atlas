@@ -1,0 +1,150 @@
+{
+  "analysis": {
+    "choice_paths": [],
+    "direct_type_refs": [
+      "RiemannHypothesis"
+    ],
+    "direct_value_refs": [
+      "rhOfAll"
+    ],
+    "external_closure": "NOT_RUN",
+    "external_or_unresolved_references": [
+      "Formalism.VW.rh_of_every",
+      "UpperTheory.FinalTheorems.everyCharacter"
+    ],
+    "imports_not_direct_constant_references": [
+      "Init",
+      "Statements",
+      "Supplements.Kernels.MainTheoremsAll"
+    ],
+    "kind": "theorem",
+    "original_proof_kernel_replay": "NOT_RUN",
+    "reached_declarations": {
+      "allChi": "Supplements.Kernels.MainTheorems",
+      "rhOfAll": "Supplements.Kernels.MainTheorems",
+      "riemannHypothesis": "Main"
+    },
+    "resolved_edges": [
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "allChi",
+        "to_module": "Supplements.Kernels.MainTheorems"
+      },
+      {
+        "from": "riemannHypothesis",
+        "from_module": "Main",
+        "kind": "value",
+        "to": "rhOfAll",
+        "to_module": "Supplements.Kernels.MainTheorems"
+      }
+    ],
+    "root": "riemannHypothesis",
+    "schema": "riemann-evidence-module-set-value-paths-v1",
+    "scope": "SUPPLIED_MODULE_DECLARATION_RECORDS",
+    "unresolved_edges": [
+      {
+        "from": "allChi",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "allChi",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "UpperTheory.FinalTheorems.everyCharacter"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_every"
+      },
+      {
+        "from": "riemannHypothesis",
+        "from_module": "Main",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      }
+    ]
+  },
+  "archive_sha256": "31ed2ace3a3d2a3daff6dc689d7848c15f5d7ce77a71eb68d481b03e72b7cabe",
+  "claim_authority": "NONE",
+  "extractor_sha256": "5791ea7f98c65f2f8cae19b2ab60ec4ab6f729264468d4464cd3bb418c64382a",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "module_inputs": {
+    "Main": {
+      "archive_member": "alp-oleans/lib/Main.olean",
+      "sha256": "9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad"
+    },
+    "Supplements.Kernels.MainTheorems": {
+      "archive_member": "alp-oleans/lib/Supplements/Kernels/MainTheorems.olean",
+      "sha256": "ccf715ec0e2be6075cefe8cae3f43de6e18501959fa768970b1e11d81683d02f"
+    }
+  },
+  "records": [
+    {
+      "declaration": "riemannHypothesis",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Statements",
+        "Supplements.Kernels.MainTheoremsAll"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis"
+      ],
+      "value_refs": [
+        "rhOfAll"
+      ]
+    },
+    {
+      "declaration": "rhOfAll",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis"
+      ],
+      "value_refs": [
+        "Formalism.VW.rh_of_every",
+        "allChi"
+      ]
+    },
+    {
+      "declaration": "allChi",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "UpperTheory.FinalTheorems.everyCharacter"
+      ]
+    }
+  ],
+  "schema": "riemann-evidence-rh-module-set-replay-v1"
+}

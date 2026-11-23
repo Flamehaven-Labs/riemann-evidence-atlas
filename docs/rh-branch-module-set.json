@@ -1,0 +1,544 @@
+{
+  "analysis": {
+    "choice_paths": [],
+    "direct_type_refs": [
+      "RiemannHypothesis"
+    ],
+    "direct_value_refs": [
+      "rhOfAll"
+    ],
+    "external_closure": "NOT_RUN",
+    "external_or_unresolved_references": [
+      "CommGroupWithZero.toCommMonoidWithZero",
+      "CommRing.toCommMonoid",
+      "Complex",
+      "Complex.instField",
+      "Complex.instOne",
+      "Complex.instZero",
+      "Complex.re",
+      "DirichletCharacter",
+      "DirichletCharacter.LFunction",
+      "DirichletCharacter.LFunction_modOne_eq",
+      "DivInvMonoid.toDiv",
+      "Eq.mp",
+      "Field.toSemifield",
+      "Formalism.VW.rh_of_right",
+      "HDiv.hDiv",
+      "LT.lt",
+      "MulChar.hasOne",
+      "Nat",
+      "Nat.instAtLeastTwoHAddOfNat",
+      "Nat.instNeZeroSucc",
+      "Ne",
+      "OfNat.ofNat",
+      "One.toOfNat1",
+      "Or.inr",
+      "Real",
+      "Real.instDivInvMonoid",
+      "Real.instLT",
+      "Real.instNatCast",
+      "Real.instOne",
+      "Semifield.toCommGroupWithZero",
+      "UpperTheory.EveryCharacter",
+      "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+      "ZMod",
+      "ZMod.commRing",
+      "Zero.toOfNat0",
+      "congrArg",
+      "instHDiv",
+      "instOfNatAtLeastTwo",
+      "instOfNatNat",
+      "riemannZeta"
+    ],
+    "imports_not_direct_constant_references": [
+      "Init",
+      "Statements",
+      "Supplements.Kernels.MainTheoremsAll"
+    ],
+    "kind": "theorem",
+    "original_proof_kernel_replay": "NOT_RUN",
+    "reached_declarations": {
+      "Formalism.VW.rh_of_every": "Formalism.GammaFactorNonvanishing.CritLine",
+      "UpperTheory.FinalTheorems.everyCharacter": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+      "allChi": "Supplements.Kernels.MainTheorems",
+      "rhOfAll": "Supplements.Kernels.MainTheorems",
+      "riemannHypothesis": "Main"
+    },
+    "resolved_edges": [
+      {
+        "from": "allChi",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "UpperTheory.FinalTheorems.everyCharacter",
+        "to_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_every",
+        "to_module": "Formalism.GammaFactorNonvanishing.CritLine"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "value",
+        "to": "allChi",
+        "to_module": "Supplements.Kernels.MainTheorems"
+      },
+      {
+        "from": "riemannHypothesis",
+        "from_module": "Main",
+        "kind": "value",
+        "to": "rhOfAll",
+        "to_module": "Supplements.Kernels.MainTheorems"
+      }
+    ],
+    "root": "riemannHypothesis",
+    "schema": "riemann-evidence-module-set-value-paths-v1",
+    "scope": "SUPPLIED_MODULE_DECLARATION_RECORDS",
+    "unresolved_edges": [
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "CommGroupWithZero.toCommMonoidWithZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "CommRing.toCommMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.instField"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.instZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Complex.re"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DirichletCharacter"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DirichletCharacter.LFunction"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DirichletCharacter.LFunction_modOne_eq"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "DivInvMonoid.toDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Eq.mp"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Field.toSemifield"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Formalism.VW.rh_of_right"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "HDiv.hDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "LT.lt"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "MulChar.hasOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Nat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Nat.instAtLeastTwoHAddOfNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Nat.instNeZeroSucc"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Ne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "OfNat.ofNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "One.toOfNat1"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Or.inr"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instDivInvMonoid"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instLT"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instNatCast"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Real.instOne"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Semifield.toCommGroupWithZero"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "ZMod"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "ZMod.commRing"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "Zero.toOfNat0"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "congrArg"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "instHDiv"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "instOfNatAtLeastTwo"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "instOfNatNat"
+      },
+      {
+        "from": "Formalism.VW.rh_of_every",
+        "from_module": "Formalism.GammaFactorNonvanishing.CritLine",
+        "kind": "value",
+        "to": "riemannZeta"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      },
+      {
+        "from": "UpperTheory.FinalTheorems.everyCharacter",
+        "from_module": "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+        "kind": "value",
+        "to": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      },
+      {
+        "from": "allChi",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "type",
+        "to": "UpperTheory.EveryCharacter"
+      },
+      {
+        "from": "rhOfAll",
+        "from_module": "Supplements.Kernels.MainTheorems",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      },
+      {
+        "from": "riemannHypothesis",
+        "from_module": "Main",
+        "kind": "type",
+        "to": "RiemannHypothesis"
+      }
+    ]
+  },
+  "archive_sha256": "31ed2ace3a3d2a3daff6dc689d7848c15f5d7ce77a71eb68d481b03e72b7cabe",
+  "claim_authority": "NONE",
+  "extractor_sha256": "5791ea7f98c65f2f8cae19b2ab60ec4ab6f729264468d4464cd3bb418c64382a",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "module_inputs": {
+    "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion": {
+      "archive": "alp-oleans-Development-AutomorphicArithmetic.tar.gz",
+      "archive_member": "alp-oleans/lib/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.olean",
+      "sha256": "96f053d27b81461fcf5ca2fe9a234384bc6ead9697de76cee37e13686aa156df"
+    },
+    "Formalism.GammaFactorNonvanishing.CritLine": {
+      "archive": "alp-oleans-Formalism.tar.gz",
+      "archive_member": "alp-oleans/lib/Formalism/GammaFactorNonvanishing/CritLine.olean",
+      "sha256": "10eb57ebfe01dffd2cff3890214eed84dc5e1373da81ddadb6c98eccc40341e7"
+    },
+    "Main": {
+      "archive_member": "alp-oleans/lib/Main.olean",
+      "sha256": "9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad"
+    },
+    "Supplements.Kernels.MainTheorems": {
+      "archive_member": "alp-oleans/lib/Supplements/Kernels/MainTheorems.olean",
+      "sha256": "ccf715ec0e2be6075cefe8cae3f43de6e18501959fa768970b1e11d81683d02f"
+    }
+  },
+  "records": [
+    {
+      "declaration": "riemannHypothesis",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Statements",
+        "Supplements.Kernels.MainTheoremsAll"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis"
+      ],
+      "value_refs": [
+        "rhOfAll"
+      ]
+    },
+    {
+      "declaration": "rhOfAll",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis"
+      ],
+      "value_refs": [
+        "Formalism.VW.rh_of_every",
+        "allChi"
+      ]
+    },
+    {
+      "declaration": "allChi",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "UpperTheory.FinalTheorems.everyCharacter"
+      ]
+    },
+    {
+      "declaration": "Formalism.VW.rh_of_every",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+        "Formalism.GammaFactorNonvanishing.RhOfRight"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "RiemannHypothesis",
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "CommGroupWithZero.toCommMonoidWithZero",
+        "CommRing.toCommMonoid",
+        "Complex",
+        "Complex.instField",
+        "Complex.instOne",
+        "Complex.instZero",
+        "Complex.re",
+        "DirichletCharacter",
+        "DirichletCharacter.LFunction",
+        "DirichletCharacter.LFunction_modOne_eq",
+        "DivInvMonoid.toDiv",
+        "Eq.mp",
+        "Field.toSemifield",
+        "Formalism.VW.rh_of_right",
+        "HDiv.hDiv",
+        "LT.lt",
+        "MulChar.hasOne",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Or.inr",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instLT",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Semifield.toCommGroupWithZero",
+        "UpperTheory.EveryCharacter",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "congrArg",
+        "instHDiv",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "riemannZeta"
+      ]
+    },
+    {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter",
+      "kind": "theorem",
+      "module_imports": [
+        "Init",
+        "Init",
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.EveryCharacterOfLiteratureOfVWin",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+        "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc",
+        "Development.AutomorphicArithmetic.CharacterBoxes.RiemannHypothesisOfEveryCharacter"
+      ],
+      "schema": "riemann-evidence-direct-proof-refs-v1",
+      "type_refs": [
+        "UpperTheory.EveryCharacter"
+      ],
+      "value_refs": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      ]
+    }
+  ],
+  "schema": "riemann-evidence-rh-module-set-replay-v1"
+}

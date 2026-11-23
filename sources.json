@@ -62,5 +62,12 @@
     "url": "https://math.mit.edu/~drew/grh/audit.log",
     "bytes": 2062,
     "sha256": "0a1473fce6eed840011f4a76b1c51558fc6f03edd1e6bd1ee542e6c738d87a62"
+  },
+  {
+    "file": "sources/masullo-2026-11-20/The_Music_of_the_Primes_Masullo_2026-11-20.pdf",
+    "url": "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf",
+    "bytes": 6756996,
+    "sha256": "e039d3f6cf0a4b14f03c7edb85097752dd65c0a2fe543c76fe992be234f97bf5",
+    "pages": 940
   }
 ]

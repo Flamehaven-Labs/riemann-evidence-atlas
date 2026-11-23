@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "L_p": "4/3",
+      "exact_tail": "1/196608",
+      "finite_prime_power_weight": "21845/65536",
+      "identity_holds": true,
+      "negative_log_derivative_over_log_p": "1/3",
+      "p": 2,
+      "s": 2,
+      "terms": 8
+    },
+    {
+      "L_p": "8/7",
+      "exact_tail": "1/117440512",
+      "finite_prime_power_weight": "2396745/16777216",
+      "identity_holds": true,
+      "negative_log_derivative_over_log_p": "1/7",
+      "p": 2,
+      "s": 3,
+      "terms": 8
+    },
+    {
+      "L_p": "16/15",
+      "exact_tail": "1/64424509440",
+      "finite_prime_power_weight": "286331153/4294967296",
+      "identity_holds": true,
+      "negative_log_derivative_over_log_p": "1/15",
+      "p": 2,
+      "s": 4,
+      "terms": 8
+    }
+  ],
+  "claim_authority": "NONE",
+  "claim_scope": "EXACT_RATIONAL_EULER_FACTOR_IDENTITY_ONLY",
+  "inputs": {
+    "m": 8,
+    "p": 2,
+    "s": [
+      2,
+      3,
+      4
+    ]
+  },
+  "numeric_relevance_to_masullo_objection": "NOT_ESTABLISHED",
+  "proof_of_either_rh_or_grh": "NO",
+  "schema": "e2a-prime-two-exact-local-surface-v1"
+}

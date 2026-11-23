@@ -1,0 +1,4708 @@
+{
+  "catalog_sha256": "82c88d25d909a1399c754b87ce298e1939ab0908aeb4766fdac8a57387c71dc5",
+  "claim_authority": "NONE",
+  "distinct_original_value_references": 378,
+  "evidence_counts": {
+    "LEAN_TOOLCHAIN_ENVIRONMENT": 76,
+    "PINNED_RH_OLEAN": 2,
+    "PUBLISHED_GRAPH_CATALOG": 10,
+    "UNCONFIRMED": 290
+  },
+  "extractor_sha256": "83c746d63e5d912963ea932b18535fd9f288f1c00614a2748dfe05046e38a2f8",
+  "frontier": [
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddCancelMonoid.toAddRightCancelMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddCommGroup.toAddGroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddCommGroup.toDivisionAddCommMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddCommMonoidWithOne.toAddMonoidWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddGroup.toAddCancelMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddGroup.toSubNegMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddGroup.toSubtractionMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddGroupWithOne.toAddGroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddGroupWithOne.toAddMonoidWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddGroupWithOne.toIntCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddMonoid.toAddSemigroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddMonoid.toAddZeroClass",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddMonoidWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddMonoidWithOne.toAddMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddMonoidWithOne.toNatCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddMonoidWithOne.toOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddRightCancelMonoid.toAddRightCancelSemigroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddRightCancelSemigroup.toIsRightCancelAdd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddSemigroup.toAdd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddZero.toZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "AddZeroClass.toAddZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Algebra",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "Bool",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Prelude",
+      "name": "Bool.false",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CStarAlgebra.toNormedRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CharZero.NeZero.two",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommCStarAlgebra.toCStarAlgebra",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommGroupWithZero.toCommMonoidWithZero",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommRing.toCommMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommRing.toNonAssocCommRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommRing.toNonUnitalCommRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommRing.toRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "CommSemiring.toSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.Gamma",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.Gamma_ne_zero_of_re_pos",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.addCommGroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.addGroupWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.commRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.cos",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.cos_eq_zero_iff",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.cpow_ne_zero_iff",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.im",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instAdd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instCharZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instCommSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instDivInvMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instField",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instIntCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instMul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instNatCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instNeg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instNormedField",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instOne",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instPow",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instSub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.instZero",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.mul_re",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.natCast_re",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.neg_re",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.ofReal",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.ofReal_inj._simp_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.one_re",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.re",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Complex.sub_re",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Core",
+      "name": "Decidable.byContradiction",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DirichletCharacter",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DirichletCharacter.LFunction",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DirichletCharacter.LFunction_modOne_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Distrib.toAdd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Distrib.toMul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivInvMonoid.toDiv",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivInvOneMonoid.toInvOneClass",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivisionMonoid.toDivInvOneMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivisionRing.toDivInvMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivisionRing.toRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivisionSemiring.toGroupWithZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "DivisionSemiring.toSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right",
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "Eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Core",
+      "name": "Eq.mp",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Core",
+      "name": "Eq.mpr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "Eq.ndrec",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Prelude",
+      "name": "Eq.refl",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Prelude",
+      "name": "Eq.symm",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Prelude",
+      "name": "Eq.trans",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Core",
+      "name": "Exists",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Core",
+      "name": "Exists.casesOn",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Core",
+      "name": "Exists.intro",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "False",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "False.elim",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Field",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Field.toCommRing",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Field.toDivisionRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Field.toSemifield",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right",
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "FloorRing.toFloorSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "FloorSemiring.instCharZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "def",
+      "module": "Formalism.ConjugateSelfDual.Statement",
+      "name": "Formalism.ConjugateSelfDual.IsPlaceOver",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "PINNED_RH_OLEAN",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+      "name": "Formalism.VW.rh_of_right._proof_1_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": [
+        "Bool",
+        "Bool.true",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Int",
+        "Int.add_one_le_of_lt",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instLinearOrder",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.sub_nonneg_of_le",
+        "LE.le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.combine_sat'",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.lt_of_not_le",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.tidy_sat",
+        "LinearOrder.toPartialOrder",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Neg.neg",
+        "Not",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "id",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHSub",
+        "instOfNat",
+        "instOfNatNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ]
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "PINNED_RH_OLEAN",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+      "name": "Formalism.VW.rh_of_right._proof_1_2",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": [
+        "Bool",
+        "Bool.true",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Int",
+        "Int.add_one_le_of_lt",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instLinearOrder",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.sub_nonneg_of_le",
+        "LE.le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.combine_sat'",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.lt_of_not_le",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.tidy_sat",
+        "LinearOrder.toPartialOrder",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Neg.neg",
+        "Not",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "id",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHSub",
+        "instOfNat",
+        "instOfNatNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ]
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "abbrev",
+      "module": "Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne",
+      "name": "GlobalTheory.LocGL.IrrGL",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "def",
+      "module": "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MonodromyZeroOfWeilDeligneRepClassIff",
+      "name": "GlobalTheory.WeilDeligne.WD",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "GroupWithZero.toDivInvMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "GroupWithZero.toDivisionMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "HAdd.hAdd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "HDiv.hDiv",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "HMul.hMul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "HPow.hPow",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "HSub.hSub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "HasDistribNeg.toInvolutiveNeg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Core",
+      "name": "Iff.mp",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Core",
+      "name": "Iff.mpr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.cast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.cast_le._simp_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.cast_natCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.cast_negSucc._simp_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.cast_one",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.cast_sub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.cast_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.decLe",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.instLEInt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.instLinearOrder",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.instNegInt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.instRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.instSub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.negOfNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.negSucc",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.ofNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Int.rawCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "Int.toNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Data.Int.Order",
+      "name": "Int.toNat_of_nonneg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "Inv.inv",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "InvOneClass.toInv",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "InvolutiveNeg.toNeg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "IsAlgClosure",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "IsDedekindDomain.HeightOneSpectrum",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "IsDedekindDomain.HeightOneSpectrum.adicCompletion",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instUniformSpace",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "IsOrderedAddMonoid.toAddLeftMono",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "LE.le",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "LT.lt",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "LinearOrder.toPartialOrder",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsInt.of_raw",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsInt.to_isNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsInt.to_isRat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNNRat.den_nz",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNNRat.of_raw",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNNRat.to_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNNRat.to_isNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNNRat.to_isRat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNNRat.to_raw_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNat.of_raw",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNat.to_isInt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNat.to_isNNRat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsRat.den_nz",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsRat.of_raw",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsRat.to_isInt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.IsRat.to_raw_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.instAddMonoidWithOne'",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.instAtLeastTwo",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isInt_add",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isInt_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isInt_neg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNNRat_div",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNNRat_inv_pos",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNNRat_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNat_eq_true",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNat_lt_true",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNat_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isNat_ofNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isRat_div",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isRat_eq_false",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Meta.NormNum.isRat_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.CancelDenoms.derive_trans",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.CancelDenoms.div_subst",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.CancelDenoms.sub_subst",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.add_neg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.lt_irrefl",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.lt_of_lt_of_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.mul_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.mul_neg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.mul_nonpos",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.natCast_nonneg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Linarith.zero_lt_one",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.LinearCombination.eq_of_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.LinearCombination.eq_rearrange",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.LinearCombination.mul_const_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_congr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.atom_pf",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.div_congr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.div_pf",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.inv_single",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.mul_add",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.mul_congr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.mul_pf_left",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.mul_pf_right",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.mul_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.neg_add",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.neg_congr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.neg_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.neg_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.sub_congr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.sub_pf",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.Common.zero_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.cast_pos",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.cast_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Mathlib.Tactic.Ring.of_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Monoid.toNPow",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "Mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "MulChar.hasOne",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "MulZeroClass.mul_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "MulZeroClass.toMul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "MulZeroClass.toZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NNRat.rawCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NPow.toPow",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "Nat",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Cast",
+      "name": "Nat.cast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Nat.cast_nonneg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Nat.cast_one",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Nat.cast_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Nat.instAtLeastTwoHAddOfNat",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Nat.instCommSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Data.Nat.Basic",
+      "name": "Nat.instNeZeroSucc",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "Nat.mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Nat.rawCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Core",
+      "name": "Ne",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Data.Int.Lemmas",
+      "name": "Ne.eq_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NeZero.charZero_one",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "Neg.neg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NegZeroClass.toNeg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NegZeroClass.toZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonAssocCommRing.toNonAssocRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonAssocRing.toAddCommGroupWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonAssocSemiring.toAddCommMonoidWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonUnitalNonAssocRing.toHasDistribNeg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NonUnitalNonAssocSemiring.toDistrib",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NormMulClass.toNoZeroDivisors",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NormedDivisionRing.toNormMulClass",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NormedField.toNormedDivisionRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "Not",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NumberField",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NumberField.RingOfIntegers",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NumberField.RingOfIntegers.instAlgebra_1",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NumberField.RingOfIntegers.instIsDedekindDomain",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NumberField.RingOfIntegers.instIsFractionRing",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "NumberField.instCommRingRingOfIntegers",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "OfNat.ofNat",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Zero",
+      "name": "One.toOfNat1",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "Or",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "Or.casesOn",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Prelude",
+      "name": "Or.inl",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "constructor",
+      "module": "Init.Prelude",
+      "name": "Or.inr",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "PartialOrder.toPreorder",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Preorder.toLE",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Preorder.toLT",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Rat.rawCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.commRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instAddCommGroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instAddCommMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instAddGroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instAddMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instCommSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instDivInvMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instField",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instFloorRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instIntCast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instIsOrderedAddMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instIsOrderedRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instIsStrictOrderedRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instLE",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instLT",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instMul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instNatCast",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instNeg",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instOne",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instPreorder",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instRing",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instSub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instZero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.instZeroLEOneClass",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.linearOrder",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.partialOrder",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.pi",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.pi_ne_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Real.semiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "RiemannHypothesis",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "RiemannHypothesis._proof_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Ring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Ring.toAddCommGroup",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Ring.toAddGroupWithOne",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Ring.toSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Semifield.toCommGroupWithZero",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Semifield.toCommSemiring",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Semifield.toDivisionSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right",
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Semiring.toMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "Semiring.toNonAssocSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "SubNegMonoid.toSub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "SubNegZeroMonoid.toNegZeroClass",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "SubtractionCommMonoid.toSubtractionMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "SubtractionMonoid.toSubNegZeroMonoid",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "inductive",
+      "module": "Init.Prelude",
+      "name": "True",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "UniformSpace.toTopologicalSpace",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "def",
+      "module": "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+      "name": "UpperTheory.EveryCharacter",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "theorem",
+      "module": "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc",
+      "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "UpperTheory.GalStar.RecNotion._proof_1",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "def",
+      "module": "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.WeightsConjBis",
+      "name": "UpperTheory.GalStar.Row0b",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.mk",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "theorem",
+      "module": "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.EveryCharacterOfLiteratureOfVWin",
+      "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "theorem",
+      "module": "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+      "name": "UpperTheory.One.vwin_of_row",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "def",
+      "module": "Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec",
+      "name": "UpperTheory.Zero.LLC.IsRecT",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "PUBLISHED_GRAPH_CATALOG",
+      "has_value": null,
+      "kind": "theorem",
+      "module": "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+      "name": "UpperTheory.Zero.LLC.recTExists",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "ValuationSubring",
+      "referrers": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "ZMod",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "ZMod.commRing",
+      "referrers": [
+        "Formalism.VW.rh_of_every"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Zero",
+      "name": "Zero.toOfNat0",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "absurd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "cast",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Prelude",
+      "name": "congr",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Prelude",
+      "name": "congrArg",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Prelude",
+      "name": "congrFun'",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.SimpLemmas",
+      "name": "eq_false",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.SimpLemmas",
+      "name": "eq_self",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "id",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "inferInstance",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instAddNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "instCommCStarAlgebraComplex",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "instDistribOfSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instHAdd",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instHDiv",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instHMul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instHPow",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instHSub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "instMulZeroClassOfSemiring",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "instNatCastInt",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.Data.NeZero",
+      "name": "instNeZeroNatHAdd_1",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Data.Int.Basic",
+      "name": "instOfNat",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "instOfNatAtLeastTwo",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "instOfNatNat",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "lt_of_not_ge",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "lt_trichotomy",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "mul_eq_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "mul_ne_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "neg_eq_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "neg_mul",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "neg_neg_of_pos",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "neg_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "theorem",
+      "module": "Init.SimpLemmas",
+      "name": "of_eq_true",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "AXIOM_DECLARATION",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": false,
+      "kind": "axiom",
+      "module": "Init.Core",
+      "name": "propext",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "OTHER_DECLARATION_KIND",
+      "evidence": "LEAN_TOOLCHAIN_ENVIRONMENT",
+      "has_value": true,
+      "kind": "definition",
+      "module": "Init.Prelude",
+      "name": "rfl",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "riemannZeta",
+      "referrers": [
+        "Formalism.VW.rh_of_every",
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "riemannZeta_one_sub",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "riemannZeta_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "sub_eq_zero_of_eq",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "sub_sub_cancel",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "sub_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    },
+    {
+      "axiom_status": "UNCONFIRMED",
+      "evidence": "UNCONFIRMED",
+      "has_value": null,
+      "kind": null,
+      "module": null,
+      "name": "two_ne_zero",
+      "referrers": [
+        "Formalism.VW.rh_of_right"
+      ],
+      "value_refs": null
+    }
+  ],
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "opened_pinned_rh_values": [
+    "Formalism.VW.rh_of_right._proof_1_1",
+    "Formalism.VW.rh_of_right._proof_1_2"
+  ],
+  "original_proof_kernel_replay": "NOT_RUN",
+  "schema": "riemann-evidence-value-frontier-v1",
+  "seed_receipt_sha256": "de121ac9ac426cc666410147abe107ab41e2d06effc01e4e2c480e88a1a1e582",
+  "toolchain_imports": [
+    "Init"
+  ],
+  "transitive_closure": "NOT_RUN"
+}
