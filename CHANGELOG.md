@@ -11,6 +11,9 @@
 - Certify the fixed Landau tail integral in Lean 4.33.1 with pinned Mathlib. Prove the existing 128-bit enclosure and both cap decisions for the real integral.
 - Resolve four direct RH helper references against the pinned Mathlib modules. The original `VwinOfRow` artifact and the cross-paper trace correspondence remain open.
 
+- Bind the four newer Lean receipts to tracked files in the portable checks. Add separate Linux Lean replay with pinned Mathlib and an artifact for the observed reports.
+- Compare real Landau proof evidence across hosts and report unavailable inputs, failed checks, and receipt drift separately.
+
 ## v0.2.0-rc.1 — 2026-11-23
 
 - Adopt **Riemann Evidence Atlas** as the repository title and pin Lean 4.33.1.

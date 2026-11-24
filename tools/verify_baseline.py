@@ -21,6 +21,10 @@ RECEIPTS = {
     "docs/rh-branch-module-set.json": "f213bd94da41795a8bf8dff610312679cdb32347e08ab8420f4bddb39f7bf90c",
     NEXT_LAYER: "de121ac9ac426cc666410147abe107ab41e2d06effc01e4e2c480e88a1a1e582",
     FRONTIER: "1d38bce4b88b68c1979ac9889a25873de321070523ac7306b2583b1bce0b5e99",
+    "docs/rh-lean-fixture-match-v2.json": "37836dfbcc2f05713a92ecece1f23bda0999e456066050b87126d707f5456c5f",
+    "docs/rh-lean-helper-match-v2.json": "c6815fdd1dc48e288fb1c080a10c092c0729d91e1c2c89e7a19b03a280cb7010",
+    "docs/rh-mathlib-frontier-match.json": "8b6562f60fccf71810a91abdecf9566b4c7b3e16b17b47b069b52c7732a5ddd4",
+    "docs/landau-tail-lean-replay.json": "a4bbb8951ec28fec7044e982c1df48f88e457edffe3bb865fe46b61b8590c828",
 }
 
 

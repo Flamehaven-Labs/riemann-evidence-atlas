@@ -6,7 +6,7 @@ $$J=\int_{(0,\infty)\setminus[1,3]}
  \frac{u^3e^{-3u}}{3!}\,du
  =\frac{1-13e^{-3}+172e^{-9}}{81}.$$
 
-**로컬 실행 PASS.** 유리수 끝점 모듈의 감사 선언 2개, 유리수 급수 모듈 8개, 실수 모듈 5개를 컴파일했다. 공리 출력은 `propext`, `Classical.choice`, `Quot.sound` 범위이며 `sorryAx`는 검출되지 않았다. Python 3.10·3.14에서 각각 43개의 회귀 테스트를 통과했다. [실행 기록과 해시](landau-tail-lean-replay.json)
+**로컬 실행 PASS.** 유리수 끝점 모듈의 감사 선언 2개, 유리수 급수 모듈 8개, 실수 모듈 5개를 컴파일했다. 공리 출력은 `propext`, `Classical.choice`, `Quot.sound` 범위이며 `sorryAx`는 검출되지 않았다. 당시 Python 3.10·3.14에서 각각 43개의 회귀 테스트를 통과했다. [실행 기록과 해시](landau-tail-lean-replay.json)
 
 ## 증명 구성
 
@@ -31,13 +31,24 @@ lake exe cache get Mathlib.Analysis.Complex.Exponential \
   Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Tactic.Linarith
 ~~~
 
+Windows에서 실행 파일만 보존한 Lean 환경은 Mathlib 캐시 도구를 빌드하는 데 필요한 헤더가 빠질 수 있다. 새 환경에는 전체 Lean 4.33.1 배포본을 사용한다. [배포본과 SHA-256 기록](PROOF_DEPENDENCY_PILOT_ko.md)
+
 저장소 루트로 돌아와 실행한다.
 
 ~~~sh
-python -E -S tools/verify_landau_tail.py --lean "$LEAN_BIN" --mathlib-project formal/landau
+python -E -S tools/verify_landau_tail.py --lean "$LEAN_BIN" \
+  --mathlib-project formal/landau --expect docs/landau-tail-lean-replay.json
 ~~~
 
-실행기는 Lean 커밋과 각 Lake 의존성의 커밋·추적 파일 상태를 확인한다. 임시 폴더에서 세 모듈을 차례대로 컴파일하고 소스 해시와 명명된 정리의 공리 출력을 기록한다. Mathlib 실수 검사의 학술적 범위는 이 고정 적분이다. 보존된 RH 전체 증명 커널 검사와 Colab 재현은 별도 실행이다.
+실행기는 Lean 커밋, Lake 잠금 내용과 각 의존성의 커밋·추적 파일을 확인한다. 이미 고정 캐시가 준비된 로컬에서는 `--mathlib-project`에 그 Lake 프로젝트 경로를 지정해 재사용할 수 있다. Windows의 [검수 실행기](../tools/audit_p3_landau_tail_real_local.ps1)는 기본 프로젝트를 먼저 확인하고 보존 캐시가 있으면 이를 사용할 수 있다. 임시 폴더에서 세 모듈을 차례대로 컴파일하고 소스 해시와 명명된 정리의 공리 출력을 기록한다. Mathlib 실수 검사의 학술적 범위는 이 고정 적분이다. 보존된 RH 전체 증명 커널 검사와 Colab 재현은 별도 실행이다.
+
+`--expect`는 두 호스트 모두 지정된 Lean 커밋을 사용했는지 확인하고, 플랫폼을 포함한 Lean 버전 배너 외의 모든 필드를 비교한다. 종료 코드 1은 검사 실패, 2는 환경 결측 또는 컴파일된 의존성 읽기 실패, 3은 실행 결과와 기준 영수증의 불일치, 4는 실행 시간 초과다. 11월 23일 검수에서 `formal/landau/.lake`가 비어 있어 발생한 차단은 [당시 기록](P0_P3_INDEPENDENT_AUDIT_2026-11-23_ko.md)에 보존한다.
+
+### 2026-11-24 로컬 재실행
+
+전체 Lean 4.33.1 배포본을 다시 풀고 새 Lake 프로젝트에 고정 Mathlib 소스와 캐시를 준비했다. 캐시 2,725개와 변경 없는 Lake 잠금을 확인했다. 실수 정리 5개를 다시 컴파일한 영수증은 기준 바이트와 일치했다. SHA-256은 `a4bbb8951ec28fec7044e982c1df48f88e457edffe3bb865fe46b61b8590c828`다. 의존성 결측, 변경된 잠금 입력, 실수 증명이 빠진 영수증도 각각 종료 코드 2, 1, 3으로 구분했다.
+
+이 실행은 같은 운영 환경에서 캐시를 복원해 수행한 로컬 재현이다. 별도 운영자 재실행과 원격 Linux CI는 미실행이다. [기준 영수증](landau-tail-lean-replay.json)
 
 ## P3.2 원문 간 연결
 

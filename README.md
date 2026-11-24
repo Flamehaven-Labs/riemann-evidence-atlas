@@ -1,6 +1,6 @@
 # Riemann Evidence Atlas
 
-리만 가설 Lean 선언의 의존성, 논문의 원문과 계산 가능한 보조항을 추적하는 독립 연구 저장소입니다. 저장소 이름은 `riemann-evidence-atlas`이며, Python 모듈은 `riemann_evidence`입니다. 현재 로컬 릴리스 후보는 `v0.2.0-rc.1`입니다.
+리만 가설 Lean 선언의 의존성, 논문의 원문과 계산 가능한 보조항을 추적하는 독립 연구 저장소입니다. 저장소 이름은 `riemann-evidence-atlas`이며, Python 모듈은 `riemann_evidence`입니다. 로컬 기준 태그는 `v0.2.0-rc.1`이며, `v0.2.0` 공개 검증을 준비 중입니다.
 
 ## 빠른 실행
 
@@ -37,9 +37,11 @@ python window_kernel.py --window case.json
 - 입력은 무차원이며 $0\le k\le64$, $0\le a<b$, $s>0$, $sb\le16$을 지원합니다.
 - 관측량은 입력 바이트 SHA-256, 적분의 정확한 유리수 구간, 판정에 사용된 정밀도입니다. 128, 256, 512 fractional bits 중 지정된 예산을 사용합니다.
 - 예시 꼬리 적분은 약 $0.00461721725334$입니다. $1/200$은 상한으로 채택되고, $1/300$은 기각됩니다.
-- 최상위 Lean 선언 등의 소스 참조 13개와 Landau 부등식 모듈까지의 import 경로를 기록했습니다. 원본 Lean 4.33.1의 5개 모듈에서 7개 선언과 6개 연결 VALUE 간선을 재현했고, 별도로 378개 미해결 직접 참조를 분류했습니다. 전체 전이 폐쇄, 원본 RH 전체 커널 재검사 및 Landau 실수 적분의 형식 연결은 후속 단계입니다.
+- 최상위 Lean 선언 등의 소스 참조 13개와 Landau 부등식 모듈까지의 import 경로를 기록했습니다. 원본 Lean 4.33.1의 5개 모듈에서 7개 선언과 6개 연결 VALUE 간선을 재현했고, 별도로 378개 미해결 직접 참조를 분류했습니다. 고정 Landau 꼬리 적분의 128비트 포함과 $1/300<J\le1/200$은 Lean 4.33.1과 고정 Mathlib에서 검증했습니다. 전체 전이 폐쇄, 원본 RH 커널 재검사, Masullo 적분의 해석적 연결은 열린 과제입니다.
 
 [Lean 추적 기록](rh-proof-trace.json) · [독립 실행 결과](window-results-v2.json) · [이전 Colab 기준 결과](window-results.json) · [현재 실행 기록](docs/standalone-replay.json)
+
+Python 회귀와 Lean 실수 재현은 별도 CI 작업으로 구성했습니다. Lean 작업은 고정 Mathlib을 준비한 후 저장 영수증과 대조합니다. 로컬 재현 범위와 원격 검수 상태는 [Landau 재현 절차](docs/P3_LANDAU_TAIL_ko.md)에서 확인할 수 있습니다.
 
 ## Colab
 
@@ -59,6 +61,7 @@ python window_kernel.py --window case.json
 | [Inspector 검수와 수용 판정](docs/INSPECTOR_REVIEW_2026-11-23_ko.md) | 검수별 근거와 ACCEPT·AMBER·REJECT |
 | [P0 기준선 재현](docs/P0_BASELINE_REPLAY_ko.md) | 새 체크아웃에서의 실행과 원본 증거 재생 |
 | [P3 Landau 꼬리 검증](docs/P3_LANDAU_TAIL_ko.md) | 고정 입력의 유리수 포락, 실수 적분, Lean 재현 절차 |
+| [P0–P3 독립 검수](docs/P0_P3_INDEPENDENT_AUDIT_2026-11-23_ko.md) | 11월 23일 검수 범위와 당시 Mathlib 결측 기록 |
 | [Masullo 원고와 소수 2 기준선](docs/masullo/README_ko.md) | PDF 출처·중요 페이지·유리수 항등식 |
 | [소수 2 문자 비교](docs/masullo/P2_CHARACTER_COMPARISON_ko.md) | 네 문자와 modulus·conductor 대조, 원문의 연결 조건 |
 | [자료 목록](sources.json) · [PDF 페이지 색인](pdf-pages.jsonl) | 4개 PDF 및 공개 입력의 출처, 해시, 원본 페이지 |

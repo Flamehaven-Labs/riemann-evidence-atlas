@@ -1,8 +1,12 @@
 name: Standalone replay
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
 
 jobs:
   replay:
+    name: Python (${{ matrix.os }}, ${{ matrix.python }})
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
@@ -14,3 +18,54 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -E -S tools/verify_baseline.py
+
+  lean:
+    name: Lean 4.33.1 and pinned Mathlib
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
+        with:
+          lake-package-directory: formal/landau
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'false'
+          use-github-cache: 'false'
+      - name: Replay core Lean declarations and rational tail
+        shell: bash
+        run: |
+          mkdir -p outputs/ci
+          elan toolchain install "$(cat lean-toolchain)"
+          LEAN_BIN="$(elan which lean)"
+          python -E -S tools/verify_lean_match.py --lean "$LEAN_BIN" \
+            --expect docs/rh-lean-fixture-match-v2.json > outputs/ci/lean-fixture.json
+          python -E -S tools/verify_landau_tail.py --lean "$LEAN_BIN" \
+            > outputs/ci/landau-rational.json
+      - name: Restore pinned Mathlib inputs
+        working-directory: formal/landau
+        shell: bash
+        run: |
+          lake exe cache get Mathlib.Analysis.Complex.Exponential \
+            Mathlib.Analysis.SpecialFunctions.Gamma.Basic \
+            Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus \
+            Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Tactic.Linarith \
+            2>&1 | tee ../../outputs/ci/mathlib-setup.log
+          git diff --exit-code -- lake-manifest.json
+      - name: Replay real Landau tail and compare receipt
+        shell: bash
+        run: |
+          python -E -S tools/verify_landau_tail.py --lean "$(elan which lean)" \
+            --mathlib-project formal/landau --expect docs/landau-tail-lean-replay.json \
+            > outputs/ci/landau-real.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lean-replay-evidence
+          path: outputs/ci/
+          if-no-files-found: ignore

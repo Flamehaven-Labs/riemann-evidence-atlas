@@ -5,6 +5,8 @@ from pathlib import Path
 import re
 import unittest
 
+from tools.verify_landau_tail import ReceiptMismatch, require_receipt_match
+from tools.verify_lean_match import semantic_digest
 from window_kernel import run_cases, verify_saved_report
 
 
@@ -75,6 +77,55 @@ class ReplayTests(unittest.TestCase):
         report = run_cases()
         report["landau_tail_valid_cap"]["details"]["fractional_bits"] = 128.0
         self.assertFalse(verify_saved_report(json.dumps(report).encode()))
+
+    def test_lean_receipts_bind_to_tracked_sources(self):
+        def load(path):
+            return json.loads((ROOT / path).read_bytes())
+
+        def check(path, expected):
+            with self.subTest(path=path):
+                self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected)
+
+        helper = "docs/rh-lean-helper-match-v2.json"
+        for path in ("docs/rh-lean-fixture-match-v2.json", helper):
+            receipt = load(path)
+            semantic = receipt["semantic"]
+            self.assertEqual(semantic_digest(semantic), receipt["semantic_sha256"])
+            check("tests/lean/ChoiceDependenceFixture.lean", semantic["fixture_source_sha256"])
+            check("tools/ProofCatalog.lean", semantic["catalog_sha256"])
+
+        frontier = load("docs/rh-mathlib-frontier-match.json")
+        check("tools/ProofCatalog.lean", frontier["extractor_sha256"])
+        check(helper, frontier["seed_report_sha256"])
+
+        landau = load("docs/landau-tail-lean-replay.json")
+        for section, module in (("endpoints", "E2ATailEndpointAlgebra"),
+                                ("rational", "E2ALandauTailRational"),
+                                ("real", "E2ALandauTailReal")):
+            check(f"tests/lean/{module}.lean", landau[section]["sha256"])
+        lock = "formal/landau/lake-manifest.json"
+        check(lock, landau["real"]["dependency_lock_sha256"])
+        mathlib = next(row["rev"] for row in load(lock)["packages"] if row["name"] == "mathlib")
+        self.assertEqual(mathlib, frontier["mathlib_commit"])
+        self.assertEqual(mathlib, landau["real"]["mathlib_commit"])
+
+    def test_landau_receipt_replay_allows_host_variance_only(self):
+        raw = (ROOT / "docs/landau-tail-lean-replay.json").read_bytes()
+        expected = json.loads(raw)
+        actual = json.loads(raw)
+        actual["lean_version"] = actual["lean_version"].replace("x86_64-w64-windows-gnu", "x86_64-unknown-linux-gnu")
+        self.assertNotEqual(actual["lean_version"], expected["lean_version"])
+        require_receipt_match(actual, expected)
+        actual["real"]["axioms"]["tail_mass_caps"].append("sorryAx")
+        with self.assertRaisesRegex(ReceiptMismatch, "proof evidence"):
+            require_receipt_match(actual, expected)
+        actual = json.loads(raw)
+        actual["real"] = {"status": "NOT_RUN"}
+        with self.assertRaisesRegex(ReceiptMismatch, "proof evidence"):
+            require_receipt_match(actual, expected)
+        actual["lean_version"] = actual["lean_version"].replace("4.33.1", "4.33.0")
+        with self.assertRaisesRegex(ReceiptMismatch, "toolchain"):
+            require_receipt_match(actual, expected)
 
     def test_standalone_receipt_pins(self):
         receipt = json.loads((ROOT / "docs/standalone-replay.json").read_bytes())
