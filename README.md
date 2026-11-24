@@ -1,6 +1,8 @@
 # Riemann Evidence Atlas
 
-리만 가설 Lean 선언의 의존성, 논문의 원문과 계산 가능한 보조항을 추적하는 독립 연구 저장소입니다. 저장소 이름은 `riemann-evidence-atlas`이며, Python 모듈은 `riemann_evidence`입니다. 로컬 기준 태그는 `v0.2.0-rc.1`이며, `v0.2.0` 공개 검증을 준비 중입니다.
+리만 가설 관련 Lean 선언의 의존성과 논문의 계산 가능한 보조항을 추적하는 독립 연구 저장소입니다. 원본 선언의 타입과 증명 항을 따로 읽고, 정확 유리수로 수치 구간을 재현하며, 고정 Landau 꼬리 적분을 Lean으로 인증합니다.
+
+[버전 및 릴리스 노트](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/releases) · [GitHub Actions](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/workflows/checks.yml) · [변경 기록](CHANGELOG.md)
 
 ## 빠른 실행
 
@@ -41,7 +43,11 @@ python window_kernel.py --window case.json
 
 [Lean 추적 기록](rh-proof-trace.json) · [독립 실행 결과](window-results-v2.json) · [이전 Colab 기준 결과](window-results.json) · [현재 실행 기록](docs/standalone-replay.json)
 
-Python 회귀와 Lean 실수 재현은 별도 CI 작업으로 구성했습니다. Lean 작업은 고정 Mathlib을 준비한 후 저장 영수증과 대조합니다. 로컬 재현 범위와 원격 검수 상태는 [Landau 재현 절차](docs/P3_LANDAU_TAIL_ko.md)에서 확인할 수 있습니다.
+| 검증 | 재현 범위 | 근거 |
+| --- | --- | --- |
+| Python | 10개 고정 수치 사례와 45개 회귀 검사. CI는 Linux·Windows의 Python 3.10·3.14를 실행합니다. | [수치 결과](window-results-v2.json) · [CI](.github/workflows/checks.yml) |
+| Lean과 Mathlib | Lean 4.33.1과 잠금된 Mathlib로 합성 선언, 유리수 포락, 고정 Landau 실수 정리 5개를 검증합니다. CI는 입력·영수증 해시와 로그를 보존합니다. | [Mathlib 잠금](formal/landau/lake-manifest.json) · [Landau 재현 절차](docs/P3_LANDAU_TAIL_ko.md) |
+| 원본 Lean 참조 | 보존된 `.olean`에서 선언의 타입과 증명 항 직접 참조를 추출합니다. | [의존성 분석](docs/PROOF_DEPENDENCY_PILOT_ko.md) |
 
 ## Colab
 
@@ -66,6 +72,6 @@ Python 회귀와 Lean 실수 재현은 별도 CI 작업으로 구성했습니다
 | [소수 2 문자 비교](docs/masullo/P2_CHARACTER_COMPARISON_ko.md) | 네 문자와 modulus·conductor 대조, 원문의 연결 조건 |
 | [자료 목록](sources.json) · [PDF 페이지 색인](pdf-pages.jsonl) | 4개 PDF 및 공개 입력의 출처, 해시, 원본 페이지 |
 | [Lean 아카이브](lean-archive-manifest.json) · [추출물 기록](lean-extract-manifest.json) | 아카이브 14조각과 추출 파일 15개의 경로 및 SHA-256 |
-| [변경 기록](CHANGELOG.md) | 로컬 기준선 및 릴리스 후보 |
+| [변경 기록](CHANGELOG.md) | 공개 버전과 이전 로컬 기준선 |
 
 소스 추적을 다시 실행할 때는 원본 조각을 아카이브 목록의 URL에서 지정된 `sources/lean-parts/` 경로에 저장합니다. 필요한 추출 파일은 추출물 기록의 아카이브 항목을 사용합니다. `python verify_lean_archive.py`로 조각과 지정된 원본 파일을 확인하고, `python trace_lean.py`로 import 그래프를 다시 만듭니다. PDF 색인 재생성에는 선택적으로 `pypdfium2`와 자료 목록의 원본 파일이 필요합니다. 다운로드한 원본, 대형 import 그래프, 내부 메모는 로컬에 보존합니다.

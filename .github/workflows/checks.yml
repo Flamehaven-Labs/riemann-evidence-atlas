@@ -1,5 +1,9 @@
 name: Standalone replay
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,6 +18,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
@@ -25,12 +31,19 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Record Lean input pins
+        shell: bash
+        run: |
+          mkdir -p outputs/ci
+          git rev-parse HEAD > outputs/ci/source-commit.txt
+          sha256sum lean-toolchain formal/landau/lean-toolchain formal/landau/lake-manifest.json \
+            > outputs/ci/input-sha256.txt
+          cmp lean-toolchain formal/landau/lean-toolchain
       - uses: actions/setup-python@v5
         with:
           python-version: '3.14'
-      - name: Check Lake workspace toolchain pin
-        shell: bash
-        run: cmp lean-toolchain formal/landau/lean-toolchain
       - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
         with:
           lake-package-directory: formal/landau
@@ -43,13 +56,15 @@ jobs:
       - name: Replay core Lean declarations and rational tail
         shell: bash
         run: |
-          mkdir -p outputs/ci
           elan toolchain install "$(cat lean-toolchain)"
           LEAN_BIN="$(elan which lean)"
+          "$LEAN_BIN" --version > outputs/ci/lean-version.txt
+          lake --version > outputs/ci/lake-version.txt
           python -E -S tools/verify_lean_match.py --lean "$LEAN_BIN" \
-            --expect docs/rh-lean-fixture-match-v2.json > outputs/ci/lean-fixture.json
+            --expect docs/rh-lean-fixture-match-v2.json > outputs/ci/lean-fixture.json \
+            2> >(tee outputs/ci/lean-fixture.stderr >&2)
           python -E -S tools/verify_landau_tail.py --lean "$LEAN_BIN" \
-            > outputs/ci/landau-rational.json
+            > outputs/ci/landau-rational.json 2> >(tee outputs/ci/landau-rational.stderr >&2)
       - name: Restore pinned Mathlib inputs
         working-directory: formal/landau
         shell: bash
@@ -59,13 +74,15 @@ jobs:
             Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus \
             Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Tactic.Linarith \
             2>&1 | tee ../../outputs/ci/mathlib-setup.log
-          git diff --exit-code -- lake-manifest.json
+          git diff --exit-code -- lean-toolchain lake-manifest.json
       - name: Replay real Landau tail and compare receipt
         shell: bash
         run: |
           python -E -S tools/verify_landau_tail.py --lean "$(elan which lean)" \
             --mathlib-project formal/landau --expect docs/landau-tail-lean-replay.json \
-            > outputs/ci/landau-real.json
+            > outputs/ci/landau-real.json 2> >(tee outputs/ci/landau-real.stderr >&2)
+          sha256sum outputs/ci/lean-fixture.json outputs/ci/landau-{rational,real}.json \
+            > outputs/ci/receipt-sha256.txt
       - uses: actions/upload-artifact@v4
         if: always()
         with:

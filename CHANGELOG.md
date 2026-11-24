@@ -1,19 +1,13 @@
 # Changelog
 
-## Unreleased
+## v0.2.0 — 2026-11-24
 
-- Preserve proof-only and definition-mediated Choice paths when they meet at one declaration.
-- Record Lean declaration kinds, TYPE and VALUE references, and the absence of a stored VALUE in v2 matching reports.
-- Recover hash-pinned members from local tar fragments with USTAR, PAX, and GNU names. The original VwinOfRow artifact remains pending.
-- Add a platform-aware Lean matching procedure for the first Colab replay.
-- Replay four exact prime-2 character comparisons, including the modulus–conductor split, through the baseline checks. Record the source equations and the open trace-formula correspondence.
-
-- Certify the fixed Landau tail integral in Lean 4.33.1 with pinned Mathlib. Prove the existing 128-bit enclosure and both cap decisions for the real integral.
-- Resolve four direct RH helper references against the pinned Mathlib modules. The original `VwinOfRow` artifact and the cross-paper trace correspondence remain open.
-
-- Bind the four newer Lean receipts to tracked files in the portable checks. Add separate Linux Lean replay with pinned Mathlib and an artifact for the observed reports.
-- Compare real Landau proof evidence across hosts and report unavailable inputs, failed checks, and receipt drift separately.
-- Pin the toolchain inside the Landau Lake workspace so the Mathlib cache can restore from a fresh checkout. Preserve the successful Colab Linux receipt for the fixed real Landau tail.
+- Track Lean declaration kinds, TYPE and VALUE references, and separate proof-only and definition-mediated Choice paths. Resolve four more direct references against pinned Mathlib.
+- Recover hash-pinned archive members from local tar fragments with USTAR, PAX and GNU names. The compiled `VwinOfRow` artifact remains open.
+- Replay ten numerical cases and four exact prime-2 character comparisons, including the modulus–conductor split. The trace-formula correspondence remains open.
+- Certify the fixed Landau tail integral in Lean 4.33.1 with pinned Mathlib. The real integral is enclosed by the 128-bit rational endpoints and satisfies `1/300 < J ≤ 1/200`.
+- Preserve the Windows and Colab Linux Lean receipts. The verifier compares their proof evidence across hosts and distinguishes unavailable inputs, failed checks and receipt drift.
+- Run a four-job Python matrix and a separate Linux Lean and Mathlib job in GitHub Actions. Preserve the source commit, dependency pins, logs and receipt hashes as a workflow artifact.
 
 ## v0.2.0-rc.1 — 2026-11-23
 

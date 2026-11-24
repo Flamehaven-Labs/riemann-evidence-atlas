@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "riemann-evidence-atlas"
-version = "0.2.0rc1"
+version = "0.2.0"
 description = "Lean declaration tracing and bounded numerical replay"
 readme = "README.md"
 license = {file = "LICENSE"}

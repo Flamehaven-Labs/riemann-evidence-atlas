@@ -32,7 +32,7 @@ python -E -S tools/verify_lean_match.py --lean "$LEAN_BIN" \
 
 실수 영수증의 SHA-256은 `45fb8d94c5969278472f0c9b828d21dd7f97db81edf7ab898e989fed8cbd975e`다. Lean 플랫폼 배너 외의 필드는 Windows 영수증과 모두 일치했다. [Colab 영수증](landau-tail-colab-replay.json) · [Windows 기준 영수증](landau-tail-lean-replay.json)
 
-첫 실행 묶음에서 Git 추적 매니페스트 3개가 빠져 같은 커밋에서 보완했다. 그다음 Mathlib 캐시 도구가 Lake 작업 폴더의 `lean-toolchain`을 요구한다는 점을 확인했다. Colab에서 루트 핀의 바이트를 복사해 재실행했고, 저장소에는 [Lake 프로젝트 핀](../formal/landau/lean-toolchain)과 CI의 일치 검사를 추가했다. Colab에서는 원본 RH의 `.olean` 대조와 전체 커널 재실행을 수행하지 않았다. GitHub Actions 실행은 별도로 남아 있다.
+첫 실행 묶음에서 Git 추적 매니페스트 3개가 빠져 같은 커밋에서 보완했다. 그다음 Mathlib 캐시 도구가 Lake 작업 폴더의 `lean-toolchain`을 요구한다는 점을 확인했다. Colab에서 루트 핀의 바이트를 복사해 재실행했고, 저장소에는 [Lake 프로젝트 핀](../formal/landau/lean-toolchain)과 CI의 일치 검사를 추가했다. Colab에서는 원본 RH의 `.olean` 대조와 전체 커널 재실행을 수행하지 않았다. GitHub Actions에서 각 커밋의 실행 결과를 확인할 수 있다. [워크플로 실행 기록](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/workflows/checks.yml)
 
 ## P1 로컬 대조 결과
 
