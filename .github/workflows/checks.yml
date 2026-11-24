@@ -17,10 +17,10 @@ jobs:
         python: ['3.10', '3.14']
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: ${{ matrix.python }}
       - run: python -E -S tools/verify_baseline.py
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
       - name: Record Lean input pins
@@ -41,7 +41,7 @@ jobs:
           sha256sum lean-toolchain formal/landau/lean-toolchain formal/landau/lake-manifest.json \
             > outputs/ci/input-sha256.txt
           cmp lean-toolchain formal/landau/lean-toolchain
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.14'
       - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
@@ -83,7 +83,7 @@ jobs:
             > outputs/ci/landau-real.json 2> >(tee outputs/ci/landau-real.stderr >&2)
           sha256sum outputs/ci/lean-fixture.json outputs/ci/landau-{rational,real}.json \
             > outputs/ci/receipt-sha256.txt
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
           name: lean-replay-evidence

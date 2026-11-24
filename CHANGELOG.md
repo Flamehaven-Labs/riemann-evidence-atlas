@@ -7,7 +7,7 @@
 - Replay ten numerical cases and four exact prime-2 character comparisons, including the modulus–conductor split. The trace-formula correspondence remains open.
 - Certify the fixed Landau tail integral in Lean 4.33.1 with pinned Mathlib. The real integral is enclosed by the 128-bit rational endpoints and satisfies `1/300 < J ≤ 1/200`.
 - Preserve the Windows and Colab Linux Lean receipts. The verifier compares their proof evidence across hosts and distinguishes unavailable inputs, failed checks and receipt drift.
-- Run a four-job Python matrix and a separate Linux Lean and Mathlib job in GitHub Actions. Preserve the source commit, dependency pins, logs and receipt hashes as a workflow artifact.
+- Run a four-job Python matrix and a separate Linux Lean and Mathlib job in GitHub Actions. Pin the Node 24 actions and preserve the source commit, dependency pins, logs and receipt hashes as a workflow artifact.
 
 ## v0.2.0-rc.1 — 2026-11-23
 
