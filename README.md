@@ -45,7 +45,7 @@ Python 회귀와 Lean 실수 재현은 별도 CI 작업으로 구성했습니다
 
 ## Colab
 
-[독립 노트북](RH_Window.ipynb)은 이 저장소의 Python 파일을 그대로 사용합니다. Colab에서 열고 `window_kernel.py`, `riemann_evidence/__init__.py`, `riemann_evidence/rational_intervals.py`, `riemann_evidence/verification.py` 네 파일을 요청에 따라 올립니다. 노트북은 가져온 파일의 SHA-256을 확인하고 CLI와 동일한 10개 사례를 실행합니다. 저장소 폴더에서 열면 업로드 단계 없이 실행합니다. 이전 Colab 기준 결과의 범위와 실행 검사는 [현재 상태](docs/REPOSITORY_BASELINE_ko.md)에 기록했습니다. 고정 Lean 선언을 Linux에서 대조하는 첫 실행은 [Lean·Colab 검증 절차](docs/LEAN_MATCH_AND_COLAB_ko.md)를 따릅니다.
+[수치 실험 노트북](RH_Window.ipynb)은 저장소의 Python 파일로 CLI와 같은 10개 사례를 실행합니다. 저장소 폴더에서 열거나 노트북이 요청하는 네 파일을 올리면 입력 SHA-256을 확인합니다. Colab Linux에서 별도로 실행한 고정 Lean 재현은 합성 선언과 Landau 실수 정리 5개의 증거를 Windows 기준과 대조했습니다. [Lean·Colab 재현 절차와 범위](docs/LEAN_MATCH_AND_COLAB_ko.md) · [Colab 실수 증명 영수증](docs/landau-tail-colab-replay.json)
 
 ## 원본과 설계 문서
 

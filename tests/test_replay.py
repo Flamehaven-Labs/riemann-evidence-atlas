@@ -105,9 +105,14 @@ class ReplayTests(unittest.TestCase):
             check(f"tests/lean/{module}.lean", landau[section]["sha256"])
         lock = "formal/landau/lake-manifest.json"
         check(lock, landau["real"]["dependency_lock_sha256"])
+        self.assertEqual((ROOT / "formal/landau/lean-toolchain").read_bytes(),
+                         (ROOT / "lean-toolchain").read_bytes())
         mathlib = next(row["rev"] for row in load(lock)["packages"] if row["name"] == "mathlib")
         self.assertEqual(mathlib, frontier["mathlib_commit"])
         self.assertEqual(mathlib, landau["real"]["mathlib_commit"])
+        colab = "docs/landau-tail-colab-replay.json"
+        check(colab, "45fb8d94c5969278472f0c9b828d21dd7f97db81edf7ab898e989fed8cbd975e")
+        require_receipt_match(load(colab), landau)
 
     def test_landau_receipt_replay_allows_host_variance_only(self):
         raw = (ROOT / "docs/landau-tail-lean-replay.json").read_bytes()

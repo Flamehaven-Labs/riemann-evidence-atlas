@@ -1,0 +1,100 @@
+{
+  "claim_authority": "NONE",
+  "endpoints": {
+    "axioms": {
+      "propagated_lower_matches": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "propagated_upper_matches": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "sha256": "c217ab02b33d4efec7ed116f9663e71e3695e9024889264f08978e0a9c5df1a7"
+  },
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "original_rh_kernel_replay": "NOT_RUN",
+  "rational": {
+    "axioms": {
+      "cap_comparisons": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_interval": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reciprocal3_arithmetic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reciprocal9_arithmetic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "small3_arithmetic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "small3_library_arithmetic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "small9_arithmetic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "small9_library_arithmetic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "sha256": "a3e0573d29903495575fad8bce8d50400c675da7f47dc5de1d2627a6316885ee",
+    "status": "PASS"
+  },
+  "real": {
+    "axioms": {
+      "exp_neg_nine_enclosed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exp_neg_three_enclosed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "tail_mass_caps": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "tail_mass_enclosed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "tail_mass_eq": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "sha256": "2a795af1993c69776e5e789636aa05feac71684db2fdf0d4ffb498b179465553",
+    "status": "PASS"
+  },
+  "schema": "riemann-evidence-landau-tail-v1"
+}

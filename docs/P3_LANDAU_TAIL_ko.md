@@ -48,7 +48,11 @@ python -E -S tools/verify_landau_tail.py --lean "$LEAN_BIN" \
 
 전체 Lean 4.33.1 배포본을 다시 풀고 새 Lake 프로젝트에 고정 Mathlib 소스와 캐시를 준비했다. 캐시 2,725개와 변경 없는 Lake 잠금을 확인했다. 실수 정리 5개를 다시 컴파일한 영수증은 기준 바이트와 일치했다. SHA-256은 `a4bbb8951ec28fec7044e982c1df48f88e457edffe3bb865fe46b61b8590c828`다. 의존성 결측, 변경된 잠금 입력, 실수 증명이 빠진 영수증도 각각 종료 코드 2, 1, 3으로 구분했다.
 
-이 실행은 같은 운영 환경에서 캐시를 복원해 수행한 로컬 재현이다. 별도 운영자 재실행과 원격 Linux CI는 미실행이다. [기준 영수증](landau-tail-lean-replay.json)
+이 실행은 같은 운영 환경에서 캐시를 복원해 수행한 로컬 재현이다. 이후 Windows 재검수에서도 실수 영수증 SHA-256이 같았다. Python 3.10·3.14에서 각각 45개 테스트를 통과했다. [기준 영수증](landau-tail-lean-replay.json)
+
+### 2026-11-24 Colab Linux 재실행
+
+새 Colab 런타임에서 고정 Lean과 Mathlib를 복원하고 정리 5개를 재컴파일했다. Windows 기준과 입력·소스 해시 및 공리 출력이 일치했다. GitHub Actions 실행은 별도 게이트다. [실행 범위와 복원 기록](LEAN_MATCH_AND_COLAB_ko.md) · [Colab 영수증](landau-tail-colab-replay.json)
 
 ## P3.2 원문 간 연결
 
@@ -61,4 +65,4 @@ F=Q에서 노름만 따르는 후보 $\varphi(c)=h(|c|)$를 두고 $h(1)=0$이�
 | Alpöge Lean | 고정 `.olean`에서 타입·증명 항을 추출하고 두 경로를 확인 | `VwinOfRow.olean` 확보와 원본 RH 전체 커널 재실행 |
 | Masullo 원고 | 고정 PDF에서 수식 위치·측도·시험 함수 가정을 대조 | 주값 적분과 Euler 인자의 해석적 연결 |
 | 수치 코드 | 정확 유리수 값, 잘못된 부호·도체, 정밀도 소진, 보고서 변조를 구별 | 다른 입력으로의 해석적 증명 일반화 |
-| Lean 꼬리 인증 | 지수 포락과 임계값을 고정 입력의 실수 적분에 연결 | 실제 Colab 및 별도 운영자 재현 |
+| Lean 꼬리 인증 | 지수 포락과 임계값을 고정 실수 적분에 연결하고 Windows·Colab에서 재현 | GitHub Actions 실행 및 별도 운영자 Colab 재현 |

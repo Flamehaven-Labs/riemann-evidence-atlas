@@ -13,6 +13,7 @@
 
 - Bind the four newer Lean receipts to tracked files in the portable checks. Add separate Linux Lean replay with pinned Mathlib and an artifact for the observed reports.
 - Compare real Landau proof evidence across hosts and report unavailable inputs, failed checks, and receipt drift separately.
+- Pin the toolchain inside the Landau Lake workspace so the Mathlib cache can restore from a fresh checkout. Preserve the successful Colab Linux receipt for the fixed real Landau tail.
 
 ## v0.2.0-rc.1 — 2026-11-23
 

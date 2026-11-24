@@ -28,6 +28,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.14'
+      - name: Check Lake workspace toolchain pin
+        shell: bash
+        run: cmp lean-toolchain formal/landau/lean-toolchain
       - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
         with:
           lake-package-directory: formal/landau
