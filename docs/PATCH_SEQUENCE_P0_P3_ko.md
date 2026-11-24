@@ -2,6 +2,8 @@
 
 2026-11-23 · 실행 순서와 수용 기준
 
+이 문서는 P0–P3의 구현 배경과 당시 수용 기준을 기록한다. 이후 연구 우선순위와 다음 실험은 [연구 로드맵](ROADMAP_ko.md)을 따른다.
+
 **순서** P0 기준선 고정 → P1 원본 Lean 참조 추적 **및** P2 공통 국소 항 검증 → P3 RH 저장소의 형식 연결과 검증 도구 평가. P1과 P2는 P0 이후 병행할 수 있다. NSRW로 결과를 되돌려 적용하는 작업은 후속 단계다.
 
 [Inspector 판정 및 추가 발견](INSPECTOR_REVIEW_2026-11-23_ko.md)에서 수용 근거와 보류 조건을 확인한다.
@@ -16,7 +18,7 @@
 | [Landau 꼬리 상한 검증](E2A_TAIL_CAP_VERIFICATION_ko.md) | 동일 유리수 구간에서 `1/200` 채택과 `1/300` 기각을 수치 기록과 대조. Lean이 구간을 가정한 임계값 함의를 검사 | 실제 실수 적분과 해당 구간의 형식 연결 유보 |
 | Masullo 2026-11-20 원본 및 비교 감사 | PDF 940쪽 고정. 514쪽 cutoff 편집 메모, 519–520쪽 trace formula, 522쪽 최종 정리 13.3.1.2 결손 기록. 기본 `p=2` 유리수 검사 재현 보고 | 국소 항의 원문 대응, 테스트 함수 조건, trace formula 타당성 미검증. 소수 2 외부 반론은 정확한 전제가 미확정 |
 
-최신 분류 검수에서 Lean 4.33.1 분류는 2/2, Python 3.10.22·3.14.10 회귀는 각각 23/23이었다. 로컬 노트북 결과도 보고서와 일치했다. 재실행은 동일 도구의 결정적 재현에 해당한다. 별도 운영자 재현, RH 커널 재검사, 새 노트북의 실제 Colab 실행은 별도 상태로 기록한다. 아래 항목은 이번에 정렬한 실행 계획이며, 신규 검증 결과는 위 표에 합산하지 않는다.
+11월 23일 분류 검수에서 Lean 4.33.1 분류는 2/2, Python 3.10.22·3.14.10 회귀는 각각 23/23이었다. 로컬 노트북 결과도 보고서와 일치했다. 위 표는 당시의 재실행 범위를 기록한다. 후속 Colab과 GitHub Actions 재현은 아래 P3.1에 기록한다.
 
 ## P0 — 검수 기준선과 자료 위치 고정
 
@@ -37,7 +39,7 @@
 
 ## P1 — 확인 가능한 원본 Lean 경로 확장
 
-**로컬 대조 통과, 원본 확장 일부 보류.** BFS 합류 회귀, v2 선언 매치와 긴 tar 경로 회귀를 통과했다. 두 보조 증명의 직접 참조 57개 중 53개를 Lean `Init`에서, 나머지 네 개를 고정 Mathlib에서 확인했다. [Mathlib 후속 대조](rh-mathlib-frontier-match.json) 첫 Colab은 공개 커밋을 고정한 뒤 합성 Lean과 Python 재현을 수행하고, 고정 원본을 준비한 세션에만 원본 대조를 추가한다. [실행 순서와 결과](LEAN_MATCH_AND_COLAB_ko.md)
+**로컬 대조 통과, 원본 확장 일부 보류.** BFS 합류 회귀, v2 선언 매치와 긴 tar 경로 회귀를 통과했다. 두 보조 증명의 직접 참조 57개 중 53개를 Lean `Init`에서, 나머지 네 개를 고정 Mathlib에서 확인했다. [Mathlib 후속 대조](rh-mathlib-frontier-match.json) Colab Linux에서 합성 Lean 선언과 Python 기준선을 재현했다. 원본 `.olean` 대조는 고정 원본을 확보한 별도 실행이 필요하다. [실행 순서와 결과](LEAN_MATCH_AND_COLAB_ko.md)
 
 - [x] **P1.1 확보한 보조 증명의 직접 참조 대조.** `rh_of_right._proof_1_1`, `rh_of_right._proof_1_2`의 이미 추출된 참조 목록에서 중복을 제거하되 각 참조의 출발점은 보존한다. 두 57개 직접 참조 집합은 동일하며 `Lean.Omega.*`를 포함한다. 후속 패스는 중복 57개를 한 번 분류해 두 출발점에 연결한다. 직접 `Classical.choice`는 관측되지 않았고 전이 여부는 열린 상태다. 같은 `.olean`에 있거나 고정 Lean의 좁은 모듈 묶음으로 읽을 수 있는 선언을 우선한다. 각 항목에 소속 모듈, 선언 종류, TYPE 또는 VALUE 간선, 직접 확인 여부를 기록한다.
 - [ ] **P1.2 `HELD` · `vwin_of_row`를 공개 그래프 후보에서 원본 검증으로 이동.** 대상은 `Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow`다. 배포자의 파일별 목록에서 `VwinOfRow.olean`의 예상 SHA-256 `d0beb229db7511a87434172b7d2af0e1830fa0d2585777f7c71badd06ac04d6a`을 확인했다. 합성 USTAR·PAX·GNU 긴 경로로 회귀 테스트를 만들고 `tools/tar_fragment.py`와 `tools/recover_pinned_member.py`에서 prefix와 PAX path를 처리한다. 143바이트 경로를 사용한 캐시 36조각의 제한 검색은 `NOT_RECOVERED`였다. 14조각 소스 아카이브에서 같은 이름의 정리 선언을 확보했다. [소스 해시](LEAN_MATCH_AND_COLAB_ko.md#p1-로컬-대조-결과) 파일 확보 후 이 해시와 Lean 4.33.1을 대조하고, `everyCharacter_of_row → vwin_of_row`의 대상 선언과 직접 TYPE·VALUE 참조를 읽는다. 확보나 해시 검사가 실패하면 이 항목을 보류하고 P1.1과 P2를 진행한다.
@@ -66,7 +68,7 @@
 
 ## P3 — 실수 포함 증명, 형식 연결, RH 검증 도구 평가
 
-**P3.1 GREEN · P3.2 HELD · P3.3 범위 한정 GREEN.** Lean 4.33.1 및 고정 Mathlib에서 두 실수 지수 구간, 꼬리 적분 등식, 128비트 포함과 두 임계값을 확인했다. Python 3.10·3.14 각각 43개 회귀 및 P0·P1의 기존 영수증 재현이 통과했다. [실행 방법 및 범위](P3_LANDAU_TAIL_ko.md) · [Lean 실행 기록](landau-tail-lean-replay.json)
+**P3.1 GREEN · P3.2 HELD · P3.3 범위 한정 GREEN.** Lean 4.33.1 및 고정 Mathlib에서 두 실수 지수 구간, 꼬리 적분 등식, 128비트 포함과 두 임계값을 확인했다. `v0.2.0`의 GitHub Actions에서 Windows·Linux의 Python 3.10·3.14 조합이 각각 45개 테스트를 통과했다. Linux Lean 실수 영수증은 Colab과 바이트 단위로 일치했다. [실행 방법 및 범위](P3_LANDAU_TAIL_ko.md) · [릴리스 CI](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/runs/45347096386)
 
 - [x] **P3.1 Landau 파일럿의 해석적 간극을 닫는다.** 기존 유리수 임계값 증명을 재사용한다. 첫 목표는 고정 $k=3$, $s=3$, 창 $[1,3]$에서 실제 꼬리 적분이 저장한 유리수 구간 안에 들어가는 충분조건을 Lean에서 증명하는 것이다. 고정 꼬리는 $J_{\mathrm{tail}}=(1-13e^{-3}+172e^{-9})/81$이다. Rat 단계에서는 $3/8$과 $9/32$의 128비트 급수·외향 반올림을 검증하고 각각 3회·5회 제곱한다. 별도 실수 단계에서는 원시함수와 경계값으로 꼬리 항등식을 증명하고, 급수 포락을 실제 $\exp$에 연결한다. 계수 $-13$에는 반대쪽 구간 끝점을 사용한다. 성공 시 기존 양성·음성 임계값을 해당 실수 적분에 적용해 다시 확인한다. P2의 원문 대응이 보류돼도 Landau 단독 작업은 진행할 수 있다.
 - [ ] **P3.2 `HELD` · 교차 해석 연결은 조건 충족 후 진행.** P2에서 고정한 항에 대해 Mellin–Laplace 변수변환, Haar 측도, $\varphi$의 지지·소멸 조건을 하나씩 증명한다. 유한 장소에서 global trace까지 가는 합·적분 교환과 극한은 실제 논증에 필요한 경우 별도 의무로 잡는다. 연결에 필요한 원문 정의나 결론이 빠져 있으면 해당 주장만 보류한다.

@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Add a second source-anchored Landau tail case using the existing interval evaluator, with exact replay, an alternating-series cross-check, endpoint mutation rejection and precision exhaustion/refinement tests.
+- Prove that the second real tail integral lies within the saved 256-bit rational interval and meets the fixed near-threshold cap. Preserve its Windows and Colab Lean receipts.
+- Verify the reflection cosine lemma, the failure of the uniform biorthogonal bound under close-pair hypotheses, and the multiplier limits for two modes at zero and positive strip width.
+- Add a research-model job that executes the Colab notebook's numerical cells and a Lean replay of 28 additional declarations against saved evidence. Upload logs, input hashes and receipts for the checked commit.
+
 ## v0.2.0 — 2026-11-24
 
 - Track Lean declaration kinds, TYPE and VALUE references, and separate proof-only and definition-mediated Choice paths. Resolve four more direct references against pinned Mathlib.

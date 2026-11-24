@@ -4,6 +4,8 @@
 
 [버전 및 릴리스 노트](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/releases) · [GitHub Actions](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/workflows/checks.yml) · [변경 기록](CHANGELOG.md)
 
+현재 연구는 Alpöge의 Lean 증명과 Masullo의 Hecke GRH 접근을 단계별로 읽고, 공통으로 대조할 수 있는 수학적 항과 새로 검증할 가설을 찾는 데 집중합니다. [북극성과 연구 로드맵](docs/ROADMAP_ko.md)
+
 ## 빠른 실행
 
 Python 3.10 이상. 수치 실행과 회귀 검사에는 Python 표준 라이브러리만 필요합니다.
@@ -45,13 +47,22 @@ python window_kernel.py --window case.json
 
 | 검증 | 재현 범위 | 근거 |
 | --- | --- | --- |
-| Python | 10개 고정 수치 사례와 45개 회귀 검사. CI는 Linux·Windows의 Python 3.10·3.14를 실행합니다. | [수치 결과](window-results-v2.json) · [CI](.github/workflows/checks.yml) |
-| Lean과 Mathlib | Lean 4.33.1과 잠금된 Mathlib로 합성 선언, 유리수 포락, 고정 Landau 실수 정리 5개를 검증합니다. CI는 입력·영수증 해시와 로그를 보존합니다. | [Mathlib 잠금](formal/landau/lake-manifest.json) · [Landau 재현 절차](docs/P3_LANDAU_TAIL_ko.md) |
+| Python | Linux·Windows의 Python 3.10·3.14에서 고정 수치 사례와 51개 회귀 검사를 실행합니다. | [수치 결과](window-results-v2.json) · [CI](.github/workflows/checks.yml) |
+| 연구 모델 | 두 번째 Landau의 유리수 결과, 소수 2 단위 껍질의 정확한 합, 양의 띠 폭의 보조 수치 계산을 같은 노트북 소스로 재생합니다. | [모델 재현 노트북](colab/Research_Model_Replay.ipynb) |
+| Lean과 Mathlib | Lean 4.33.1과 고정 Mathlib로 기존 기준선에 더해 두 번째 Landau, RH 반사, 쌍직교 상계, 두 영점 행렬, 양의 띠 폭에 관한 28개 선언을 재실행합니다. CI는 입력과 영수증의 해시 및 로그를 보존합니다. | [Mathlib 잠금](formal/landau/lake-manifest.json) · [현재 연구 로드맵](docs/ROADMAP_ko.md) |
 | 원본 Lean 참조 | 보존된 `.olean`에서 선언의 타입과 증명 항 직접 참조를 추출합니다. | [의존성 분석](docs/PROOF_DEPENDENCY_PILOT_ko.md) |
+
+## RH 내부 추가 Landau 사례 (미릴리스)
+
+고정 Lean 사례와 다른 입력의 꼬리 적분을 동일 구간 계산기로 검사했습니다. 로컬 Lean 실행으로 실제 적분이 저장된 256비트 구간에 포함되고 정해진 임계값을 만족함을 확인했습니다. [두 번째 사례와 실행 방법](docs/LANDAU_SECOND_CASE_ko.md) · [수치 영수증](docs/landau-second-case.json) · [Lean 영수증](docs/landau-second-case-lean-replay.json)
+
+## Masullo 원고에서 분리한 두 영점 모형
+
+균일 쌍직교 상계가 작은 간격과 양립하지 않는 조건을 형식화했습니다. 두 영점이 생성하는 공간에서는 승수값 차이가 비대각항을 제어합니다. 폭 0에서는 Lipschitz 승수의 비대각항이 0으로 가고, 고정 양의 폭에서는 승수 도함수에 비례하는 극한이 남을 수 있습니다. [상계의 실패](docs/masullo/BIORTHOGONAL_GAP_ko.md) · [두 영점의 행렬](docs/masullo/TWO_ZERO_BLOCK_ko.md) · [양의 띠 폭](docs/masullo/POSITIVE_STRIP_GRAM_ko.md)
 
 ## Colab
 
-[수치 실험 노트북](RH_Window.ipynb)은 저장소의 Python 파일로 CLI와 같은 10개 사례를 실행합니다. 저장소 폴더에서 열거나 노트북이 요청하는 네 파일을 올리면 입력 SHA-256을 확인합니다. Colab Linux에서 별도로 실행한 고정 Lean 재현은 합성 선언과 Landau 실수 정리 5개의 증거를 Windows 기준과 대조했습니다. [Lean·Colab 재현 절차와 범위](docs/LEAN_MATCH_AND_COLAB_ko.md) · [Colab 실수 증명 영수증](docs/landau-tail-colab-replay.json)
+[Colab에서 연구 모델 노트북 열기](https://colab.research.google.com/github/Flamehaven-Labs/riemann-evidence-atlas/blob/main/colab/Research_Model_Replay.ipynb). 전체 Git 커밋 SHA를 지정하고, Lean 재실행에는 `RUN_LEAN`을 켭니다. GitHub Actions는 같은 노트북의 수치 셀을 GitHub 런너에서 실행하고 별도의 Lean 작업에서 보존된 Colab 영수증을 대조합니다. 실제 Colab 세션의 증거는 개별 영수증에 기록합니다. [실행 방법](docs/LEAN_MATCH_AND_COLAB_ko.md) · [기존 10개 수치 사례 노트북](RH_Window.ipynb)
 
 ## 원본과 설계 문서
 

@@ -1,0 +1,14 @@
+{
+  "axioms": [
+    "'E2ABiorthogonalGap.inverse_sqrt_gap_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ABiorthogonalGap.biorthogonal_product_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ABiorthogonalGap.gap_lower_of_uniform_cap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ABiorthogonalGap.no_uniform_cap_of_close_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "axioms_log_sha256": "c2b5020091c4aac6d3f85e58a27e5f214e0d91f573a7fe28026a089505ebb3ec",
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "8640264b395c11152ec74d27531e2b5001775a510a15a10b5fd3827fe5b05aaa",
+  "status": "PASS"
+}

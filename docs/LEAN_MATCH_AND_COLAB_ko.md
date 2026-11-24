@@ -14,6 +14,10 @@ Colab Linux CPU에서 Python, 합성 Lean, Landau 유리수·실수 증명을 �
 
 ## Colab 재현 방법
 
+[연구 모델 노트북](../colab/Research_Model_Replay.ipynb)을 Colab에서 열고 `ATLAS_COMMIT`에 대상 공개 커밋의 전체 SHA를 입력한다. 수치 셀은 두 번째 Landau 사례, 소수 2 단위 껍질, 양의 띠 폭을 실행한다. 마지막 셀의 `RUN_LEAN`을 켜면 고정 Linux Lean 및 Mathlib을 준비하고 새 형식 결과를 Windows·Colab 기준과 대조한다. 실행 결과는 `outputs/research-model-replay`에 저장한다.
+
+GitHub Actions의 연구 모델 작업은 해당 커밋에서 같은 노트북 소스의 수치 셀을 실행하고 반복 실행의 보고서가 일치하는지 확인한다. 별도 Lean 작업은 실제 새 증명 실행을 기존 Colab 영수증과 대조한다. 각 작업의 아티팩트에는 커밋과 입력 해시, 결과 및 로그가 포함된다. [워크플로와 실행 기록](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/workflows/checks.yml)
+
 확정된 Git 커밋의 저장소 루트에서 실행한다. CPU 런타임과 `elan`이 준비된 환경을 사용한다.
 
 ~~~sh

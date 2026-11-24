@@ -10,3 +10,4 @@
 /docs/unit_test_receipt.json -text whitespace=cr-at-eol
 /docs/CROSS_REPO_WORKFLOW_AND_VERIFICATION_SPEC_ko.md -text whitespace=cr-at-eol,-blank-at-eol
 /docs/ENGINEERING_RESEARCH_REPORT_ko.md -text whitespace=cr-at-eol,-blank-at-eol
+/tests/lean/E2APositiveStripGram.lean -text whitespace=-blank-at-eof

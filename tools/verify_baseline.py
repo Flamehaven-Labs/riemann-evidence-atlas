@@ -15,6 +15,7 @@ PRIME_TWO = "docs/masullo/P2_LOCAL_SURFACE.json"
 PRIME_TWO_CHARACTERS = "docs/masullo/P2_CHARACTER_COMPARISON.json"
 RECEIPTS = {
     "window-results-v2.json": "ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1",
+    "docs/landau-second-case.json": "1e2ba00fd1ff34bf13145ad1838f12b01029ada14a0baac670a6bd7758d15121",
     PRIME_TWO: "298d90f4f80e932d6d1eb1034dd76fca519555dada786964f0b5d7ce28cdec03",
     PRIME_TWO_CHARACTERS: "bbdc488501a875c0d0121d386f2b3e0a6d5b4edbcbc03bc6e1db0231e3ddbd89",
     "docs/rh-module-set-pilot.json": "0b541e3ceb684e8f457fc6a91f84256bc13943a5519f2b85cb6b1ae15f37ac34",

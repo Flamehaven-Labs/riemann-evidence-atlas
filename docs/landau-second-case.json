@@ -1,0 +1,165 @@
+{
+  "cases": {
+    "precision_exhausted": {
+      "input": {
+        "a": "1/2",
+        "b": "2",
+        "cap": "242158075435671337967324601779809645921/2722258935367507707706996859454145691648",
+        "component": "outside_window",
+        "k": 1,
+        "precision_bits": 128,
+        "rate": "2"
+      },
+      "report": {
+        "check_id": "landau-window-kernel-mass",
+        "claim_authority": "NONE",
+        "claim_status": "UNVERIFIED",
+        "details": {
+          "cap": "242158075435671337967324601779809645921/2722258935367507707706996859454145691648",
+          "fractional_bits": 128,
+          "lower": "121079037717835668983662300889904822957/1361129467683753853853498429727072845824",
+          "reason": "precision budget exhausted",
+          "upper": "30269759429458917245915575222476205741/340282366920938463463374607431768211456"
+        },
+        "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+        "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+        "format": "riemann-evidence-verification-v1",
+        "inputs": {
+          "window": {
+            "bytes": 188,
+            "sha256": "41e6c876bfb7a723715de173e595bc7cd2a6b1bc3b5ac43115268795ca36d686"
+          }
+        },
+        "method": "Closed-form primitive and total mass with outward rational bounds",
+        "revision": "3",
+        "status": "UNRESOLVED",
+        "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!"
+      }
+    },
+    "refined_cap": {
+      "input": {
+        "a": "1/2",
+        "b": "2",
+        "cap": "242158075435671337967324601779809645921/2722258935367507707706996859454145691648",
+        "component": "outside_window",
+        "k": 1,
+        "precision_bits": 256,
+        "rate": "2"
+      },
+      "report": {
+        "check_id": "landau-window-kernel-mass",
+        "claim_authority": "NONE",
+        "claim_status": "UNVERIFIED",
+        "details": {
+          "cap": "242158075435671337967324601779809645921/2722258935367507707706996859454145691648",
+          "fractional_bits": 256,
+          "lower": "5150132692391838099305122917866226216214174311535347965444171447923760414037/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+          "reason": "upper endpoint meets cap",
+          "upper": "41201061539134704794440983342929809729713394492282783723553371583390083312303/463168356949264781694283940034751631413079938662562256157830336031652518559744"
+        },
+        "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+        "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+        "format": "riemann-evidence-verification-v1",
+        "inputs": {
+          "window": {
+            "bytes": 188,
+            "sha256": "8d7aafa2a0f4baf2991a463aa7fc11cdc1edef5c7b03d8f0989d7be1a1585e48"
+          }
+        },
+        "method": "Closed-form primitive and total mass with outward rational bounds",
+        "revision": "3",
+        "status": "PASS",
+        "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!"
+      }
+    },
+    "valid_cap": {
+      "input": {
+        "a": "1/2",
+        "b": "2",
+        "cap": "1/10",
+        "component": "outside_window",
+        "k": 1,
+        "precision_bits": 128,
+        "rate": "2"
+      },
+      "report": {
+        "check_id": "landau-window-kernel-mass",
+        "claim_authority": "NONE",
+        "claim_status": "UNVERIFIED",
+        "details": {
+          "cap": "1/10",
+          "fractional_bits": 128,
+          "lower": "121079037717835668983662300889904822957/1361129467683753853853498429727072845824",
+          "reason": "upper endpoint meets cap",
+          "upper": "30269759429458917245915575222476205741/340282366920938463463374607431768211456"
+        },
+        "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+        "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+        "format": "riemann-evidence-verification-v1",
+        "inputs": {
+          "window": {
+            "bytes": 112,
+            "sha256": "679fb5557c8e56ff2291283508bd5fa76e892267a475b7660f7f24a333d4224b"
+          }
+        },
+        "method": "Closed-form primitive and total mass with outward rational bounds",
+        "revision": "3",
+        "status": "PASS",
+        "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!"
+      }
+    },
+    "violated_cap": {
+      "input": {
+        "a": "1/2",
+        "b": "2",
+        "cap": "1/20",
+        "component": "outside_window",
+        "k": 1,
+        "precision_bits": 128,
+        "rate": "2"
+      },
+      "report": {
+        "check_id": "landau-window-kernel-mass",
+        "claim_authority": "NONE",
+        "claim_status": "UNVERIFIED",
+        "details": {
+          "cap": "1/20",
+          "fractional_bits": 128,
+          "lower": "121079037717835668983662300889904822957/1361129467683753853853498429727072845824",
+          "reason": "lower endpoint exceeds cap",
+          "upper": "30269759429458917245915575222476205741/340282366920938463463374607431768211456"
+        },
+        "domain": "Dimensionless nonnegative window; positive rate; rate*b <= 16",
+        "evidence_class": "BOUNDED_NUMERICAL_KERNEL_CHECK",
+        "format": "riemann-evidence-verification-v1",
+        "inputs": {
+          "window": {
+            "bytes": 112,
+            "sha256": "2f12ca14a92900b124dc1da95465e73a950f046841a11303f5325fd5d81bcd66"
+          }
+        },
+        "method": "Closed-form primitive and total mass with outward rational bounds",
+        "revision": "3",
+        "status": "FAIL",
+        "target": "Window or complementary positive-axis integral of u^k exp(-rate*u)/k!"
+      }
+    }
+  },
+  "claim_authority": "NONE",
+  "code_sha256": {
+    "landau_second_case.py": "4ab2f72ae3153687afaff60c233dd9d9b9787822669c04f44632c09f8a723b66",
+    "riemann_evidence/rational_intervals.py": "5aa5fdcbb17ca443ddaa9c3362781da98b4a03d52afe0190fe1677a4a81acab9",
+    "riemann_evidence/verification.py": "6fd038c01f72b0ec8cce14396320e50fa8fe6c047232c60d1b40ed873ae876ac",
+    "window_kernel.py": "9c7c14b2fb5539ff450fed8ee8c8d65117396c1389d5cc2a074891854881502f"
+  },
+  "formal_real_proof": "NOT_RUN",
+  "schema": "riemann-evidence-landau-second-case-v1",
+  "source": {
+    "declaration": "Deduction.landau_window_ineq",
+    "extract_manifest_sha256": "60e69fe0e8acea56ea843c826c44236bbc225663f17276fbcbc099973c67a082",
+    "path": "sources/rh-landauWindowIneq.lean",
+    "sha256": "e3d5d760bcefe1242d4f5b0ced44fc055f1fa8dfe048a2222cf2c39ae812e59c",
+    "surface": "third RHS term, integral only; excludes 2*C0"
+  },
+  "source_claim": "PARAMETERIZED_KERNEL_SPECIALIZATION"
+}

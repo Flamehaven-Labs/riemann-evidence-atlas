@@ -1,0 +1,38 @@
+{
+  "claim_authority": "NONE",
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "imports": {
+    "E2ALandauTailRational": "a3e0573d29903495575fad8bce8d50400c675da7f47dc5de1d2627a6316885ee",
+    "E2ATailEndpointAlgebra": "c217ab02b33d4efec7ed116f9663e71e3695e9024889264f08978e0a9c5df1a7"
+  },
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "numerical_report_sha256": "1e2ba00fd1ff34bf13145ad1838f12b01029ada14a0baac670a6bd7758d15121",
+  "real": {
+    "axioms": {
+      "exp_one_enclosed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "tail_mass_caps": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "tail_mass_enclosed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "tail_mass_eq": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "sha256": "a265816118fc19f7325a457eba1066a21481b81f5a5f86b2d74dc0a82d4c5dbf",
+    "status": "PASS"
+  },
+  "schema": "riemann-evidence-landau-second-case-lean-v1"
+}

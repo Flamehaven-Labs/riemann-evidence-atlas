@@ -52,7 +52,11 @@ python -E -S tools/verify_landau_tail.py --lean "$LEAN_BIN" \
 
 ### 2026-11-24 Colab Linux 재실행
 
-새 Colab 런타임에서 고정 Lean과 Mathlib를 복원하고 정리 5개를 재컴파일했다. Windows 기준과 입력·소스 해시 및 공리 출력이 일치했다. GitHub Actions 실행은 별도 게이트다. [실행 범위와 복원 기록](LEAN_MATCH_AND_COLAB_ko.md) · [Colab 영수증](landau-tail-colab-replay.json)
+새 Colab 런타임에서 고정 Lean과 Mathlib를 복원하고 정리 5개를 재컴파일했다. Windows 기준과 입력·소스 해시 및 공리 출력이 일치했다. [실행 범위와 복원 기록](LEAN_MATCH_AND_COLAB_ko.md) · [Colab 영수증](landau-tail-colab-replay.json)
+
+### 2026-11-24 GitHub Actions 재실행
+
+`v0.2.0` 커밋 `5cea9571018fe94ccf760c00c7db6f7c72817646`에서 5개 작업이 모두 통과했다. Linux Lean 작업은 82초였고, 그중 고정 Mathlib 의존성·캐시 복원에 55초가 걸렸다. CI에서 다운로드한 실수 영수증의 SHA-256은 Colab과 같은 `45fb8d94c5969278472f0c9b828d21dd7f97db81edf7ab898e989fed8cbd975e`였다. [릴리스 CI와 증거](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/runs/45347096386)
 
 ## P3.2 원문 간 연결
 
@@ -65,4 +69,4 @@ F=Q에서 노름만 따르는 후보 $\varphi(c)=h(|c|)$를 두고 $h(1)=0$이�
 | Alpöge Lean | 고정 `.olean`에서 타입·증명 항을 추출하고 두 경로를 확인 | `VwinOfRow.olean` 확보와 원본 RH 전체 커널 재실행 |
 | Masullo 원고 | 고정 PDF에서 수식 위치·측도·시험 함수 가정을 대조 | 주값 적분과 Euler 인자의 해석적 연결 |
 | 수치 코드 | 정확 유리수 값, 잘못된 부호·도체, 정밀도 소진, 보고서 변조를 구별 | 다른 입력으로의 해석적 증명 일반화 |
-| Lean 꼬리 인증 | 지수 포락과 임계값을 고정 실수 적분에 연결하고 Windows·Colab에서 재현 | GitHub Actions 실행 및 별도 운영자 Colab 재현 |
+| Lean 꼬리 인증 | 지수 포락과 임계값을 고정 실수 적분에 연결하고 Windows·Colab·GitHub Actions에서 재현 | 별도 운영자의 재현 |

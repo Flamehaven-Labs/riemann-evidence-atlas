@@ -8,10 +8,15 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: replay-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   replay:
     name: Python (${{ matrix.os }}, ${{ matrix.python }})
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
         python: ['3.10', '3.14']
@@ -24,6 +29,50 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -E -S tools/verify_baseline.py
+
+  research-models:
+    name: Research models and Colab notebook cells
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.14'
+      - name: Execute Colab notebook source on this runner
+        shell: bash
+        env:
+          ATLAS_REPLAY_ROOT: ${{ github.workspace }}
+          ATLAS_REPLAY_COMMIT: ${{ github.sha }}
+          ATLAS_REPLAY_OUTPUT: ${{ github.workspace }}/outputs/ci/models
+        run: |
+          set -euo pipefail
+          mkdir -p "$ATLAS_REPLAY_OUTPUT"
+          sha256sum colab/Research_Model_Replay.ipynb tools/verify_research_models.py \
+            > "$ATLAS_REPLAY_OUTPUT/input-sha256.txt"
+          python -E -S - <<'PY' 2>&1 | tee "$ATLAS_REPLAY_OUTPUT/notebook.log"
+          import json
+          from pathlib import Path
+          path = Path("colab/Research_Model_Replay.ipynb")
+          notebook = json.loads(path.read_bytes())
+          scope = {"__name__": "__main__"}
+          for i, cell in enumerate(notebook["cells"]):
+              if cell["cell_type"] == "code":
+                  if cell.get("outputs") or cell.get("execution_count") is not None:
+                      raise ValueError("Notebook must be committed with empty outputs")
+                  exec(compile("".join(cell["source"]), f"{path}:cell-{i}", "exec"), scope)
+          PY
+          python -E -S tools/verify_research_models.py --output outputs/model-repeat.json
+          cmp "$ATLAS_REPLAY_OUTPUT/numerical-models.json" outputs/model-repeat.json
+          sha256sum "$ATLAS_REPLAY_OUTPUT/numerical-models.json" > "$ATLAS_REPLAY_OUTPUT/receipt-sha256.txt"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: research-model-evidence
+          path: outputs/ci/models/
+          if-no-files-found: warn
 
   lean:
     name: Lean 4.33.1 and pinned Mathlib
@@ -39,6 +88,8 @@ jobs:
           mkdir -p outputs/ci
           git rev-parse HEAD > outputs/ci/source-commit.txt
           sha256sum lean-toolchain formal/landau/lean-toolchain formal/landau/lake-manifest.json \
+            tools/verify_model_proofs.py tests/lean/E2A*.lean \
+            docs/landau-second-case-*-replay.json docs/masullo/*-replay.json \
             > outputs/ci/input-sha256.txt
           cmp lean-toolchain formal/landau/lean-toolchain
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
@@ -69,11 +120,11 @@ jobs:
         working-directory: formal/landau
         shell: bash
         run: |
-          lake exe cache get Mathlib.Analysis.Complex.Exponential \
-            Mathlib.Analysis.SpecialFunctions.Gamma.Basic \
-            Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus \
-            Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Tactic.Linarith \
-            2>&1 | tee ../../outputs/ci/mathlib-setup.log
+          set -euo pipefail
+          imports="$(python -E -S ../../tools/verify_model_proofs.py --mathlib-imports)"
+          test -n "$imports"
+          mapfile -t modules <<< "$imports"
+          lake exe cache get "${modules[@]}" 2>&1 | tee ../../outputs/ci/mathlib-setup.log
           git diff --exit-code -- lean-toolchain lake-manifest.json
       - name: Replay real Landau tail and compare receipt
         shell: bash
@@ -81,7 +132,14 @@ jobs:
           python -E -S tools/verify_landau_tail.py --lean "$(elan which lean)" \
             --mathlib-project formal/landau --expect docs/landau-tail-lean-replay.json \
             > outputs/ci/landau-real.json 2> >(tee outputs/ci/landau-real.stderr >&2)
-          sha256sum outputs/ci/lean-fixture.json outputs/ci/landau-{rational,real}.json \
+      - name: Replay additional Lean models against Windows and Colab records
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -E -S tools/verify_model_proofs.py --lean "$(elan which lean)" \
+            --mathlib-project formal/landau --output-dir outputs/ci/model-proofs \
+            2>&1 | tee outputs/ci/model-proofs.log
+          find outputs/ci -type f -name '*.json' -print0 | sort -z | xargs -0 sha256sum \
             > outputs/ci/receipt-sha256.txt
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()

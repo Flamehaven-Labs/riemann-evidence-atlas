@@ -1,0 +1,22 @@
+{
+  "axioms": [
+    "'E2APositiveStrip.weight_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.second_moment_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.mass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.moment2_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.correlation_deficit_limit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.correlation_deficit_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ARealGramBlock.real_gram_block' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.strip_denominator_limit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.strip_lipschitz_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.strip_derivative_limit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.strip_linear_multiplier_nonzero_limit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2APositiveStrip.strip_fixed_jump_diverges' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "axioms_log_sha256": "515e55b346ceffdd5a96155d302d2ff35afc854e06b4c2a7a4864c6da65b74b3",
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "c6adf940bcfd76048b29cd8d76304a70485259c8bc51fe6f99213de054975f76",
+  "status": "PASS"
+}
