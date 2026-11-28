@@ -1,0 +1,66 @@
+{
+  "alpha": 0.125,
+  "cells": [
+    64,
+    128
+  ],
+  "driver_sha256": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a",
+  "evidence": "uncertified numerical diagnostic",
+  "level": 4,
+  "numpy": "2.4.4",
+  "places": {
+    "real": {
+      "far_from_zero": {
+        "coarse": 1.4141019509774602,
+        "fine": 0.7013285507805991,
+        "normalized_gram_condition": 48.84240971160135,
+        "orthogonal_increment": -0.7127734001968641,
+        "split_residual": 2.9976021664879227e-15
+      },
+      "near_zero": {
+        "coarse": -0.0009993792649569137,
+        "fine": -0.0009992885799353464,
+        "normalized_gram_condition": 48.84240971160135,
+        "orthogonal_increment": 9.068502156710852e-08,
+        "split_residual": 2.5576424540139616e-19
+      }
+    },
+    "real_and_two": {
+      "far_from_zero": {
+        "coarse": -1.9096705109155234,
+        "fine": 2.0009272499118587,
+        "normalized_gram_condition": 2658.9008813568694,
+        "orthogonal_increment": 3.910597760827376,
+        "split_residual": 6.217248937900877e-15
+      },
+      "near_zero": {
+        "coarse": -0.08954839045925184,
+        "fine": -0.10175613398611943,
+        "normalized_gram_condition": 2658.9008813568694,
+        "orthogonal_increment": -0.012207743526867704,
+        "split_residual": 1.0581813203458523e-16
+      }
+    }
+  },
+  "quadrature": {
+    "gram_min": 1.1641532182693481e-10,
+    "gram_radius_multiplier": 64,
+    "order": 7,
+    "step": 0.25,
+    "test_order": 36,
+    "theta_extent": 2048
+  },
+  "source_sha256": "520edb8ca17b6b3fd20d5c90cdc6e53d5d015c1bc4aa1bff38d33b6bb627eda7",
+  "trace_differences": {
+    "far_from_zero": {
+      "coarse": -3.3237724618929834,
+      "fine": 1.2995986991312596,
+      "orthogonal_increment": 4.62337116102424
+    },
+    "near_zero": {
+      "coarse": -0.08854901119429492,
+      "fine": -0.10075684540618408,
+      "orthogonal_increment": -0.01220783421188927
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "alpha": "1/8",
+  "arb_precision_bits": 160,
+  "cells": 128,
+  "constant_coefficient_magnitude_lower_expression_arb": "[0.05398393977523955260049492000581901754239219617 +/- 9.21e-48]",
+  "constant_coefficient_magnitude_upper_expression_arb": "[0.05410601008773955260049492000581901754239219617 +/- 9.21e-48]",
+  "evidence": "constant Fourier term in fixed lower-gate unpolarized trace compression",
+  "four_constant_rank_one_errors_upper_expression_arb": "[0.4502 +/- 6.13e-5]",
+  "gate": "1/16",
+  "level": 4,
+  "period": 2,
+  "python_flint_version": "0.9.0",
+  "rows": {
+    "near_origin": {
+      "real": {
+        "constant_rank_one_error_upper_expression_arb": "[0.03061 +/- 5.82e-6]",
+        "flat_energy_near_frequency_cap_arb": "[2.2827416060237536484466225376463728912376114745e-7 +/- 5.97e-54]",
+        "flat_energy_upper_expression_arb": "[0.23772961807012574530634045442380161641301477512 +/- 3.15e-48]",
+        "incoming_pairing_inner_interval_arb": [
+          "0.097351074218750000000000000000000000000000000000",
+          "0.64201164245605468750000000000000000000000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.15058 +/- 3.86e-6]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[0.83174 +/- 6.60e-6]",
+        "incoming_support_arb": [
+          "[0.097350097883925608530646283372290080912096536303 +/- 2.90e-49]",
+          "[0.64201270834387074203671028403121822916814043264 +/- 1.32e-48]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[0.3849 +/- 5.86e-5]",
+        "trial_norm_sq_far_cap_arb": "[1.6423382710734930715355861897568021804167777679e-7 +/- 7.86e-54]",
+        "trial_norm_sq_near_cap_arb": "[6.263444002178564886954332755701177666734284444e-6 +/- 3.65e-52]",
+        "trial_norm_sq_upper_expression_arb": "[0.024752345684357162855432717611881643888044878399 +/- 7.29e-49]",
+        "trial_pairing_lower_expression_arb": "[0.06105 +/- 1.10e-6]"
+      },
+      "real_and_two": {
+        "constant_rank_one_error_upper_expression_arb": "[0.1265 +/- 5.95e-5]",
+        "flat_energy_near_frequency_cap_arb": "[4.987674115195705665937325386933675074928220935e-5 +/- 1.06e-51]",
+        "flat_energy_upper_expression_arb": "[0.79377321001650947074585325875379457103865708010 +/- 8.33e-48]",
+        "incoming_pairing_inner_interval_arb": [
+          "0.097351074218750000000000000000000000000000000000",
+          "0.64201164245605468750000000000000000000000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.066561 +/- 4.79e-7]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[3.213363 +/- 4.81e-7]",
+        "incoming_support_arb": [
+          "[0.097350097883925608530646283372290080912096536303 +/- 2.90e-49]",
+          "[0.64201270834387074203671028403121822916814043264 +/- 1.32e-48]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[1.700 +/- 4.99e-4]",
+        "trial_norm_sq_far_cap_arb": "[2.919712481908432127174375448456537209629827143e-7 +/- 2.21e-53]",
+        "trial_norm_sq_near_cap_arb": "[0.022437692163879457813927517763458351475316258934 +/- 7.53e-49]",
+        "trial_norm_sq_upper_expression_arb": "[1.1542985695394033634305366528779826534123394722 +/- 3.53e-47]",
+        "trial_pairing_lower_expression_arb": "[0.277184 +/- 4.60e-7]"
+      }
+    },
+    "outer": {
+      "real": {
+        "constant_rank_one_error_upper_expression_arb": "[0.1042 +/- 3.96e-5]",
+        "flat_energy_near_frequency_cap_arb": "[1.4609546278552023350058384240936786503920713437e-5 +/- 5.82e-52]",
+        "flat_energy_upper_expression_arb": "[1.7518171221207636357987140641292776845107086716 +/- 4.37e-47]",
+        "incoming_pairing_inner_interval_arb": [
+          "6.2304077148437500000000000000000000000000000000",
+          "41.088811874389648437500000000000000000000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.090174 +/- 5.57e-7]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[7.148450 +/- 1.76e-7]",
+        "incoming_support_arb": [
+          "[6.2304062645712389459613621358265651783741783234 +/- 1.06e-47]",
+          "[41.088813334007727490349458177997966666760987689 +/- 4.44e-47]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[0.5185 +/- 5.46e-5]",
+        "trial_norm_sq_far_cap_arb": "[1.6423382710734930715355861897568021804167777679e-7 +/- 7.86e-54]",
+        "trial_norm_sq_near_cap_arb": "[6.263444002178564886954332755701177666734284444e-6 +/- 3.65e-52]",
+        "trial_norm_sq_upper_expression_arb": "[0.024752345684357162855432717611881643888044878399 +/- 7.29e-49]",
+        "trial_pairing_lower_expression_arb": "[0.0472443 +/- 8.38e-8]"
+      },
+      "real_and_two": {
+        "constant_rank_one_error_upper_expression_arb": "[0.1889 +/- 5.03e-5]",
+        "flat_energy_near_frequency_cap_arb": "[0.0027647550986428399682669004113801356233476412520 +/- 6.13e-50]",
+        "flat_energy_upper_expression_arb": "[1.6687797563315311723942572867911552850939939265 +/- 1.91e-47]",
+        "incoming_pairing_inner_interval_arb": [
+          "6.2304077148437500000000000000000000000000000000",
+          "41.088811874389648437500000000000000000000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.0027010 +/- 8.03e-8]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[6.8928075 +/- 6.65e-8]",
+        "incoming_support_arb": [
+          "[6.2304062645712389459613621358265651783741783234 +/- 1.06e-47]",
+          "[41.088813334007727490349458177997966666760987689 +/- 4.44e-47]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[1.769 +/- 3.26e-4]",
+        "trial_norm_sq_far_cap_arb": "[2.919712481908432127174375448456537209629827143e-7 +/- 2.21e-53]",
+        "trial_norm_sq_near_cap_arb": "[0.022437692163879457813927517763458351475316258934 +/- 7.53e-49]",
+        "trial_norm_sq_upper_expression_arb": "[1.1542985695394033634305366528779826534123394722 +/- 3.53e-47]",
+        "trial_pairing_lower_expression_arb": "[0.055836 +/- 7.69e-7]"
+      }
+    }
+  },
+  "source_sha256": {
+    "docs/masullo/s-local-dual-gram-160.json": "7620c8086921ae466d179211526fc6f5f8e63a04a14cabbe5366d4cc95041c4f",
+    "docs/masullo/s-local-primal-106.json": "3a12c7de6a2acb25a91f1c7ae85bdab7b83e93527463f5d784902dd5aa9c567f",
+    "tests/lean/E2AGeometricTraceTest.lean": "a3ec4fc5e93c99937315a55144822c477f4a4d7f2d35869b7d2ccb07cdb086c0",
+    "tools/s_local_incoming.py": "15684eb5e398ddb3f092eef7f4ceb9799d5c3e970b344aa78c49e5f1f2d73a6c",
+    "tools/s_local_primal.py": "d04f87eb7050bcfae375a40df7b424ce69acfc39456cb43391fc4b19a5295dce",
+    "tools/s_local_projection_upper.py": "f89acb7a1afddff9726a4f8d4ccfba7e0e5c7f6492cb8a33ff19cab8589d2915"
+  },
+  "spectral_dilation_depth": 3
+}

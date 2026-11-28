@@ -1,0 +1,17 @@
+{
+  "axioms": [
+    "'E2AFixedCharacterTrace.translate_kernel_average' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.kernel_average_orbit_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.twice_resolvent_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.summable_adjoint_columns' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.resolvent_rank_one_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.kernel_average_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.summable_resolvent_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFixedCharacterTrace.summable_mellin_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "e5cc000e8730668b234520a82fd3332d89694c9a643d77634b20db86441d16d9",
+  "status": "PASS"
+}

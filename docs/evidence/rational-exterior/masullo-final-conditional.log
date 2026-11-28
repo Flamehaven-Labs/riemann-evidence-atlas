@@ -1,0 +1,13 @@
+atlas_exterior_zeros_of_archived_statement (h : DirichletLNonvanishingRightOfHalf)
+  (τ : NNRealˣ →ₜ* NumberField.IdeleClassGroup (NumberField.RingOfIntegers ℚ) ℚ)
+  (hτ : Function.RightInverse ⇑τ ⇑(RiemannMasullo.ideleClassNorm ℚ))
+  (φ : RiemannMasullo.BruhatCompactSupport (NumberField.IdeleClassGroup (NumberField.RingOfIntegers ℚ) ℚ))
+  (hφ : ∀ (g : ↥(RiemannMasullo.ideleClassNorm ℚ).ker), ↑φ ↑g = 0) {α : ℝ} (hα : 0 < α) :
+  HasSum
+    (fun z =>
+      ↑((MeromorphicOn.divisor (RiemannMasullo.continuedCompletedHeckeL ↑(↑z).1) Set.univ) (↑z).2) *
+        RiemannMasullo.modulatedFourierMellin { toMonoidHom := RiemannMasullo.ideleClassNorm ℚ, continuous_toFun := ⋯ }
+          Set.univ ⋯ (RiemannMasullo.ideleClassTamagawaMeasure ℚ) (↑φ)
+          (RiemannMasullo.ideleClassNormTwist (↑(↑z).1) ((↑z).2 - 1 / 2)))
+    0
+'atlas_exterior_zeros_of_archived_statement' depends on axioms: [propext, Classical.choice, Quot.sound]

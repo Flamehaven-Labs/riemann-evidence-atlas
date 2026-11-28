@@ -1,0 +1,11 @@
+{
+  "axioms": [
+    "'E2ASLocalQuotientCore.dyadic_product_norm' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ASLocalQuotientCore.no_uniform_dyadic_level' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "a639f4ff54444c52c8fffb8d631e45474d6c94659226fde6ea1443845d52cec2",
+  "status": "PASS"
+}

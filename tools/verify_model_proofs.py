@@ -44,8 +44,8 @@ def save_receipt(output: Path, name: str, receipt: dict) -> None:
     )
 
 
-def compile_with_axioms(lean: Path, source: Path, env: dict[str, str]) -> list[str]:
-    output = run([str(lean), f"--root={ROOT}", "-j", "2", str(source)], ROOT, env)
+def compile_with_axioms(lean: Path, source: Path, env: dict[str, str], *, root: Path = ROOT) -> list[str]:
+    output = run([str(lean), f"--root={root}", "-j", "2", str(source)], root, env)
     lines = output.splitlines()
     names = set()
     for line in lines:

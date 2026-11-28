@@ -1,0 +1,18 @@
+RiemannMasullo.traceFormula_exteriorZeros_rat_of_dirichletGRH
+  (hGRH :
+    ∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+      1 / 2 < s.re → χ ≠ 1 ∨ s ≠ 1 → DirichletCharacter.LFunction χ s ≠ 0)
+  (τ : NNRealˣ →ₜ* NumberField.IdeleClassGroup (NumberField.RingOfIntegers ℚ) ℚ)
+  (hτ : Function.RightInverse ⇑τ ⇑(RiemannMasullo.ideleClassNorm ℚ))
+  (φ : RiemannMasullo.BruhatCompactSupport (NumberField.IdeleClassGroup (NumberField.RingOfIntegers ℚ) ℚ))
+  (hφ : ∀ (g : ↥(RiemannMasullo.ideleClassNorm ℚ).ker), ↑φ ↑g = 0) {α : ℝ} (hα : 0 < α) :
+  HasSum
+    (fun z =>
+      ↑((MeromorphicOn.divisor (RiemannMasullo.continuedCompletedHeckeL ↑(↑z).1) Set.univ) (↑z).2) *
+        RiemannMasullo.modulatedFourierMellin { toMonoidHom := RiemannMasullo.ideleClassNorm ℚ, continuous_toFun := ⋯ }
+          Set.univ ⋯ (RiemannMasullo.ideleClassTamagawaMeasure ℚ) (↑φ)
+          (RiemannMasullo.ideleClassNormTwist (↑(↑z).1) ((↑z).2 - 1 / 2)))
+    0
+'RiemannMasullo.traceFormula_exteriorZeros_rat_of_dirichletGRH' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

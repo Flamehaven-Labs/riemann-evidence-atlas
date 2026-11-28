@@ -1,0 +1,185 @@
+{
+  "alpha": 0.125,
+  "cells": [
+    64,
+    128
+  ],
+  "driver_sha256": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a",
+  "evidence": "uncertified numerical diagnostic",
+  "g1_source_sha256": "a3ec4fc5e93c99937315a55144822c477f4a4d7f2d35869b7d2ccb07cdb086c0",
+  "level": 4,
+  "numpy": "2.4.4",
+  "platform": "Windows",
+  "python": "3.14.10",
+  "results": {
+    "baseline": {
+      "places": {
+        "real": {
+          "balanced": {
+            "coarse": 0.662016903113056,
+            "fine": 0.6731448542342207,
+            "normalized_gram_condition": 48.84240971160135,
+            "orthogonal_increment": 0.011127951121164778,
+            "split_residual": 1.7520707107365752e-16
+          },
+          "quadratic": {
+            "coarse": 2.0751194748255597,
+            "fine": 1.3734741164348838,
+            "normalized_gram_condition": 48.84240971160135,
+            "orthogonal_increment": -0.7016453583906763,
+            "split_residual": 4.440892098500626e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "coarse": -3.1193028839358563,
+            "fine": -3.1816744549260507,
+            "normalized_gram_condition": 2658.9008813568694,
+            "orthogonal_increment": -0.062371570990194136,
+            "split_residual": 2.7755575615628914e-16
+          },
+          "quadratic": {
+            "coarse": -5.118521785310631,
+            "fine": -1.282503339000307,
+            "normalized_gram_condition": 2658.9008813568694,
+            "orthogonal_increment": 3.83601844631032,
+            "split_residual": 3.9968028886505635e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_differences": {
+        "balanced": {
+          "coarse": -3.781319787048912,
+          "fine": -3.8548193091602716,
+          "orthogonal_increment": -0.07349952211135892
+        },
+        "quadratic": {
+          "coarse": -7.193641260136191,
+          "fine": -2.655977455435191,
+          "orthogonal_increment": 4.537663804700996
+        }
+      }
+    },
+    "extended_gram": {
+      "places": {
+        "real": {
+          "balanced": {
+            "coarse": 0.6620103529081981,
+            "fine": 0.6731413964173396,
+            "normalized_gram_condition": 48.842400681976166,
+            "orthogonal_increment": 0.011131043509141656,
+            "split_residual": 1.4224732503009818e-16
+          },
+          "quadratic": {
+            "coarse": 2.075051596442431,
+            "fine": 1.3734907424118652,
+            "normalized_gram_condition": 48.842400681976166,
+            "orthogonal_increment": -0.701560854030563,
+            "split_residual": 2.9976021664879227e-15
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "coarse": -3.119292219618278,
+            "fine": -3.181671645474287,
+            "normalized_gram_condition": 2658.88395683142,
+            "orthogonal_increment": -0.0623794258560071,
+            "split_residual": 1.9845236565174673e-15
+          },
+          "quadratic": {
+            "coarse": -5.118484387769517,
+            "fine": -1.2835550391344759,
+            "normalized_gram_condition": 2658.88395683142,
+            "orthogonal_increment": 3.8349293486350473,
+            "split_residual": 5.773159728050814e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 128,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_differences": {
+        "balanced": {
+          "coarse": -3.781302572526476,
+          "fine": -3.8548130418916267,
+          "orthogonal_increment": -0.07351046936514875
+        },
+        "quadratic": {
+          "coarse": -7.193535984211948,
+          "fine": -2.657045781546341,
+          "orthogonal_increment": 4.53649020266561
+        }
+      }
+    },
+    "refined": {
+      "places": {
+        "real": {
+          "balanced": {
+            "coarse": 0.662016903265434,
+            "fine": 0.6731448543876969,
+            "normalized_gram_condition": 48.84240971160136,
+            "orthogonal_increment": 0.011127951122262829,
+            "split_residual": 6.938893903907228e-18
+          },
+          "quadratic": {
+            "coarse": 2.075119475031997,
+            "fine": 1.3734741165997304,
+            "normalized_gram_condition": 48.84240971160136,
+            "orthogonal_increment": -0.7016453584322642,
+            "split_residual": 2.220446049250313e-15
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "coarse": -3.124024881239021,
+            "fine": -3.1760140306832,
+            "normalized_gram_condition": 2657.8205157156235,
+            "orthogonal_increment": -0.05198914944417847,
+            "split_residual": 6.245004513516506e-16
+          },
+          "quadratic": {
+            "coarse": -5.111602203251451,
+            "fine": -1.2702397511476073,
+            "normalized_gram_condition": 2657.8205157156235,
+            "orthogonal_increment": 3.8413624521038505,
+            "split_residual": 7.105427357601002e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.125,
+        "test_order": 72,
+        "theta_extent": 4096
+      },
+      "trace_differences": {
+        "balanced": {
+          "coarse": -3.7860417845044547,
+          "fine": -3.8491588850708967,
+          "orthogonal_increment": -0.06311710056644129
+        },
+        "quadratic": {
+          "coarse": -7.1867216782834475,
+          "fine": -2.643713867747338,
+          "orthogonal_increment": 4.543007810536115
+        }
+      }
+    }
+  },
+  "source_sha256": "520edb8ca17b6b3fd20d5c90cdc6e53d5d015c1bc4aa1bff38d33b6bb627eda7"
+}

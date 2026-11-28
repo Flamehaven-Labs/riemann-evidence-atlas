@@ -1,0 +1,58 @@
+{
+  "new_oleans_sha256": {
+    "RationalExteriorZeros.olean": "ed80a5e3654c5804bea8157fcf7914713d775ce4b04413bcafceb89185e710f5",
+    "RationalExteriorZeros.olean.private": "04714fd670da5c1fe28d3f5ff372e7089e732df662df4ed49d90414faefdb335"
+  },
+  "target_source_sha256": "3512f4a932fdca7ed033b6a2d9b7ceb2090c22e0dc46c33ea37667c4445b759a",
+  "lake_lock_sha256": "cd7d2b7afecd00b17f4465bb2b939ac29d21f7a276556e10e94984e8a827941e",
+  "project_commit": "6dfe34ef2ef48f1f2c2cfd2274b73663a0eac07c",
+  "target_axioms": {
+    "exit": 0,
+    "argv": [
+      "/content/atlas-proof-composition/lean-4.36.0-linux/bin/lean",
+      "-j1",
+      "MasulloAudit.lean"
+    ],
+    "sha256": "da125264767e34dae2aa3a22f67de309af3e0c480990dc186c181596b1c45dca",
+    "axioms": {
+      "RiemannMasullo.traceFormula_exteriorZeros_rat_of_dirichletGRH": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "first_lines": [
+      "RiemannMasullo.traceFormula_exteriorZeros_rat_of_dirichletGRH",
+      "  (hGRH :",
+      "    \u2200 (N : \u2115) [inst : NeZero N] (\u03c7 : DirichletCharacter \u2102 N) (s : \u2102),",
+      "      1 / 2 < s.re \u2192 \u03c7 \u2260 1 \u2228 s \u2260 1 \u2192 DirichletCharacter.LFunction \u03c7 s \u2260 0)",
+      "  (\u03c4 : NNReal\u02e3 \u2192\u209c* NumberField.IdeleClassGroup (NumberField.RingOfIntegers \u211a) \u211a)"
+    ]
+  },
+  "target_pass": true,
+  "conditional_application": {
+    "exit": 0,
+    "argv": [
+      "/content/atlas-proof-composition/lean-4.36.0-linux/bin/lean",
+      "-j1",
+      "ConditionalApplication.lean"
+    ],
+    "sha256": "5b5d09bf40e870ef0574a7691b911aef00f86d67086fd5840c6324c8b579aae7",
+    "axioms": {
+      "atlas_exterior_zeros_of_archived_statement": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "first_lines": [
+      "atlas_exterior_zeros_of_archived_statement (h : DirichletLNonvanishingRightOfHalf)",
+      "  (\u03c4 : NNReal\u02e3 \u2192\u209c* NumberField.IdeleClassGroup (NumberField.RingOfIntegers \u211a) \u211a)",
+      "  (h\u03c4 : Function.RightInverse \u21d1\u03c4 \u21d1(RiemannMasullo.ideleClassNorm \u211a))",
+      "  (\u03c6 : RiemannMasullo.BruhatCompactSupport (NumberField.IdeleClassGroup (NumberField.RingOfIntegers \u211a) \u211a))",
+      "  (h\u03c6 : \u2200 (g : \u21a5(RiemannMasullo.ideleClassNorm \u211a).ker), \u2191\u03c6 \u2191g = 0) {\u03b1 : \u211d} (h\u03b1 : 0 < \u03b1) :"
+    ]
+  },
+  "conditional_pass": true,
+  "composed_without_grh_hypothesis": "AMBER_ORIGINAL_IMPORT_CLOSURE"
+}

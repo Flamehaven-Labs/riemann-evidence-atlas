@@ -1,0 +1,179 @@
+{
+  "alpha": 0.125,
+  "evidence": "uncertified numerical diagnostic",
+  "results": [
+    {
+      "cells": 32,
+      "dimension": 32,
+      "level": 2,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 30.05000144945463,
+            "trace": 0.7105156168573725,
+            "trace_solve_residual": 1.302897459402273e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 30.05000144945463,
+            "trace": 2.882822760170056,
+            "trace_solve_residual": 7.088682371047295e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 1506.5583321629113,
+            "trace": -1.125477418746843,
+            "trace_solve_residual": 4.399130311815662e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 1506.5583321629113,
+            "trace": -5.104524797150966,
+            "trace_solve_residual": 1.2787264380283296e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -1.8359930356042156,
+        "quadratic": -7.987347557321022
+      }
+    },
+    {
+      "cells": 32,
+      "dimension": 32,
+      "level": 4,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 56.31463694709033,
+            "trace": 0.622384522926633,
+            "trace_solve_residual": 2.00994129149257e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 56.31463694709033,
+            "trace": 1.3262706205381123,
+            "trace_solve_residual": 3.821250788461911e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 3447.557942501061,
+            "trace": -2.670972647476816,
+            "trace_solve_residual": 1.2380243230116425e-15
+          },
+          "quadratic": {
+            "normalized_gram_condition": 3447.557942501061,
+            "trace": -3.0711207440157846,
+            "trace_solve_residual": 1.1564017441856746e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -3.293357170403449,
+        "quadratic": -4.397391364553897
+      }
+    },
+    {
+      "cells": 64,
+      "dimension": 64,
+      "level": 2,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 29.42396694333049,
+            "trace": 0.7120906563506971,
+            "trace_solve_residual": 1.3258710631771277e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 29.42396694333049,
+            "trace": 2.933399922474143,
+            "trace_solve_residual": 8.106003107940794e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 1430.5297524263683,
+            "trace": -1.2281911912092989,
+            "trace_solve_residual": 9.673818061784937e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 1430.5297524263683,
+            "trace": -5.152864912616797,
+            "trace_solve_residual": 3.2038262026770773e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -1.940281847559996,
+        "quadratic": -8.08626483509094
+      }
+    },
+    {
+      "cells": 64,
+      "dimension": 64,
+      "level": 4,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 50.39748441507561,
+            "trace": 0.6620169031130576,
+            "trace_solve_residual": 2.368032864734074e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 50.39748441507561,
+            "trace": 2.075119474825561,
+            "trace_solve_residual": 1.1668096821586323e-15
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 2917.1405204414327,
+            "trace": -3.1193028839358603,
+            "trace_solve_residual": 1.973179227685553e-15
+          },
+          "quadratic": {
+            "normalized_gram_condition": 2917.1405204414327,
+            "trace": -5.118521785310685,
+            "trace_solve_residual": 5.957043294592186e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -3.781319787048918,
+        "quadratic": -7.193641260136246
+      }
+    }
+  ],
+  "source_sha256": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a"
+}

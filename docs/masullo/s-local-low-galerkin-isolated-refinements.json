@@ -1,0 +1,139 @@
+{
+  "alpha": 0.125,
+  "evidence": "uncertified numerical diagnostic",
+  "results": [
+    {
+      "cells": 32,
+      "change": "theta_extent",
+      "dimension": 32,
+      "level": 2,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 30.05000144945463,
+            "trace": 0.7105156168573725,
+            "trace_solve_residual": 1.302897459402273e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 30.05000144945463,
+            "trace": 2.882822760170056,
+            "trace_solve_residual": 7.088682371047295e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 1506.5570297345303,
+            "trace": -1.1257628296998,
+            "trace_solve_residual": 3.865195248540857e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 1506.5570297345303,
+            "trace": -5.105169892100792,
+            "trace_solve_residual": 1.320564391708249e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 8192
+      },
+      "trace_difference": {
+        "balanced": -1.8362784465571724,
+        "quadratic": -7.987992652270848
+      }
+    },
+    {
+      "cells": 32,
+      "change": "test_order",
+      "dimension": 32,
+      "level": 2,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 30.05000144945463,
+            "trace": 0.7105156169447568,
+            "trace_solve_residual": 1.192674451075165e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 30.05000144945463,
+            "trace": 2.882822760305473,
+            "trace_solve_residual": 7.71313882105868e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 1506.5583321629113,
+            "trace": -1.1262703375759742,
+            "trace_solve_residual": 4.208383289433916e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 1506.5583321629113,
+            "trace": -5.105691081982413,
+            "trace_solve_residual": 1.2675844815913405e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 72,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -1.836785954520731,
+        "quadratic": -7.988513842287886
+      }
+    },
+    {
+      "cells": 32,
+      "change": "radius_step",
+      "dimension": 32,
+      "level": 2,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 30.050001449454648,
+            "trace": 0.7105156168573719,
+            "trace_solve_residual": 1.4160880788870457e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 30.050001449454648,
+            "trace": 2.882822760170053,
+            "trace_solve_residual": 8.1495518687815e-16
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 1506.7040656712613,
+            "trace": -1.1592155114544849,
+            "trace_solve_residual": 4.173107170601427e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 1506.7040656712613,
+            "trace": -5.126563241038512,
+            "trace_solve_residual": 1.2881830013787271e-15
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.125,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -1.8697311283118567,
+        "quadratic": -8.009386001208565
+      }
+    }
+  ],
+  "source_sha256": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a"
+}

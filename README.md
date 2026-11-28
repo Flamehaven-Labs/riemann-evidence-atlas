@@ -1,21 +1,28 @@
 # Riemann Evidence Atlas
 
-리만 가설 관련 Lean 선언의 의존성과 논문의 계산 가능한 보조항을 추적하는 독립 연구 저장소입니다. 원본 선언의 타입과 증명 항을 따로 읽고, 정확 유리수로 수치 구간을 재현하며, 고정 Landau 꼬리 적분을 Lean으로 인증합니다.
+Riemann Evidence Atlas is an independent research repository for tracing Lean declarations related to the Riemann hypothesis and reproducing computable terms from the source papers. It separates declaration types from proof terms, computes exact rational enclosures, and certifies a fixed Landau tail integral in Lean.
 
-[버전 및 릴리스 노트](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/releases) · [GitHub Actions](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/workflows/checks.yml) · [변경 기록](CHANGELOG.md)
+[Versions and release notes](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/releases) · [GitHub Actions](https://github.com/Flamehaven-Labs/riemann-evidence-atlas/actions/workflows/checks.yml) · [Changelog](CHANGELOG.md)
 
-현재 연구는 Alpöge의 Lean 증명과 Masullo의 Hecke GRH 접근을 단계별로 읽고, 공통으로 대조할 수 있는 수학적 항과 새로 검증할 가설을 찾는 데 집중합니다. [북극성과 연구 로드맵](docs/ROADMAP_ko.md)
+The project compares Alpöge's Lean proof with Masullo's approach to Hecke GRH, one
+proof obligation at a time. The latest checkpoint documents where the numerical
+trace certificate ran out of room and how an existing Lean theorem supplied a
+conditional result for exterior zeros over the rationals.
 
-## 빠른 실행
+[Read the case study](docs/RESEARCH_CASE_STUDY.md) · [Current roadmap](docs/ROADMAP.md) ·
+[Colab Lean evidence and import blockers](docs/masullo/RH_PROOF_COMPOSITION_REPLAY.md) ·
+[Release notes](docs/RELEASE_V0.3.0.md) · [Related writing](docs/RESEARCH_CASE_STUDY.md#related-reading)
 
-Python 3.10 이상. 수치 실행과 회귀 검사에는 Python 표준 라이브러리만 필요합니다.
+## Quick start
+
+Use Python 3.10 or later. Numerical runs and regression tests require only the Python standard library.
 
 ~~~sh
 python -E -S tools/verify_baseline.py
 python window_kernel.py
 ~~~
 
-직접 입력은 JSON으로 전달합니다. 다음 입력은 양의 반직선에서 창 $[1,3]$을 제외한 부분의 적분이 $1/200$ 이하인지 판단합니다.
+Pass inputs as JSON. The following case tests whether the integral over the positive half-line outside $[1,3]$ is at most $1/200$.
 
 ~~~json
 {"component":"outside_window","k":3,"rate":"3","a":"1","b":"3","cap":"1/200","precision_bits":128}
@@ -25,64 +32,82 @@ python window_kernel.py
 python window_kernel.py --window case.json
 ~~~
 
-| 종료 | 의미 |
+| Exit code | Meaning |
 | --- | --- |
-| 0 | 계산된 상한이 임계값 이하 |
-| 1 | 계산된 하한이 임계값을 초과했거나 입력 거부 |
-| 2 | 구간이 임계값을 가르고 지정한 정밀도 예산이 소진됨 |
-| 3 | 기타 실행 상태 |
+| 0 | The computed upper bound is at or below the threshold. |
+| 1 | The computed lower bound exceeds the threshold, or the input was rejected. |
+| 2 | The enclosure straddles the threshold and the precision budget is exhausted. |
+| 3 | Another execution outcome occurred. |
 
-`--ratio`는 과거 기준과 비교하는 회귀 사례입니다. 고정 $\lambda=10^{-12}$의 MB-06 비율을 같은 산술 방식으로 비교하는 선택 입력입니다. `lambda`, `cap`, `precision_bits`를 전달합니다. 기존 Navier–Stokes 저장소에서 가져온 산술과 실행기 부분은 이 저장소에 포함되어 있습니다. 다른 저장소, 패키지 설치, 네트워크 연결 없이 실행합니다. [출처와 라이선스](NOTICE.md)
+The optional `--ratio` input reproduces a historical MB-06 regression case at $\lambda=10^{-12}$ with the same arithmetic. Supply `lambda`, `cap`, and `precision_bits`. The arithmetic and runner code adapted from the Navier–Stokes repository are included here. These runs work offline without additional packages or a checkout of that repository. [Attribution and license](NOTICE.md)
 
-## 계산과 검증 범위
+## Computation and verification scope
 
-저자 소스의 `landau_window_ineq`에서 $s=\sigma-2>0$인 양의 커널 $u^k e^{-su}/k!$을 선택했습니다. $P_k(x)=\sum_{j=0}^k x^j/j!$에 대해 $-e^{-su}P_k(su)/s^{k+1}$을 원시함수로 사용합니다. 양의 반직선 적분 $s^{-(k+1)}$에서 유한 창 적분을 빼면 전체 꼬리를 계산할 수 있습니다.
+We extract the positive kernel $u^k e^{-su}/k!$ with $s=\sigma-2>0$ from the author's `landau_window_ineq`. With $P_k(x)=\sum_{j=0}^k x^j/j!$, an antiderivative is $-e^{-su}P_k(su)/s^{k+1}$. Subtract the finite-window integral from the positive half-line integral $s^{-(k+1)}$ to compute the full tail.
 
-- 입력은 무차원이며 $0\le k\le64$, $0\le a<b$, $s>0$, $sb\le16$을 지원합니다.
-- 관측량은 입력 바이트 SHA-256, 적분의 정확한 유리수 구간, 판정에 사용된 정밀도입니다. 128, 256, 512 fractional bits 중 지정된 예산을 사용합니다.
-- 예시 꼬리 적분은 약 $0.00461721725334$입니다. $1/200$은 상한으로 채택되고, $1/300$은 기각됩니다.
-- 최상위 Lean 선언 등의 소스 참조 13개와 Landau 부등식 모듈까지의 import 경로를 기록했습니다. 원본 Lean 4.33.1의 5개 모듈에서 7개 선언과 6개 연결 VALUE 간선을 재현했고, 별도로 378개 미해결 직접 참조를 분류했습니다. 고정 Landau 꼬리 적분의 128비트 포함과 $1/300<J\le1/200$은 Lean 4.33.1과 고정 Mathlib에서 검증했습니다. 전체 전이 폐쇄, 원본 RH 커널 재검사, Masullo 적분의 해석적 연결은 열린 과제입니다.
+- Inputs are dimensionless. The supported domain is $0\le k\le64$, $0\le a<b$, $s>0$, and $sb\le16$.
+- The report records SHA-256 of the input bytes, the exact rational enclosure, and the precision used for the decision. Supported budgets are 128, 256, and 512 fractional bits.
+- The example tail is approximately $0.00461721725334$. The calculation accepts $1/200$ as an upper bound and rejects $1/300$.
+- The source trace records 13 references, including top-level Lean declarations, and the import path to the Landau inequality. The Lean 4.33.1 replay recovered seven declarations and six VALUE edges from five original modules. A separate pass classified 378 unresolved direct references. Lean 4.33.1 with pinned Mathlib verified the fixed tail's 128-bit enclosure and $1/300<J\le1/200$. Full transitive closure, a kernel recheck of the original RH proof, and the analytic link to Masullo's integral remain open.
 
-[Lean 추적 기록](rh-proof-trace.json) · [독립 실행 결과](window-results-v2.json) · [이전 Colab 기준 결과](window-results.json) · [현재 실행 기록](docs/standalone-replay.json)
+[Lean trace](rh-proof-trace.json) · [Standalone results](window-results-v2.json) · [Earlier Colab baseline](window-results.json) · [Replay receipt](docs/standalone-replay.json)
 
-| 검증 | 재현 범위 | 근거 |
+| Check | Replay scope | Evidence |
 | --- | --- | --- |
-| Python | Linux·Windows의 Python 3.10·3.14에서 고정 수치 사례와 51개 회귀 검사를 실행합니다. | [수치 결과](window-results-v2.json) · [CI](.github/workflows/checks.yml) |
-| 연구 모델 | 두 번째 Landau의 유리수 결과, 소수 2 단위 껍질의 정확한 합, 양의 띠 폭의 보조 수치 계산을 같은 노트북 소스로 재생합니다. | [모델 재현 노트북](colab/Research_Model_Replay.ipynb) |
-| Lean과 Mathlib | Lean 4.33.1과 고정 Mathlib로 기존 기준선에 더해 두 번째 Landau, RH 반사, 쌍직교 상계, 두 영점 행렬, 양의 띠 폭에 관한 28개 선언을 재실행합니다. CI는 입력과 영수증의 해시 및 로그를 보존합니다. | [Mathlib 잠금](formal/landau/lake-manifest.json) · [현재 연구 로드맵](docs/ROADMAP_ko.md) |
-| 원본 Lean 참조 | 보존된 `.olean`에서 선언의 타입과 증명 항 직접 참조를 추출합니다. | [의존성 분석](docs/PROOF_DEPENDENCY_PILOT_ko.md) |
+| Python | Fixed numerical cases and 51 regression tests on Linux and Windows with Python 3.10 and 3.14. | [Numerical results](window-results-v2.json) · [CI](.github/workflows/checks.yml) |
+| Research models | The same notebook source replays the second Landau rational calculation, the exact prime-2 unit-shell sums, and the positive-width numerical check. | [Model replay notebook](colab/Research_Model_Replay.ipynb) |
+| Lean and Mathlib | Lean 4.33.1 with pinned Mathlib replays the baseline and 28 declarations for the second Landau case, RH reflection, the biorthogonal bound, the two-zero matrix, and positive strip width. CI preserves input and receipt hashes and execution logs. | [Mathlib lock](formal/landau/lake-manifest.json) · [Research roadmap](docs/ROADMAP.md) |
+| Original Lean references | Extracts direct type and proof-term references from preserved `.olean` files. | [Dependency analysis](docs/PROOF_DEPENDENCY_PILOT.md) |
 
-## RH 내부 추가 Landau 사례 (미릴리스)
+## Second RH Landau Case
 
-고정 Lean 사례와 다른 입력의 꼬리 적분을 동일 구간 계산기로 검사했습니다. 로컬 Lean 실행으로 실제 적분이 저장된 256비트 구간에 포함되고 정해진 임계값을 만족함을 확인했습니다. [두 번째 사례와 실행 방법](docs/LANDAU_SECOND_CASE_ko.md) · [수치 영수증](docs/landau-second-case.json) · [Lean 영수증](docs/landau-second-case-lean-replay.json)
+The same interval calculator tests a tail integral at different inputs. A local Lean run verified that the real integral lies inside the saved 256-bit enclosure and satisfies the stated thresholds. [Second case and replay](docs/LANDAU_SECOND_CASE.md) · [Numerical receipt](docs/landau-second-case.json) · [Lean receipt](docs/landau-second-case-lean-replay.json)
 
-## Masullo 원고에서 분리한 두 영점 모형
+## Zero-Mode Models from the Masullo Manuscript
 
-균일 쌍직교 상계가 작은 간격과 양립하지 않는 조건을 형식화했습니다. 두 영점이 생성하는 공간에서는 승수값 차이가 비대각항을 제어합니다. 폭 0에서는 Lipschitz 승수의 비대각항이 0으로 가고, 고정 양의 폭에서는 승수 도함수에 비례하는 극한이 남을 수 있습니다. [상계의 실패](docs/masullo/BIORTHOGONAL_GAP_ko.md) · [두 영점의 행렬](docs/masullo/TWO_ZERO_BLOCK_ko.md) · [양의 띠 폭](docs/masullo/POSITIVE_STRIP_GRAM_ko.md)
+We formalized conditions under which arbitrarily small gaps preclude a uniform biorthogonal bound. In the span of two zero modes, the multiplier difference controls the off-diagonal entry. At zero width a Lipschitz multiplier makes the entry tend to zero. At fixed positive width a limit proportional to the multiplier derivative can remain. [Failure of the bound](docs/masullo/BIORTHOGONAL_GAP.md) · [Two-zero matrix](docs/masullo/TWO_ZERO_BLOCK.md) · [Positive strip width](docs/masullo/POSITIVE_STRIP_GRAM.md)
+
+As two modes coalesce, the divided difference and the second Gram vector approach the derivative direction in weighted $L^2$. The limiting matrix is scalar when the multiplier derivative vanishes and otherwise has a Jordan term. Seven Lean declarations replayed on Windows and Colab. [Mode confluence and Jordan structure](docs/masullo/MODE_CONFLUENCE.md)
+
+We verified the action of the logarithmic integral operator on derivative modes and the weighted $L^2$ limit, then compared the formulas with the manuscript's logarithmic moments and multiplicity conditions. Seven Lean declarations matched on Windows and Colab. [Mellin multipliers in logarithmic coordinates](docs/masullo/MELLIN_TRANSLATION.md)
+
+Lean verified the reciprocal weight in the idelic quotient, quotient norm and dual action, and triangular translation of zero modes. The radial application assumes the manuscript's density theorem and includes the resolvent integral on an exponential mode. [Idelic quotient and zero modes](docs/masullo/ADELIC_QUOTIENT.md)
+
+The weighted translation bound yields the generator energy estimate. Lean verifies summability of the squared resolvent column norms from the zero count. [Resolvent and Hilbert–Schmidt estimate](docs/masullo/RESOLVENT_HILBERT_SCHMIDT.md)
+
+The fixed-character trace follows from kernel differentiation, factorization through two resolvents, and an absolutely summable Mellin diagonal. Eight Lean declarations replayed on Windows and Colab. Standard operator theory gives the trace-class conclusion and trace norm convergence of orthogonal compressions. [Fixed-character trace](docs/masullo/FIXED_CHARACTER_TRACE.md)
+
+Fourier decay of the test function and Hecke zero counts give trace norm summability across all character blocks in the radial model. Coefficient cancellation and series comparison replayed in pinned Lean on Windows and Colab. [Trace over all character components](docs/masullo/GLOBAL_CHARACTER_TRACE.md)
+
+For the geometric comparison over the rationals, seven declarations for the fixed radial test replayed in Lean on Windows and Colab. The unfolded S-local Fourier integral yields the exact prime-2 term and a one-sided cutoff error bound. The weighted quotient comparison and the global-to-local equality remain open. The separate rational exterior-zero cancellation theorem is checked under the archived Dirichlet nonvanishing hypothesis. [Geometric trace comparison](docs/masullo/GEOMETRIC_TRACE_COMPARISON.md) · [S-local cutoff calculation](docs/masullo/S_LOCAL_SHARP_CUTOFF.md)
+
+For the trivial angular type over the rationals, the product-norm Paley–Wiener core now has a dyadic formula. At fixed cutoffs the weighted compression is trace class with an integrable trace density, including for smooth symmetric frequency masks. This gives an operator to compare with the two unfolded schedules. [Weighted S-local quotient](docs/masullo/S_LOCAL_WEIGHTED_QUOTIENT.md) · [Unfolded schedule dependence](docs/masullo/NEGATIVE_RESULT_REGISTER.md)
+
+The trace split isolates the lower frequency gate and the single origin condition that survives the weighted closure. The corresponding polar correction vanishes on the quadratic schedule. The unpolarized moving-window comparison remains open. [Upper and lower trace terms](docs/masullo/S_LOCAL_TRACE_SPLIT.md)
 
 ## Colab
 
-[Colab에서 연구 모델 노트북 열기](https://colab.research.google.com/github/Flamehaven-Labs/riemann-evidence-atlas/blob/main/colab/Research_Model_Replay.ipynb). 전체 Git 커밋 SHA를 지정하고, Lean 재실행에는 `RUN_LEAN`을 켭니다. GitHub Actions는 같은 노트북의 수치 셀을 GitHub 런너에서 실행하고 별도의 Lean 작업에서 보존된 Colab 영수증을 대조합니다. 실제 Colab 세션의 증거는 개별 영수증에 기록합니다. [실행 방법](docs/LEAN_MATCH_AND_COLAB_ko.md) · [기존 10개 수치 사례 노트북](RH_Window.ipynb)
+[Open the research model notebook in Colab](https://colab.research.google.com/github/Flamehaven-Labs/riemann-evidence-atlas/blob/main/colab/Research_Model_Replay.ipynb). Supply a full Git commit SHA and enable `RUN_LEAN` for Lean replay. GitHub Actions runs the numerical cells on a GitHub runner and compares the saved Colab receipts in a separate Lean job. The individual receipts identify runs that took place in an actual Colab session. [Replay instructions](docs/LEAN_MATCH_AND_COLAB.md) · [Original 10-case notebook](RH_Window.ipynb)
 
-## 원본과 설계 문서
+## Sources and Design Documents
 
-| 자료 | 역할 |
+| Document | Contents |
 | --- | --- |
-| [교차 연구 실행 명세](docs/CROSS_REPO_WORKFLOW_AND_VERIFICATION_SPEC_ko.md) | 소스, 형식 증명, 수치 인증, 실행, 전이의 근거와 다음 단계 |
-| [엔지니어링 연구 보고서](docs/ENGINEERING_RESEARCH_REPORT_ko.md) | 원본 Landau 분석, NSRW와 TOE에 적용할 후보 실험 |
-| [현재 상태](docs/REPOSITORY_BASELINE_ko.md) | 과거 기록 보존, 이번 검수와 미실행 항목 |
-| [증명 항 참조 실험](docs/PROOF_DEPENDENCY_PILOT_ko.md) | 원본 Lean 컴파일 산출물에서 타입·증명 항의 직접 참조 추출 |
-| [Lean 대조 및 Colab 실행 순서](docs/LEAN_MATCH_AND_COLAB_ko.md) | 합성 선언, 원본 보조 증명, Linux 재현의 입력과 결과 |
-| [P0–P3 재패치 순서](docs/PATCH_SEQUENCE_P0_P3_ko.md) | 기존 검수 기준선, 원본 Lean 경로 확장, 두 연구의 국소 항 비교와 형식 연결 |
-| [2026-11-23 로컬 검수 기록](docs/LOCAL_VALIDATION_2026-11-23_ko.md) | 17개 회귀 테스트, Lean 4.33.1 직접 참조, 합성 Choice 전이, Python 다중 버전과 노트북 실행의 정확한 범위 |
-| [Inspector 검수와 수용 판정](docs/INSPECTOR_REVIEW_2026-11-23_ko.md) | 검수별 근거와 ACCEPT·AMBER·REJECT |
-| [P0 기준선 재현](docs/P0_BASELINE_REPLAY_ko.md) | 새 체크아웃에서의 실행과 원본 증거 재생 |
-| [P3 Landau 꼬리 검증](docs/P3_LANDAU_TAIL_ko.md) | 고정 입력의 유리수 포락, 실수 적분, Lean 재현 절차 |
-| [P0–P3 독립 검수](docs/P0_P3_INDEPENDENT_AUDIT_2026-11-23_ko.md) | 11월 23일 검수 범위와 당시 Mathlib 결측 기록 |
-| [Masullo 원고와 소수 2 기준선](docs/masullo/README_ko.md) | PDF 출처·중요 페이지·유리수 항등식 |
-| [소수 2 문자 비교](docs/masullo/P2_CHARACTER_COMPARISON_ko.md) | 네 문자와 modulus·conductor 대조, 원문의 연결 조건 |
-| [자료 목록](sources.json) · [PDF 페이지 색인](pdf-pages.jsonl) | 4개 PDF 및 공개 입력의 출처, 해시, 원본 페이지 |
-| [Lean 아카이브](lean-archive-manifest.json) · [추출물 기록](lean-extract-manifest.json) | 아카이브 14조각과 추출 파일 15개의 경로 및 SHA-256 |
-| [변경 기록](CHANGELOG.md) | 공개 버전과 이전 로컬 기준선 |
+| [Cross-project verification specification](docs/CROSS_REPO_WORKFLOW_AND_VERIFICATION_SPEC.md) | Source, formal proof, numerical certificate, execution, and transfer evidence. |
+| [Engineering research report](docs/ENGINEERING_RESEARCH_REPORT.md) | Source analysis of Landau and candidate NSRW and TOE experiments. |
+| [Repository baseline](docs/REPOSITORY_BASELINE.md) | Preserved historical records, verification scope, and pending runs. |
+| [Proof-term reference pilot](docs/PROOF_DEPENDENCY_PILOT.md) | Direct type and proof-term references in the original Lean artifacts. |
+| [Lean matching and Colab replay](docs/LEAN_MATCH_AND_COLAB.md) | Inputs and results for synthetic declarations, original helper proofs, and Linux replay. |
+| [P0–P3 patch sequence](docs/PATCH_SEQUENCE_P0_P3.md) | Review baselines, original Lean paths, local terms across both sources, and formal connections. |
+| [2026-11-23 local validation](docs/LOCAL_VALIDATION_2026-11-23.md) | Scope of 17 regression tests, Lean 4.33.1 direct references, synthetic Choice paths, Python compatibility, and notebook execution. |
+| [Inspector review and dispositions](docs/INSPECTOR_REVIEW_2026-11-23.md) | Evidence for each review and the ACCEPT, AMBER, and REJECT decisions. |
+| [P0 baseline replay](docs/P0_BASELINE_REPLAY.md) | Running from a fresh checkout and replaying original evidence. |
+| [P3 Landau tail verification](docs/P3_LANDAU_TAIL.md) | Pinned rational enclosure, real integral, and Lean replay. |
+| [Independent P0–P3 audit](docs/P0_P3_INDEPENDENT_AUDIT_2026-11-23.md) | Scope of the November 23 audit and the then-missing Mathlib environment. |
+| [Masullo manuscript and prime-2 baseline](docs/masullo/README.md) | PDF provenance, key pages, and rational identities. |
+| [Prime-2 character comparison](docs/masullo/P2_CHARACTER_COMPARISON.md) | Four characters, modulus versus conductor, and conditions for relating the primary sources. |
+| [Source inventory](sources.json) · [PDF page index](pdf-pages.jsonl) | Provenance, hashes, and original pages for four PDFs and public inputs. |
+| [Lean archive](lean-archive-manifest.json) · [Extraction manifest](lean-extract-manifest.json) | Paths and SHA-256 digests for 14 archive fragments and 15 extracted files. |
+| [Changelog](CHANGELOG.md) | Public versions and the earlier local baseline. |
 
-소스 추적을 다시 실행할 때는 원본 조각을 아카이브 목록의 URL에서 지정된 `sources/lean-parts/` 경로에 저장합니다. 필요한 추출 파일은 추출물 기록의 아카이브 항목을 사용합니다. `python verify_lean_archive.py`로 조각과 지정된 원본 파일을 확인하고, `python trace_lean.py`로 import 그래프를 다시 만듭니다. PDF 색인 재생성에는 선택적으로 `pypdfium2`와 자료 목록의 원본 파일이 필요합니다. 다운로드한 원본, 대형 import 그래프, 내부 메모는 로컬에 보존합니다.
+To replay source tracing, download the original fragments from the archive inventory to the specified `sources/lean-parts/` paths. Use the extraction manifest to locate the required archive members. Run `python verify_lean_archive.py` to check the fragments and specified originals, then `python trace_lean.py` to rebuild the import graph. Rebuilding the PDF index requires the original files in the source inventory and the optional `pypdfium2` package. Downloaded originals, the large import graph, and local working notes are kept locally.

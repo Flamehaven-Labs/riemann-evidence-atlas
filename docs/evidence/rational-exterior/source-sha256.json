@@ -1,0 +1,12 @@
+{
+  "upstream_commit": "6dfe34ef2ef48f1f2c2cfd2274b73663a0eac07c",
+  "archive_sha256": {
+    "masullo-source-6dfe34e.tar.gz": "4cdb8be6ccdaca5cfee29fe80027f02b721279e54572248dd5f6424835d29054"
+  },
+  "file_sha256": {
+    "RiemannMasullo/Ch13_ZerosHecke/RationalExteriorZeros.lean": "3512f4a932fdca7ed033b6a2d9b7ceb2090c22e0dc46c33ea37667c4445b759a",
+    "lake-manifest.json": "cd7d2b7afecd00b17f4465bb2b939ac29d21f7a276556e10e94984e8a827941e",
+    "lean-toolchain": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a",
+    "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  }
+}

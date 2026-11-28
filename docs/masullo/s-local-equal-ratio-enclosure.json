@@ -1,0 +1,28 @@
+{
+  "balanced_limit_arb": "[+/- 13.2]",
+  "balanced_limit_lower": "[2.681723952803276716926090549822 +/- 4.26e-31]",
+  "balanced_limit_rational_enclosure": [
+    "268/100",
+    "1314/100"
+  ],
+  "balanced_limit_upper": "[13.13658738187279575989484054982 +/- 2.43e-30]",
+  "cutoff_input_A": 1,
+  "d1_arb": "[+/- 6.63]",
+  "d1_rational_enclosure": [
+    "-663/100",
+    "-14/10"
+  ],
+  "endpoint_rounding_total_cap": "1/79228162514264337593543950336",
+  "endpoint_trim": "1/4294967296",
+  "finite_integral_arb": "[-4.02 +/- 5.39e-3]",
+  "flint_precision_bits": 106,
+  "negative_s_unit_depth": 8,
+  "omitted_endpoint_error": "130842755714821849613174625/9903520314283042199192993792",
+  "omitted_series_error": "383279/147456",
+  "proof_source_sha256": "a3ec4fc5e93c99937315a55144822c477f4a4d7f2d35869b7d2ccb07cdb086c0",
+  "python_flint_version": "0.9.0",
+  "quadrature_source_sha256": "aee63b4a2fb1f2c1d6c493c47cd06663955e20da0dc0a8964e46dbea81029cd7",
+  "retained_kernels": 306,
+  "shell_depth": 10,
+  "status": "POSITIVE_BALANCED_UNFOLDED_LIMIT"
+}

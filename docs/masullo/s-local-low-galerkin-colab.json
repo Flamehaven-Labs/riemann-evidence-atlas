@@ -1,0 +1,120 @@
+{
+  "alpha": 0.125,
+  "cutoffs": "sharp",
+  "evidence": "uncertified numerical diagnostic",
+  "full_report_sha256": "3a061d67abece56019fc541af5e6571596e550353ef44ed462577a67d6f24362",
+  "g1_controls": {
+    "k_log_2": -0.25,
+    "moment_minus_half": -1.0983058906788279e-10,
+    "moment_plus_half": -2.196678394739132e-10
+  },
+  "g1_source_sha256": "a3ec4fc5e93c99937315a55144822c477f4a4d7f2d35869b7d2ccb07cdb086c0",
+  "numpy": "2.4.4",
+  "platform": "Linux",
+  "python": "3.13.18",
+  "source_sha256": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a",
+  "trace_pairs": [
+    {
+      "cells": 16,
+      "dimension": 16,
+      "level": 2,
+      "quadrature": {
+        "gram_min": 7.450580596923828e-09,
+        "gram_radius_multiplier": 4,
+        "order": 6,
+        "step": 0.5,
+        "test_order": 20,
+        "theta_extent": 512
+      },
+      "trace_difference": {
+        "balanced": -1.5097137735488613,
+        "quadratic": -5.659638791710552
+      }
+    },
+    {
+      "cells": 32,
+      "dimension": 32,
+      "level": 2,
+      "quadrature": {
+        "gram_min": 7.450580596923828e-09,
+        "gram_radius_multiplier": 4,
+        "order": 6,
+        "step": 0.5,
+        "test_order": 20,
+        "theta_extent": 512
+      },
+      "trace_difference": {
+        "balanced": -2.0665158614162413,
+        "quadratic": -7.668615029713009
+      }
+    },
+    {
+      "cells": 32,
+      "dimension": 32,
+      "level": 2,
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 8,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -1.842674643029114,
+        "quadratic": -8.028720660218154
+      }
+    },
+    {
+      "cells": 16,
+      "dimension": 17,
+      "level": 4,
+      "quadrature": {
+        "gram_min": 7.450580596923828e-09,
+        "gram_radius_multiplier": 4,
+        "order": 6,
+        "step": 0.5,
+        "test_order": 20,
+        "theta_extent": 512
+      },
+      "trace_difference": {
+        "balanced": -1.2125190182835355,
+        "quadratic": -2.440677702138813
+      }
+    },
+    {
+      "cells": 32,
+      "dimension": 32,
+      "level": 4,
+      "quadrature": {
+        "gram_min": 7.450580596923828e-09,
+        "gram_radius_multiplier": 4,
+        "order": 6,
+        "step": 0.5,
+        "test_order": 20,
+        "theta_extent": 512
+      },
+      "trace_difference": {
+        "balanced": -3.249973660671557,
+        "quadratic": -4.460499443668808
+      }
+    },
+    {
+      "cells": 32,
+      "dimension": 32,
+      "level": 4,
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 8,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -3.297308248523883,
+        "quadratic": -4.403770649713036
+      }
+    }
+  ]
+}

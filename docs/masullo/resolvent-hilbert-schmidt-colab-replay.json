@@ -1,0 +1,17 @@
+{
+  "axioms": [
+    "'E2AResolvent.orbit_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.energy_of_inverse_equation' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.diagonal_of_orthogonal_error' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.real_part_inverse_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.summable_ordinates_of_dyadic_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.resolvent_column_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.summable_resolvent_columns_of_dyadic_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AResolvent.laplace_diagonal_of_orthogonal_error' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "e1fb5e3245884ef973950d4840807d44533213479c75724635d5c0906f80d2e4",
+  "status": "PASS"
+}

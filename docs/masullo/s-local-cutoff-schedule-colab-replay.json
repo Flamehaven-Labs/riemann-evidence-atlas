@@ -1,0 +1,14 @@
+{
+  "axioms": [
+    "'E2ASLocalCutoffSchedule.small_limit_of_sqrt_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ASLocalCutoffSchedule.band_limit_finite_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ASLocalCutoffSchedule.band_limit_diverging_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ASLocalCutoffSchedule.band_difference_inv_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ASLocalCutoffSchedule.quadratic_cutoff_limit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "6082f2764d047b8601a1c6813b81c67ec4d4439ea01e66ee30c28292dd9dfe81",
+  "status": "PASS"
+}

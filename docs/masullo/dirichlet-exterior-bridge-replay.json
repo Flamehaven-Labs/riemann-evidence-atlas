@@ -1,0 +1,16 @@
+{
+  "axiom_log_sha256": "992f6787068ce17d8e70d2889bceef311af7a754bdc04592177e9d5f686620ae",
+  "axioms": [
+    "'E2ADirichletExteriorBridge.exterior_empty' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ADirichletExteriorBridge.exterior_hasSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2ADirichletExteriorBridge.strip_only_countermodel' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "bridge_sha256": "62b2c5168ec2d8caad55815c26fc25b146e4f1fd49ed035aee8ece259175bafd",
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_proof_kernel_replay": "NOT_RUN",
+  "statement_body_sha256": "9a2c8e4d8bf1d2f5843ec54e202d758034a36067a41c43125142f64e0a8f268c",
+  "statement_source_sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+  "status": "PASS_CONDITIONAL_BRIDGE"
+}

@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "part_count": 14,
+  "path_keyword_counts": {
+    "fourier": 916,
+    "hilbertschmidt": 83,
+    "landau": 104,
+    "localglobal": 1345,
+    "mellin": 31,
+    "nuclear": 2,
+    "orthogonal": 761,
+    "projection": 679,
+    "theta": 18663,
+    "trace": 2694
+  },
+  "project_lean_source_members": 175187,
+  "selected_source_sha256": {
+    "lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5",
+    "lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean": "e3d5d760bcefe1242d4f5b0ced44fc055f1fa8dfe048a2222cf2c39ae812e59c",
+    "lean/src/Main.lean": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+    "lean/src/Statements.lean": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+  }
+}

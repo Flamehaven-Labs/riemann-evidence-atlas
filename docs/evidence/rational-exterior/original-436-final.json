@@ -1,0 +1,49 @@
+{
+  "original_dependency": {
+    "exit": 1,
+    "argv": [
+      "/content/atlas-proof-composition/lean-4.36.0-linux/bin/lean",
+      "-j1",
+      "-o",
+      "Supplements/Kernels/MainTheoremsAll.olean",
+      "Supplements/Kernels/MainTheoremsAll.lean"
+    ],
+    "sha256": "5f214228ec675c676eb54481dad2f6ef5042941d70bd5abc07ad2de331a4d982",
+    "axioms": {},
+    "first_lines": [
+      "Supplements/Kernels/MainTheoremsAll.lean:1:0: error: object file '/content/atlas-proof-composition/original-source-probe-436/Supplements/Kernels/MainTheoremsCritical.olean' of module Supplements.Kernels.MainTheoremsCritical does not exist"
+    ]
+  },
+  "statements": {
+    "exit": 0,
+    "argv": [
+      "/content/atlas-proof-composition/lean-4.36.0-linux/bin/lean",
+      "-j1",
+      "-o",
+      "Statements.olean",
+      "Statements.lean"
+    ],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms": {},
+    "first_lines": []
+  },
+  "statement_match": {
+    "exit": 0,
+    "argv": [
+      "/content/atlas-proof-composition/lean-4.36.0-linux/bin/lean",
+      "-j1",
+      "DirectStatementAudit.lean"
+    ],
+    "sha256": "4e4cd7406fea650af8ed9213b946599e692388db0a27b3d4abf4e57fb4d69e01",
+    "axioms": {
+      "original_statement_defeq": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "first_lines": [
+      "'original_statement_defeq' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  }
+}

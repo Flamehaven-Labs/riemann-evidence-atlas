@@ -1,0 +1,12 @@
+{
+  "axioms": [
+    "'E2AGlobalTrace.invariant_mellin_coefficient_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AGlobalTrace.summable_character_shells' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AGlobalTrace.summable_spectral_terms_of_trace_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "f3165d056b16885236a5a7c1c475f1db8963be452f0a641f4f2b1d21b8750e40",
+  "status": "PASS"
+}

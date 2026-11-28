@@ -1,0 +1,20 @@
+{
+  "axioms": [
+    "'E2AAdelicQuotient.quotientOperator_mk' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.norm_quotientOperator_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.quotient_functional_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.adjoint_preserves_annihilator_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.quotient_operator_eq_compression' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.norm_orthogonal_compression_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.closed_span_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.radial_dual_weight_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.translate_polynomial_mode' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.radial_translation_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AAdelicQuotient.laplace_translate_mode' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "f36f463b4257b0b94a5cb25765c0e0eb06d8cecdcd82ba2510ff1d99998347b8",
+  "status": "PASS"
+}

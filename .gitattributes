@@ -1,5 +1,6 @@
 * text=auto eol=lf
 # Existing evidence and pins are stored byte-for-byte.
+/docs/evidence/rational-exterior/* -text whitespace=cr-at-eol
 /docs/masullo/P2_LOCAL_SURFACE.json -text whitespace=cr-at-eol
 /window-results.json -text whitespace=cr-at-eol
 /nsrw-mb06-*.json -text whitespace=cr-at-eol
@@ -8,6 +9,10 @@
 /pdf-pages.jsonl -text whitespace=cr-at-eol
 /rh-proof-trace.json -text whitespace=cr-at-eol
 /docs/unit_test_receipt.json -text whitespace=cr-at-eol
-/docs/CROSS_REPO_WORKFLOW_AND_VERIFICATION_SPEC_ko.md -text whitespace=cr-at-eol,-blank-at-eol
-/docs/ENGINEERING_RESEARCH_REPORT_ko.md -text whitespace=cr-at-eol,-blank-at-eol
 /tests/lean/E2APositiveStripGram.lean -text whitespace=-blank-at-eof
+/tests/lean/E2ASLocalQuotientCore.lean -text whitespace=-blank-at-eof
+/tests/lean/E2ASLocalTraceSplit.lean -text whitespace=-blank-at-eof
+/tools/s_local_dual_gram.py -text whitespace=-blank-at-eof
+/tools/s_local_low_galerkin.py -text whitespace=-blank-at-eof
+/tools/s_local_low_nested.py -text whitespace=-blank-at-eof
+/tools/s_local_projection_upper.py -text whitespace=-blank-at-eof

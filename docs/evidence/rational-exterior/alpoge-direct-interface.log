@@ -1,0 +1,1 @@
+'original_statement_defeq' depends on axioms: [propext, Classical.choice, Quot.sound]

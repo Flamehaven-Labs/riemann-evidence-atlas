@@ -1,0 +1,47 @@
+{
+  "coefficient_real_imag": [
+    1.1529601126977287,
+    1.6609640699029873
+  ],
+  "evidence": "uncertified nested finite Galerkin diagnostic",
+  "gram_order": 7,
+  "gram_radius": 512,
+  "gram_step": 0.25,
+  "numpy_version": "2.5.5",
+  "row_order": 8,
+  "row_step": 0.125,
+  "rows": {
+    "near_origin": {
+      "real": {
+        "signed_change_128_to_256": 1.0429872441632126e-05,
+        "trace_128": -0.04423816819489585,
+        "trace_256": -0.04422773832245422
+      },
+      "real_and_two": {
+        "signed_change_128_to_256": -0.002565762349709455,
+        "trace_128": -0.1285304419724478,
+        "trace_256": -0.13109620432215727
+      }
+    },
+    "outer": {
+      "real": {
+        "signed_change_128_to_256": 0.05660793141282072,
+        "trace_128": 2.1490605037913304,
+        "trace_256": 2.205668435204151
+      },
+      "real_and_two": {
+        "signed_change_128_to_256": 0.097644818517443,
+        "trace_128": 1.53633690252539,
+        "trace_256": 1.633981721042833
+      }
+    }
+  },
+  "signed_change_in_schedule_difference": 0.03846069488247119,
+  "source_sha256": {
+    "tests/lean/E2AGeometricTraceTest.lean": "a3ec4fc5e93c99937315a55144822c477f4a4d7f2d35869b7d2ccb07cdb086c0",
+    "tools/s_local_first_harmonic_nested.py": "ee781e5ebee1ebbfe843e22201c50151675febe2822c87b4cd148faaf2db10b6",
+    "tools/s_local_low_galerkin.py": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a"
+  },
+  "sum_absolute_changes": 0.1568289421524148,
+  "theta_extent": 2048
+}

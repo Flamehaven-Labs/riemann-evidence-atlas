@@ -1,0 +1,15 @@
+{
+  "axioms": [
+    "'E2AFirstHarmonicAudit.signed_polarization' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFirstHarmonicAudit.nested_residual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFirstHarmonicAudit.signed_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFirstHarmonicAudit.first_pair_misses_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AFirstHarmonicAudit.constant_rounding_budget' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normalized_axiom_log_sha256": "a807d7e5aa213a17e0a57753fcca21f99d1654cb798a74bed21dbda9ec7dad92",
+  "source_sha256": "1c9b75e5516b7ea73a7b71320d0dafb8a6766de4469875a1059c76a4689eb1c7",
+  "status": "PASS"
+}

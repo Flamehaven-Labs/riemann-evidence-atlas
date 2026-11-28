@@ -1,0 +1,108 @@
+{
+  "alpha": "1/8",
+  "arb_precision_bits": 106,
+  "cells": 128,
+  "constant_coefficient_magnitude_lower_expression_arb": "[0.053983939775239552600494920006 +/- 3.48e-31]",
+  "constant_coefficient_magnitude_upper_expression_arb": "[0.054106010087739552600494920006 +/- 3.48e-31]",
+  "evidence": "constant Fourier term in fixed lower-gate unpolarized trace compression",
+  "four_constant_rank_one_errors_upper_expression_arb": "[0.4536 +/- 8.31e-5]",
+  "gate": "1/16",
+  "level": 4,
+  "period": 2,
+  "python_flint_version": "0.9.0",
+  "rows": {
+    "near_origin": {
+      "real": {
+        "constant_rank_one_error_upper_expression_arb": "[0.03061 +/- 5.82e-6]",
+        "flat_energy_near_frequency_cap_arb": "[2.282741606023753648446622537646e-7 +/- 6.77e-38]",
+        "flat_energy_upper_expression_arb": "[0.2377296180701264114401552295177 +/- 1.92e-32]",
+        "incoming_pairing_inner_interval_arb": [
+          "0.09735107421875000000000000000000",
+          "0.6420116424560546875000000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.15058 +/- 3.86e-6]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[0.83174 +/- 6.60e-6]",
+        "incoming_support_arb": [
+          "[0.09735009788392560853064628337229 +/- 2.46e-33]",
+          "[0.6420127083438707420367102840312 +/- 2.47e-32]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[0.3849 +/- 5.86e-5]",
+        "trial_norm_sq_far_cap_arb": "[1.642338271073493071535586189757e-7 +/- 9.50e-38]",
+        "trial_norm_sq_near_cap_arb": "[6.26344400217856488695433275570e-6 +/- 2.56e-36]",
+        "trial_norm_sq_upper_expression_arb": "[0.0247523456843571628554327176119 +/- 2.98e-32]",
+        "trial_pairing_lower_expression_arb": "[0.06105 +/- 1.10e-6]"
+      },
+      "real_and_two": {
+        "constant_rank_one_error_upper_expression_arb": "[0.1296 +/- 4.56e-5]",
+        "flat_energy_near_frequency_cap_arb": "[4.98767411519570566593732538693e-5 +/- 4.66e-35]",
+        "flat_energy_upper_expression_arb": "[0.832548976950205264871119960080 +/- 3.39e-31]",
+        "incoming_pairing_inner_interval_arb": [
+          "0.09735107421875000000000000000000",
+          "0.6420116424560546875000000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.066561 +/- 4.79e-7]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[3.373587 +/- 4.44e-7]",
+        "incoming_support_arb": [
+          "[0.09735009788392560853064628337229 +/- 2.46e-33]",
+          "[0.6420127083438707420367102840312 +/- 2.47e-32]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[1.700 +/- 4.99e-4]",
+        "trial_norm_sq_far_cap_arb": "[2.91971248190843212717437544846e-7 +/- 5.09e-37]",
+        "trial_norm_sq_near_cap_arb": "[0.0224376921638794578139275177635 +/- 5.83e-32]",
+        "trial_norm_sq_upper_expression_arb": "[1.154298569539403363430536652877 +/- 7.55e-31]",
+        "trial_pairing_lower_expression_arb": "[0.277184 +/- 4.60e-7]"
+      }
+    },
+    "outer": {
+      "real": {
+        "constant_rank_one_error_upper_expression_arb": "[0.1042 +/- 3.96e-5]",
+        "flat_energy_near_frequency_cap_arb": "[1.460954627855202335005838424094e-5 +/- 5.08e-36]",
+        "flat_energy_upper_expression_arb": "[1.751817122120764294993634935316 +/- 5.04e-31]",
+        "incoming_pairing_inner_interval_arb": [
+          "6.230407714843750000000000000000",
+          "41.08881187438964843750000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.090174 +/- 5.57e-7]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[7.148450 +/- 1.76e-7]",
+        "incoming_support_arb": [
+          "[6.230406264571238945961362135827 +/- 5.97e-31]",
+          "[41.08881333400772749034945817800 +/- 3.21e-30]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[0.5185 +/- 5.46e-5]",
+        "trial_norm_sq_far_cap_arb": "[1.642338271073493071535586189757e-7 +/- 9.50e-38]",
+        "trial_norm_sq_near_cap_arb": "[6.26344400217856488695433275570e-6 +/- 2.56e-36]",
+        "trial_norm_sq_upper_expression_arb": "[0.0247523456843571628554327176119 +/- 2.98e-32]",
+        "trial_pairing_lower_expression_arb": "[0.0472443 +/- 8.38e-8]"
+      },
+      "real_and_two": {
+        "constant_rank_one_error_upper_expression_arb": "[0.1892 +/- 1.46e-5]",
+        "flat_energy_near_frequency_cap_arb": "[0.002764755098642839968266900411380 +/- 6.71e-34]",
+        "flat_energy_upper_expression_arb": "[1.673449889495569794602073768298 +/- 7.38e-31]",
+        "incoming_pairing_inner_interval_arb": [
+          "6.230407714843750000000000000000",
+          "41.08881187438964843750000000000"
+        ],
+        "incoming_primal_gain_lower_expression_arb": "[0.0027010 +/- 8.03e-8]",
+        "incoming_residual_norm_sq_upper_expression_arb": "[6.9121048 +/- 6.61e-8]",
+        "incoming_support_arb": [
+          "[6.230406264571238945961362135827 +/- 5.97e-31]",
+          "[41.08881333400772749034945817800 +/- 3.21e-30]"
+        ],
+        "outgoing_residual_norm_sq_upper_expression_arb": "[1.769 +/- 3.26e-4]",
+        "trial_norm_sq_far_cap_arb": "[2.91971248190843212717437544846e-7 +/- 5.09e-37]",
+        "trial_norm_sq_near_cap_arb": "[0.0224376921638794578139275177635 +/- 5.83e-32]",
+        "trial_norm_sq_upper_expression_arb": "[1.154298569539403363430536652877 +/- 7.55e-31]",
+        "trial_pairing_lower_expression_arb": "[0.055836 +/- 7.69e-7]"
+      }
+    }
+  },
+  "source_sha256": {
+    "docs/masullo/s-local-dual-gram-160.json": "7620c8086921ae466d179211526fc6f5f8e63a04a14cabbe5366d4cc95041c4f",
+    "docs/masullo/s-local-primal-106.json": "3a12c7de6a2acb25a91f1c7ae85bdab7b83e93527463f5d784902dd5aa9c567f",
+    "tests/lean/E2AGeometricTraceTest.lean": "a3ec4fc5e93c99937315a55144822c477f4a4d7f2d35869b7d2ccb07cdb086c0",
+    "tools/s_local_incoming.py": "15684eb5e398ddb3f092eef7f4ceb9799d5c3e970b344aa78c49e5f1f2d73a6c",
+    "tools/s_local_primal.py": "d04f87eb7050bcfae375a40df7b424ce69acfc39456cb43391fc4b19a5295dce",
+    "tools/s_local_projection_upper.py": "f89acb7a1afddff9726a4f8d4ccfba7e0e5c7f6492cb8a33ff19cab8589d2915"
+  },
+  "spectral_dilation_depth": 2
+}

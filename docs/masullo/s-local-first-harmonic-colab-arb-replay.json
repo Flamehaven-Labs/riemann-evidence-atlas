@@ -1,0 +1,13 @@
+{
+  "budget_result": "BOUND_EXCEEDS_BUDGET",
+  "coefficient_hi": "[2.02252730906801230452984821418928267017753385 +/- 6.64e-45]",
+  "coefficient_lo": "[2.02129200579639495118282251948714935094714888 +/- 3.57e-45]",
+  "colab_report_sha256": "17e012ea858da50f3d930e0b54a9724e87254f523d8e2dbac6e98d43a0b95c81",
+  "computed_upper_expression": "[65.23789466 +/- 6.10e-9]",
+  "input_hashes_match": true,
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "python": "3.13.18",
+  "python_flint": "0.9.0",
+  "row_enclosures_overlap": true,
+  "windows_report_sha256": "17e012ea858da50f3d930e0b54a9724e87254f523d8e2dbac6e98d43a0b95c81"
+}

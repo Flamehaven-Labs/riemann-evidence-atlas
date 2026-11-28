@@ -1,0 +1,20 @@
+{
+  "exit": 0,
+  "argv": [
+    "/content/atlas-proof-composition/lean-4.33.1-linux/bin/lean",
+    "-j1",
+    "DirectStatementAudit.lean"
+  ],
+  "sha256": "4e4cd7406fea650af8ed9213b946599e692388db0a27b3d4abf4e57fb4d69e01",
+  "axioms": {
+    "original_statement_defeq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "first_lines": [
+    "'original_statement_defeq' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "f682c496a408f8976865b28047868d94be1a3b91a91e55e5ab84280359f29de0"
+}

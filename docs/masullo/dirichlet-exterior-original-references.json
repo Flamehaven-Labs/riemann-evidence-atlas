@@ -1,0 +1,27 @@
+{
+  "declaration": "LFunction_eq_zero_re",
+  "dependency_scope": "DIRECT_STORED_EXPRESSION_REFERENCES",
+  "extractor_sha256": "5791ea7f98c65f2f8cae19b2ab60ec4ab6f729264468d4464cd3bb418c64382a",
+  "kind": "theorem",
+  "main_olean_sha256": "9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad",
+  "module_imports": [
+    "Init",
+    "Init",
+    "Statements",
+    "Supplements.Kernels.MainTheoremsAll"
+  ],
+  "original_proof_kernel_replay": "NOT_RUN",
+  "schema": "riemann-evidence-direct-proof-refs-v1",
+  "type_refs": [
+    "DirichletLZerosOnLine"
+  ],
+  "value_refs": [
+    "And",
+    "And.left",
+    "And.right",
+    "Claim.HalfPlane",
+    "Claim.Strip",
+    "Claim.Zeta",
+    "claimAll"
+  ]
+}

@@ -1,11 +1,31 @@
 # Changelog
 
-## Unreleased
+## v0.3.0 — 2026-11-28
+
+- Publish the research case study, roadmap, and evidence for the transfer of NSRW
+  verification code and the use of QSOT-style evidence labels.
+- Record schedule dependence for the unfolded two-sided integral, the
+  Schwartz–Bruhat domain obstruction, and the fixed-cutoff weighted quotient trace.
+- Publish the Lean 4.36.0 Colab conditional application of the pinned Masullo
+  exterior-zero theorem, its axiom output, and the original Alpöge import blockers.
+  Keep the direct composition and geometric trace comparison open.
+
+- Translate the research documentation and roadmap into English and update their internal links.
 
 - Add a second source-anchored Landau tail case using the existing interval evaluator, with exact replay, an alternating-series cross-check, endpoint mutation rejection and precision exhaustion/refinement tests.
 - Prove that the second real tail integral lies within the saved 256-bit rational interval and meets the fixed near-threshold cap. Preserve its Windows and Colab Lean receipts.
 - Verify the reflection cosine lemma, the failure of the uniform biorthogonal bound under close-pair hypotheses, and the multiplier limits for two modes at zero and positive strip width.
 - Add a research-model job that executes the Colab notebook's numerical cells and a Lean replay of 28 additional declarations against saved evidence. Upload logs, input hashes and receipts for the checked commit.
+
+- Verify weighted $L^2$ coalescence of two modes and the derivative-dependent Jordan block. Preserve matching Windows and Colab proof evidence.
+
+- Verify the Mellin multiplier derivative, the translation integral on two local modes and their weighted-limit compatibility. Preserve matching Windows and Colab evidence.
+
+- Verify quotient descent, annihilator pullback, orthogonal compression, and polynomial-exponential translation. Match the manuscript's radial dual weight and replay the exponential-mode resolvent coefficient on Windows and Colab.
+
+- Derive the resolvent energy estimate from a differentiated orbit bound, identify a Laplace diagonal, and prove square-summability of resolvent columns from a dyadic count.
+- Replay kernel differentiation, the squared-resolvent factorization, and absolute convergence of the fixed-character Mellin diagonal in pinned Lean on Windows and Colab. Document the trace-class and compression consequences.
+- Derive trace-norm summability over character blocks in the conditional radial model using Fourier decay and a uniform Hecke zero count. Replay the Haar cancellation and summability lemmas with pinned Lean on Windows and Colab.
 
 ## v0.2.0 — 2026-11-24
 

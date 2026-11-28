@@ -1,0 +1,14 @@
+OriginalAudit.lean:1:0: error: unknown module prefix 'Development'
+
+No directory 'Development' or file 'Development.olean' in the search path entries:
+/content/atlas-proof-composition/original-import-diagnostic
+/content/atlas-proof-composition/alp-oleans/lib
+/content/atlas-proof-composition/alp-oleans/deps/LeanSearchClient
+/content/atlas-proof-composition/alp-oleans/deps/Qq
+/content/atlas-proof-composition/alp-oleans/deps/aesop
+/content/atlas-proof-composition/alp-oleans/deps/batteries
+/content/atlas-proof-composition/alp-oleans/deps/importGraph
+/content/atlas-proof-composition/alp-oleans/deps/mathlib
+/content/atlas-proof-composition/alp-oleans/deps/plausible
+/content/atlas-proof-composition/alp-oleans/deps/proofwidgets
+/content/atlas-proof-composition/lean-4.33.1-linux/lib/lean

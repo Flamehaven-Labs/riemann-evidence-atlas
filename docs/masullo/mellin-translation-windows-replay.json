@@ -1,0 +1,20 @@
+{
+  "axioms": [
+    "'E2AMellinTranslation.multiplier_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AMellinTranslation.translate_mode' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AMellinTranslation.translate_jet' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AMellinTranslation.translate_divided_mode' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AMellinTranslation.translate_divided_weighted_l2' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AMellinTranslation.weight_translate_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'E2AMellinTranslation.translate_weighted_l2_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "dependency_lock_sha256": "799c3b1ddf8eeffc9ed81510f37d8d6beb5479dc261ce3b3c01a205cd6d27667",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": {
+    "E2AMellinTranslation.lean": "99a817f9876f6e4d468bf4ce780ffb46fcf2a51baea3140713be8380148d94b4",
+    "E2AModeConfluence.lean": "ca17b504a23ffc56ddf7fd259c0c86efa11f5b1137d965518d88eef982286461",
+    "E2APositiveStripGram.lean": "c6adf940bcfd76048b29cd8d76304a70485259c8bc51fe6f99213de054975f76"
+  },
+  "status": "PASS"
+}

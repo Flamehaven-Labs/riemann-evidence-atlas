@@ -1,0 +1,23 @@
+{
+  "numpy": "2.5.5",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "python": "3.13.18",
+  "settings": {
+    "base": {
+      "absolute_change": 0.15682894215241602,
+      "colab_report_sha256": "4527dddf03eb2c71c30ab85841386f958ed85a159c1ed5dc9882f116050045c9",
+      "matches_windows_row_signs": true,
+      "max_row_change_abs_difference": 1.5543122344752192e-15,
+      "signed_change": 0.038460694882473084,
+      "windows_report_sha256": "68f444d167b1d084c353c615b556f725419555c6ff96d793a0e905d55af0cd65"
+    },
+    "refined": {
+      "absolute_change": 0.15498096923405336,
+      "colab_report_sha256": "6db53c93d25d160f89a6dbbf26c7e55aa5eb4f410f92d4e09349f1162ba5a088",
+      "matches_windows_row_signs": true,
+      "max_row_change_abs_difference": 8.215650382226158e-15,
+      "signed_change": 0.041546760998185536,
+      "windows_report_sha256": "0405eeb0cc62e76fe84d6d28cc30f2c228681d2333151e5ce644f5f29dce88c1"
+    }
+  }
+}

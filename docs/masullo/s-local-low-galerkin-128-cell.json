@@ -1,0 +1,50 @@
+{
+  "alpha": 0.125,
+  "evidence": "uncertified numerical diagnostic",
+  "results": [
+    {
+      "cells": 128,
+      "dimension": 128,
+      "level": 4,
+      "places": {
+        "real": {
+          "balanced": {
+            "normalized_gram_condition": 48.84240971160134,
+            "trace": 0.6731448542342211,
+            "trace_solve_residual": 2.230796793541204e-16
+          },
+          "quadratic": {
+            "normalized_gram_condition": 48.84240971160134,
+            "trace": 1.3734741164348745,
+            "trace_solve_residual": 3.228425905741282e-15
+          }
+        },
+        "real_and_two": {
+          "balanced": {
+            "normalized_gram_condition": 2658.9008813567784,
+            "trace": -3.1816744549260623,
+            "trace_solve_residual": 4.010239087080781e-15
+          },
+          "quadratic": {
+            "normalized_gram_condition": 2658.9008813567784,
+            "trace": -1.2825033390003342,
+            "trace_solve_residual": 1.8351512254065568e-14
+          }
+        }
+      },
+      "quadrature": {
+        "gram_min": 1.1641532182693481e-10,
+        "gram_radius_multiplier": 64,
+        "order": 7,
+        "step": 0.25,
+        "test_order": 36,
+        "theta_extent": 2048
+      },
+      "trace_difference": {
+        "balanced": -3.854819309160283,
+        "quadratic": -2.6559774554352087
+      }
+    }
+  ],
+  "source_sha256": "e4dfc17673944a8642481672f988e9330ffab539f6781ec85b4ee308bceca84a"
+}
