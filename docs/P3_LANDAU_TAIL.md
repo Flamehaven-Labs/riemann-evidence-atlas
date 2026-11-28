@@ -1,6 +1,6 @@
 # P3 — Landau Tail Integral Verification
 
-The pinned inputs are $k=3$, $\sigma=5$ (decay $s=3$), $U=1$, and $V=3$. The target is the integral in the third summand on the right side of `Deduction.landau_window_ineq`. The factor $2C_0$, other terms, and full conclusion are separate. [Lean extraction pins](../lean-extract-manifest.json) · [Python results](../window-results-v2.json)
+The pinned inputs are $k=3$, $\sigma=5$ (decay $s=3$), $U=1$, and $V=3$. The target is the integral in the third summand on the right side of `Deduction.landau_window_ineq`. The factor $2C_0$, other terms, and full conclusion are separate. [Lean extraction pins](../lean-extract-manifest.json) · [Python results](evidence/baseline/window-results-v2.json)
 
 $$J=\int_{(0,\infty)\setminus[1,3]}
  \frac{u^3e^{-3u}}{3!}\,du

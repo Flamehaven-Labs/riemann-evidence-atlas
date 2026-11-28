@@ -185,7 +185,7 @@ python -m unittest discover -s tests -v
 $Root = 'D:\Sanctum\research-sidequests\riemann-lean-2026-11-22'
 python -m e2a_atlas --root $Root --spec spec/riemann_nsrw_toe_2026-11-22.json --out .\audit-preflight.json
 # Hashing all archives rereads about 239 MB without modifying the source.
-python -m e2a_atlas --root $Root --spec spec/riemann_nsrw_toe_2026-11-22.json --archive-manifest lean-archive-manifest.json --import-graph rh-import-graph.json --out .\audit-fullstatic.json
+python -m e2a_atlas --root $Root --spec spec/riemann_nsrw_toe_2026-11-22.json --archive-manifest docs/evidence/source-index/lean-archive-manifest.json --import-graph rh-import-graph.json --out .\audit-fullstatic.json
 ```
 
 The audit preflight writes one file. `source_pin_ok` records byte identity, `HELD` under `bridges` records an unsupported or unconfirmed connection, and `case_inventory` records test coverage status.

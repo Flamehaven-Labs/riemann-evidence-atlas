@@ -10,7 +10,7 @@ $$
 
 The last factor on the right is nonzero by the initial hypothesis. The gamma factor is nonzero because $t$ has positive real part. After checking the complex powers of nonzero bases, the remaining step is to show that the cosine factor is nonzero. The original proof shows why $s=0$ and the trivial zeros need separate treatment.
 
-In the original `RhOfRight.lean`, line 5 gives the theorem, line 28 applies the functional equation, lines 34–59 handle the cosine, and line 60 multiplies the factors to reach a contradiction. The file was extracted from `lean/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean` in the release archive. Its SHA-256 is `7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5`. [Archive pins](../lean-archive-manifest.json) · [Original declaration references](rh-next-layer-module-set.json)
+In the original `RhOfRight.lean`, line 5 gives the theorem, line 28 applies the functional equation, lines 34–59 handle the cosine, and line 60 multiplies the factors to reach a contradiction. The file was extracted from `lean/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean` in the release archive. Its SHA-256 is `7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5`. [Archive pins](evidence/source-index/lean-archive-manifest.json) · [Original declaration references](rh-next-layer-module-set.json)
 
 ## Exact scope of the auxiliary lemma
 

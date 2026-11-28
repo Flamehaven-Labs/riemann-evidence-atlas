@@ -11,12 +11,13 @@ from window_kernel import run_cases, verify_saved_report
 
 
 ROOT = Path(__file__).resolve().parents[1]
+BASELINE = ROOT / "docs" / "evidence" / "baseline"
 HISTORICAL_SHA256 = "fc7ab07321c299d2f0adf921e07d8e3ecf0494b8da5e0f73ee14009bba8ae96b"
 
 
 class ReplayTests(unittest.TestCase):
     def test_standalone_matches_colab_inputs_endpoints_and_decisions(self):
-        raw = (ROOT / "window-results.json").read_bytes()
+        raw = (BASELINE / "window-results.json").read_bytes()
         self.assertEqual(hashlib.sha256(raw).hexdigest(), HISTORICAL_SHA256)
         historical = json.loads(raw)
         current = run_cases()
@@ -28,7 +29,7 @@ class ReplayTests(unittest.TestCase):
                     self.assertEqual(report[field], historical[name][field])
 
     def test_current_report_replays(self):
-        self.assertTrue(verify_saved_report((ROOT / "window-results-v2.json").read_bytes()))
+        self.assertTrue(verify_saved_report((BASELINE / "window-results-v2.json").read_bytes()))
 
     def test_lean_tail_caps_bind_to_replayed_input_and_endpoints(self):
         source = (ROOT / "tests/lean/E2ATailCapCertificate.lean").read_text(encoding="utf-8")
@@ -134,6 +135,15 @@ class ReplayTests(unittest.TestCase):
 
     def test_standalone_receipt_pins(self):
         receipt = json.loads((ROOT / "docs/standalone-replay.json").read_bytes())
+        # The original receipt keeps the paths recorded at the time of execution.
+        relocated = {
+            "RH_Window.ipynb": ROOT / "colab/RH_Window.ipynb",
+            "window-results.json": BASELINE / "window-results.json",
+            "window-results-v2.json": BASELINE / "window-results-v2.json",
+            "lean-archive-manifest.json": ROOT / "docs/evidence/source-index/lean-archive-manifest.json",
+            "rh-proof-trace.json": ROOT / "docs/evidence/source-index/rh-proof-trace.json",
+        }
         for filename, expected in receipt["sha256"].items():
             with self.subTest(file=filename):
-                self.assertEqual(hashlib.sha256((ROOT / filename).read_bytes()).hexdigest(), expected)
+                path = relocated.get(filename, ROOT / filename)
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected)

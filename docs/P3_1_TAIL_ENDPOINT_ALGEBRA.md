@@ -7,7 +7,7 @@ The patch checked rational endpoint algebra. Real exponential enclosures and the
 ## Pinned Input
 
 - Baseline — k=3, s=3, a=1, b=3, precision_bits=128.
-- Numerical baseline — ../window-results-v2.json, SHA-256 ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1.
+- [Numerical baseline](evidence/baseline/window-results-v2.json) — SHA-256 ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1.
 - Calculator — exp_bounds in ../riemann_evidence/rational_intervals.py.
 - Target real integral formula — (1 - 13 exp(-3) + 172 exp(-9))/81. The identity was outside this patch's Lean proof.
 

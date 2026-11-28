@@ -8,7 +8,8 @@ import re
 import pypdfium2 as pdfium
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE_INDEX = ROOT / "docs" / "evidence" / "source-index"
 SOURCES = {
     "alpoge-remark.pdf": "https://alpo.ge/remark.pdf",
     "rubinstein-zeta-guide.pdf": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf",
@@ -69,10 +70,20 @@ def build_index():
                 text_page.close()
                 page.close()
 
-    (ROOT / "sources.json").write_text(
-        json.dumps(sources, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    catalog = SOURCE_INDEX / "sources.json"
+    if catalog.is_file():
+        # Keep separately registered inputs, such as the pinned Masullo manuscript.
+        indexed_files = {source["file"] for source in sources}
+        sources.extend(
+            entry for entry in json.loads(catalog.read_bytes())
+            if entry["file"] not in indexed_files
+        )
+    catalog.write_text(
+        json.dumps(sources, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\r\n",
     )
-    with (ROOT / "pdf-pages.jsonl").open("w", encoding="utf-8", newline="\n") as out:
+    with (SOURCE_INDEX / "pdf-pages.jsonl").open("w", encoding="utf-8", newline="\n") as out:
         for row in pages:
             out.write(json.dumps(row, ensure_ascii=False) + "\n")
     print(f"Indexed {len(pages)} pages in {len(EXPECTED_PAGES)} PDFs.")

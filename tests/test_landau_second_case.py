@@ -39,7 +39,8 @@ class SecondLandauTests(unittest.TestCase):
 
     def test_pinned_second_case_and_original_report(self):
         self.assertTrue(second.verify_saved_report(self.saved))
-        self.assertEqual(hashlib.sha256((ROOT / "window-results-v2.json").read_bytes()).hexdigest(),
+        baseline = ROOT / "docs/evidence/baseline/window-results-v2.json"
+        self.assertEqual(hashlib.sha256(baseline.read_bytes()).hexdigest(),
                          "ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1")
         self.assertEqual(self.report["formal_real_proof"], "NOT_RUN")
 

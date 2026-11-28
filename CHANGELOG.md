@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.1 — 2026-11-28
+
+- Group the numerical baselines, source indexes, and historical NSRW MB-06
+  receipts under `docs/evidence/`. Preserve recorded file bytes and document
+  the upstream origin of the NSRW input and adapted code.
+- Group the source utilities under `tools/` and the original numerical
+  notebook under `colab/`. Update replay commands for the new locations.
+- Preserve the pinned Masullo manuscript entry when rebuilding the intake
+  source catalog.
+- Archive the English research note *After the Proof* with three figures as
+  [Markdown](docs/writing/after-the-proof/README.md) and
+  [PDF](docs/writing/after-the-proof/after-the-proof.pdf). The note describes
+  the v0.3.0 research checkpoint.
+
 ## v0.3.0 — 2026-11-28
 
 - Publish the research case study, roadmap, and evidence for the transfer of NSRW

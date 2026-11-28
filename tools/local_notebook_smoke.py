@@ -13,6 +13,8 @@ import shutil
 from tempfile import TemporaryDirectory
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTEBOOK = ROOT / "colab" / "RH_Window.ipynb"
+SAVED_REPORT = ROOT / "docs" / "evidence" / "baseline" / "window-results-v2.json"
 FILES = (
     "window_kernel.py",
     "riemann_evidence/__init__.py",
@@ -21,7 +23,7 @@ FILES = (
 )
 
 def main():
-    notebook = json.loads((ROOT / "RH_Window.ipynb").read_text(encoding="utf-8"))
+    notebook = json.loads(NOTEBOOK.read_text(encoding="utf-8"))
     cells = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     if len(cells) != 2:
         raise AssertionError("Expected exactly two source code cells")
@@ -40,14 +42,14 @@ def main():
             generated = (scratch / "window-results-v2.json").read_bytes()
         finally:
             os.chdir(previous)
-    saved = (ROOT / "window-results-v2.json").read_bytes()
+    saved = SAVED_REPORT.read_bytes()
     if json.loads(generated) != json.loads(saved):
         raise AssertionError("Notebook report differs from pinned report")
     print(json.dumps({
         "schema": "riemann-evidence-local-notebook-smoke-v1",
         "environment": "LOCAL_OFFLINE_PYTHON_NOT_COLAB",
         "cases": len(json.loads(generated)),
-        "notebook_sha256": hashlib.sha256((ROOT / "RH_Window.ipynb").read_bytes()).hexdigest(),
+        "notebook_sha256": hashlib.sha256(NOTEBOOK.read_bytes()).hexdigest(),
         "generated_report_sha256": hashlib.sha256(generated).hexdigest(),
         "saved_report_sha256": hashlib.sha256(saved).hexdigest(),
         "matches_saved_parsed_report": True,

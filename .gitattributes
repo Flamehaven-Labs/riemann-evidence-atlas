@@ -2,12 +2,9 @@
 # Existing evidence and pins are stored byte-for-byte.
 /docs/evidence/rational-exterior/* -text whitespace=cr-at-eol
 /docs/masullo/P2_LOCAL_SURFACE.json -text whitespace=cr-at-eol
-/window-results.json -text whitespace=cr-at-eol
-/nsrw-mb06-*.json -text whitespace=cr-at-eol
-/lean-archive-manifest.json -text whitespace=cr-at-eol
-/sources.json -text whitespace=cr-at-eol
-/pdf-pages.jsonl -text whitespace=cr-at-eol
-/rh-proof-trace.json -text whitespace=cr-at-eol
+/docs/evidence/baseline/window-results.json -text whitespace=cr-at-eol
+/docs/evidence/nsrw/nsrw-mb06-*.json -text whitespace=cr-at-eol
+/docs/evidence/source-index/* -text whitespace=cr-at-eol
 /docs/unit_test_receipt.json -text whitespace=cr-at-eol
 /tests/lean/E2APositiveStripGram.lean -text whitespace=-blank-at-eof
 /tests/lean/E2ASLocalQuotientCore.lean -text whitespace=-blank-at-eof

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="758" viewBox="0 0 760 758" role="img" aria-labelledby="title description">
+  <title id="title">Same test function, different cutoff limits</title>
+  <desc id="description">For the unfolded Fourier integral, the balanced two-sided schedule has a limit strictly between 2.68 and 13.14. The quadratic two-sided schedule has exact limit zero. The one-sided reference is minus log 2 divided by 4 times the square root of 2, about minus 0.12253. The weighted quotient trace limit remains open.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #192d42; }
+    .series { font-size: 21px; font-weight: 700; fill: #546577; }
+    .headline { font-size: 45px; font-weight: 700; }
+    .subtitle { font-size: 24px; fill: #546577; }
+    .schedule { font-size: 28px; font-weight: 700; }
+    .detail { font-size: 24px; fill: #546577; }
+    .interval { font-size: 49px; font-weight: 700; fill: #176b59; }
+    .tick { font-size: 22px; font-weight: 700; }
+    .endpoint { fill: #176b59; }
+    .exact { font-size: 54px; font-weight: 700; }
+    .reference { font-size: 28px; font-weight: 700; }
+    .scope { font-size: 23px; font-weight: 700; }
+    .source { font-size: 20px; fill: #546577; }
+  </style>
+  <rect width="760" height="758" fill="#f7f9fb"/>
+  <text x="32" y="45" class="series">FLAMEHAVEN LAB NOTES / FIGURE 02</text>
+  <text x="32" y="98" class="headline">Same test function,</text>
+  <text x="32" y="147" class="headline">different cutoff limits</text>
+  <text x="32" y="184" class="subtitle">NR-01 · Unfolded Fourier integral</text>
+
+  <rect x="32" y="208" width="696" height="222" rx="17" fill="#edf7f3" stroke="#72a997" stroke-width="2"/>
+  <text x="60" y="251" class="schedule">Balanced two-sided schedule · (L, L)</text>
+  <text x="60" y="311" class="interval">2.68 &lt; Q<tspan baseline-shift="sub" font-size="33">∞</tspan> &lt; 13.14</text>
+  <text x="692" y="314" text-anchor="end" class="detail">Certified limit interval</text>
+  <line x1="75" y1="365" x2="685" y2="365" stroke="#aebfc6" stroke-width="2"/>
+  <line x1="75" y1="343" x2="75" y2="385" stroke="#546577" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <line x1="191.77" y1="365" x2="647.53" y2="365" stroke="#176b59" stroke-width="12" stroke-linecap="round"/>
+  <g fill="#edf7f3" stroke="#176b59" stroke-width="3">
+    <circle cx="191.77" cy="365" r="9"/>
+    <circle cx="647.53" cy="365" r="9"/>
+  </g>
+  <text x="75" y="405" text-anchor="middle" class="tick">0</text>
+  <text x="191.77" y="405" text-anchor="middle" class="tick endpoint">2.68</text>
+  <text x="647.53" y="405" text-anchor="middle" class="tick endpoint">13.14</text>
+
+  <rect x="32" y="447" width="696" height="105" rx="17" fill="#ffffff" stroke="#cbd5df" stroke-width="2"/>
+  <text x="60" y="489" class="schedule">Quadratic two-sided schedule · (L², L)</text>
+  <text x="60" y="529" class="detail">Exact limit</text>
+  <text x="696" y="521" text-anchor="end" class="exact">0</text>
+
+  <rect x="32" y="569" width="696" height="101" rx="17" fill="#ffffff" stroke="#cbd5df" stroke-width="2"/>
+  <text x="60" y="610" class="schedule">One-sided cutoff</text>
+  <text x="60" y="648" class="detail">Reference value</text>
+  <text x="696" y="648" text-anchor="end" class="reference">−log 2 / (4√2) ≈ −0.12253</text>
+
+  <text x="32" y="710" class="scope">The weighted quotient trace limit remains open.</text>
+  <text x="32" y="741" class="source">Source · Riemann Evidence Atlas v0.3.0 · NR-01</text>
+</svg>

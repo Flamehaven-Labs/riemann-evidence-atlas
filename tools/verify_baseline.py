@@ -13,8 +13,15 @@ NEXT_LAYER = "docs/rh-next-layer-module-set.json"
 FRONTIER = "docs/rh-frontier-classification.json"
 PRIME_TWO = "docs/masullo/P2_LOCAL_SURFACE.json"
 PRIME_TWO_CHARACTERS = "docs/masullo/P2_CHARACTER_COMPARISON.json"
+WINDOW_RESULTS = "docs/evidence/baseline/window-results-v2.json"
+NSRW_EVIDENCE = "docs/evidence/nsrw"
 RECEIPTS = {
-    "window-results-v2.json": "ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1",
+    WINDOW_RESULTS: "ad3d31ceaf5a9a78e5f17f5c25ac087394eb57ebfb3cfdd977aa57c61ac66bf1",
+    f"{NSRW_EVIDENCE}/nsrw-mb06-baseline.json": "de71527c212dfe86e17ecfd8bbf0f93c7a9f308ef46b21998bbb9b377c6ea554",
+    f"{NSRW_EVIDENCE}/nsrw-mb06-baseline-manifest.json": "7f7d4c9a988328d148887e94e757fb3fa81ee4cbdd2c4a0b5fa7e225a2a8adc0",
+    f"{NSRW_EVIDENCE}/nsrw-mb06-shifted-input.json": "0578640f7a26b3ee0afdfc1e408017767cc0dc9f02ad3b92013b15fa9d9f4aab",
+    f"{NSRW_EVIDENCE}/nsrw-mb06-shifted-result.json": "fc8159a9b942c53abf97a34bfde1e0ddea65c43cecd39650bfc104974b4ceb58",
+    f"{NSRW_EVIDENCE}/nsrw-mb06-shifted-manifest.json": "e03588d9f7ac57e76b7fd8afca9b0b0e1de33506687da153be117ad38b26a52a",
     "docs/landau-second-case.json": "1e2ba00fd1ff34bf13145ad1838f12b01029ada14a0baac670a6bd7758d15121",
     PRIME_TWO: "298d90f4f80e932d6d1eb1034dd76fca519555dada786964f0b5d7ce28cdec03",
     PRIME_TWO_CHARACTERS: "bbdc488501a875c0d0121d386f2b3e0a6d5b4edbcbc03bc6e1db0231e3ddbd89",
@@ -45,7 +52,7 @@ def portable_replay() -> None:
     for relative, digest in RECEIPTS.items():
         require_sha256(ROOT / relative, digest)
     run_python("-m", "unittest", "discover", "-s", "tests", "-v")
-    run_python("window_kernel.py", "--verify-report", "window-results-v2.json")
+    run_python("window_kernel.py", "--verify-report", WINDOW_RESULTS)
     run_python("tools/prime_two_local_surface.py", "--verify-report", PRIME_TWO)
     run_python("tools/prime_two_local_surface.py", "--characters", "--verify-report", PRIME_TWO_CHARACTERS)
     run_python("tools/local_notebook_smoke.py")

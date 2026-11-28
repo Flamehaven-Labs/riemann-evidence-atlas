@@ -3,10 +3,9 @@
 from hashlib import sha256
 import io
 import json
-from pathlib import Path
 import tarfile
 
-from verify_lean_archive import ConcatenatedParts, MIT_JOINED_SHA256, ROOT
+from verify_lean_archive import ConcatenatedParts, MIT_JOINED_SHA256, ROOT, SOURCE_INDEX
 
 
 def index_sources():
@@ -21,7 +20,7 @@ def index_sources():
         path.name.removeprefix("rh-"): (path, sha256(path.read_bytes()).hexdigest())
         for path in local_files
     }
-    manifest = json.loads((ROOT / "lean-archive-manifest.json").read_bytes())
+    manifest = json.loads((SOURCE_INDEX / "lean-archive-manifest.json").read_bytes())
     joined = sha256()
     parts = []
     for entry in manifest["parts"]:

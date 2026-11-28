@@ -10,8 +10,9 @@ from Flamehaven contributors at the NSRW release commit
 | `riemann_evidence/verification.py` | `src/nsrw/research_verification.py` | `d23c3bc32ee813e7b2c22326d3e27487e31b7b67439235103c11488145ae411f` |
 
 The arithmetic module retains the exponential enclosure functions. The
-verification module uses the local report format identifier. The pinned input
-files and historical experiment results identify their respective projects.
+verification module uses the local report format identifier. See the
+[NSRW evidence archive](docs/evidence/nsrw/README.md) for the MB-06 input,
+receipts, negative control, and their relationship to the standalone replay.
 Papers and Lean sources belong to their original authors. Their URLs and
-identities are recorded in [the source catalog](sources.json) and
-[the archive manifest](lean-archive-manifest.json). The cited papers and compiled archives are separately sourced. This repository records their identities and selected declaration-reference metadata.
+identities are recorded in [the source catalog](docs/evidence/source-index/sources.json) and
+[the archive manifest](docs/evidence/source-index/lean-archive-manifest.json). The cited papers and compiled archives are separately sourced. This repository records their identities and selected declaration-reference metadata.

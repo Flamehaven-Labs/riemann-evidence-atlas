@@ -28,7 +28,7 @@ try {
   & $Py -E -S -m unittest discover -s tests -v
   if ($LASTEXITCODE -ne 0) { throw 'Python unit tests failed' }
   Write-Output 'SAVED_NUMERICAL_REPORT_REPLAY'
-  & $Py -E -S window_kernel.py --verify-report window-results-v2.json
+  & $Py -E -S window_kernel.py --verify-report docs/evidence/baseline/window-results-v2.json
   if ($LASTEXITCODE -ne 0) { throw 'Saved numeric report mismatch' }
   Write-Output 'LOCAL_NOTEBOOK_CELL_EXECUTION'
   & $Py -E -S tools/local_notebook_smoke.py

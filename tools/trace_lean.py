@@ -4,14 +4,12 @@ from collections import deque
 from hashlib import sha256
 import io
 import json
-from pathlib import Path
 import re
 import tarfile
 
-from verify_lean_archive import ConcatenatedParts, MIT_JOINED_SHA256
+from verify_lean_archive import ConcatenatedParts, MIT_JOINED_SHA256, ROOT, SOURCE_INDEX
 
 
-ROOT = Path(__file__).resolve().parent
 PREFIX = "lean/src/"
 LANDAU = "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems."
 CORE = "Development.AutomorphicArithmetic.CharacterBoxes."
@@ -108,7 +106,7 @@ def locate(snippets, module, name, expected):
 
 
 def run():
-    manifest = json.loads((ROOT/"lean-archive-manifest.json").read_bytes())
+    manifest = json.loads((SOURCE_INDEX / "lean-archive-manifest.json").read_bytes())
     if manifest["joined_sha256"] != MIT_JOINED_SHA256:
         raise ValueError("archive manifest is not the selected RH snapshot")
     paths = []
@@ -140,7 +138,9 @@ def run():
         "method": "static source import scan and checked source tokens",
         "kernel_dependency_closure": "NOT_RUN",
     }
-    (ROOT/"rh-proof-trace.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    (SOURCE_INDEX / "rh-proof-trace.json").write_text(
+        json.dumps(summary, indent=2) + "\n", encoding="utf-8"
+    )
     print(len(graph), "modules;", len(lexical), "declarations;", len(route)-1, "import edges to the window inequality")
     print("\n".join(route))
 

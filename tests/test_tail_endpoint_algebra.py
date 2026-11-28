@@ -10,7 +10,7 @@ from riemann_evidence.rational_intervals import exp_bounds
 
 ROOT = Path(__file__).resolve().parents[1]
 LEAN = ROOT / "tests/lean/E2ATailEndpointAlgebra.lean"
-BASELINE = ROOT / "window-results-v2.json"
+BASELINE = ROOT / "docs/evidence/baseline/window-results-v2.json"
 
 def rational_def(source: str, name: str) -> Fraction:
     pattern = rf"(?m)^def {re.escape(name)} : Rat :=\s*(\d+)\s*/\s*(\d+)"

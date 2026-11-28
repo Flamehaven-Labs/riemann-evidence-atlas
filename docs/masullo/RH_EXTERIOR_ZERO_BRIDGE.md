@@ -11,7 +11,7 @@ This is a source-dependent test of the exterior-zero obligation over $\mathbb Q$
 | Masullo `Sec5.lean` at `b343e185` | Exterior indices require positive order for `continuedCompletedHeckeL` and $\alpha\le|\Re s-\tfrac12|$ | The index contains the edges and has no open-critical-strip premise |
 | Alpöge's `landau_window_ineq` | A real signed integral enters the bound alongside a compact window and a controlled tail | It suggests retaining a signed density. The trace operator would still require its own density and a uniform remainder estimate |
 
-[Archived Alpöge statements](https://math.mit.edu/~drew/grh/#what-was-verified) · [Signed Landau window estimate](../../rh-proof-trace.json) · [Masullo's exterior index and target](https://github.com/mccorvie/riemann-masullo/blob/b343e185c4296c7691cd86bb58ea3fd6e0b7aa61/RiemannMasullo/Ch12_TraceGeometric/Sec5.lean#L67)
+[Archived Alpöge statements](https://math.mit.edu/~drew/grh/#what-was-verified) · [Signed Landau window estimate](../evidence/source-index/rh-proof-trace.json) · [Masullo's exterior index and target](https://github.com/mccorvie/riemann-masullo/blob/b343e185c4296c7691cd86bb58ea3fd6e0b7aa61/RiemannMasullo/Ch12_TraceGeometric/Sec5.lean#L67)
 
 ## Conditions checked in Lean
 

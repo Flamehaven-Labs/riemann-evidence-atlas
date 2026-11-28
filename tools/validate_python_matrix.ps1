@@ -13,7 +13,7 @@ try {
     & $Py --version
     & $Py -E -S -m unittest discover -s tests -v
     if ($LASTEXITCODE -ne 0) { throw "Unit tests failed for $Version" }
-    & $Py -E -S window_kernel.py --verify-report window-results-v2.json
+    & $Py -E -S window_kernel.py --verify-report docs/evidence/baseline/window-results-v2.json
     if ($LASTEXITCODE -ne 0) { throw "Report replay failed for $Version" }
     & $Py -E -S tools/local_notebook_smoke.py
     if ($LASTEXITCODE -ne 0) { throw "Notebook smoke failed for $Version" }

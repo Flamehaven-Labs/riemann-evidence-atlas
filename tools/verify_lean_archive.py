@@ -7,7 +7,8 @@ from pathlib import Path
 import tarfile
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE_INDEX = ROOT / "docs" / "evidence" / "source-index"
 MIT_JOINED_SHA256 = "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc"
 MIRROR_FILES = {
     "src/Main.lean": "rh-Main.lean",
@@ -83,7 +84,9 @@ def verify():
         raise ValueError(f"Missing expected archive entries: {targets.keys() - members.keys()}")
     result = {"joined_bytes": total, "joined_sha256": joined.hexdigest(),
               "matches_mit_manifest": True, "parts": rows, "selected_members": members}
-    (ROOT / "lean-archive-manifest.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    (SOURCE_INDEX / "lean-archive-manifest.json").write_text(
+        json.dumps(result, indent=2) + "\n", encoding="utf-8"
+    )
     print(json.dumps({key: value for key, value in result.items() if key != "parts"}, indent=2))
 
 
